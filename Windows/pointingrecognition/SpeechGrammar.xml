@@ -1,0 +1,33 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>YES</tag>
+        <one-of>
+          <item> yes </item>
+          <item> okay </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>NEXT</tag>
+        <one-of>
+          <item> next </item>
+          <item> next one </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>REPEAT</tag>
+        <one-of>
+          <item> repeat </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>THIS ONE</tag>
+        <one-of>
+          <item> this one </item>
+          <item> this </item>
+        </one-of>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

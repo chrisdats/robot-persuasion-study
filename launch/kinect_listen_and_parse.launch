@@ -1,0 +1,4 @@
+<launch>
+        <node pkg="rosbridge_server" name="rosbridge_websocket" type="rosbridge_websocket"/>        
+		<node pkg="kinect2_pointing_recognition" name="kinect_parser" type="kinect_parser.py"/>
+</launch>

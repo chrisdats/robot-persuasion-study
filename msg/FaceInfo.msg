@@ -1,0 +1,17 @@
+string person_id
+bool happy
+bool engaged
+bool wear_glasses
+bool left_eye_closed
+bool right_eye_closed
+bool mouth_open
+bool mouth_moved
+bool looking_away
+float32 yaw
+float32 pitch
+float32 roll
+float32[2] left_eye_pos
+float32[2] right_eye_pos
+float32[2] nose_pos
+float32[2] left_mouth_corner
+float32[2] right_mouth_corner
