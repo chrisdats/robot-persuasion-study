@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 
+# participantData.py
+# Christopher Datsikas Apr 2016
+# Adapted from Thomas Weng
+# contains software that subscribes to parsed Kinect data
+# and interprets that information
+
 import math
 from numpy import *
 import rospy
@@ -13,7 +19,7 @@ def dot_prod(a, b):
 def magn(a):
 	return math.sqrt(a[0]*a[0]+a[1]*a[1]+a[2]*a[2])
 
-class ComputeAttention():
+class ComputeParticipant():
 	def __init__(self, max_people, num_objects, point_aperture, look_aperture, touch_distance):
 		self.node_name = 'compute_attention'
 		rospy.init_node(self.node_name)
@@ -100,6 +106,12 @@ class ComputeAttention():
 			return [None, None]
 		return [magn(handtips_to_obj[0]), magn(handtips_to_obj[1])]
 
+	def is_happy(self, person_id):
+	 	rospy.loginfo("%s \t%s", "Happy?", self.faces.array[person_id].happy)
+
+	def is_engaged(self, person_id):
+	 	rospy.loginfo("%s \t%s", "Engaged?", self.faces.array[person_id].engaged)
+
 	def run(self, gesture, target, time_limit):
 		start = rospy.get_rostime().secs
 		while not rospy.is_shutdown():
@@ -114,7 +126,10 @@ class ComputeAttention():
 			if person_id == None:
 				rospy.loginfo("No one is detected in the frame.")
 				time.sleep(1)
-				continue
+				continue		#why do you need continue here?
+
+			self.is_happy(person_id)
+			self.is_engaged(person_id)
 
 			# Boolean and Radians of Head vs. Object
 			rospy.loginfo("%s", "Booleans and Radians of Head vs. Object")
@@ -126,30 +141,9 @@ class ComputeAttention():
 				if threshold and looking_angle < smallest_angle:
 					smallest_angle = looking_angle
 					target_object = j
-				rospy.loginfo("%s\t%s", threshold, looking_angle)
+				rospy.loginfo("%s \t%s \t%s", j, threshold, looking_angle)
 			self.head_target = target_object
-			rospy.loginfo("Looking at %s", self.head_target)
-
-			# Boolean and Radians of Point vs. Object
-			rospy.loginfo("%s", "Booleans and Radians of Point vs. Object")
-			r_smallest_angle = 1000
-			r_target_object = None
-			l_smallest_angle = 1000
-			l_target_object = None
-			for j in range(0, self.objects.num_objects):
-				pointing_angles = self.point_vs_obj_angles(person_id, j)
-				pointing_threshold = [angle is not None and angle < self.point_aptr / 2 for angle in pointing_angles]
-				if pointing_threshold[0] and pointing_angles[0] < l_smallest_angle:
-					l_smallest_angle = pointing_angles[0]
-					l_target_object = j
-				if pointing_threshold[1] and pointing_angles[1] < r_smallest_angle:
-					r_smallest_angle = pointing_angles[1]
-					r_target_object = j
-				rospy.loginfo("%s\t%s", pointing_threshold, pointing_angles)
-			self.rightarm_target = r_target_object
-			self.leftarm_target = l_target_object
-			rospy.loginfo("Right arm pointing at %s", self.rightarm_target)
-			rospy.loginfo("Left arm pointing at %s", self.leftarm_target)
+			rospy.loginfo("Looking at %s\n", self.head_target)
 
 			if gesture == "look at":
 				if self.head_target == target:
@@ -216,3 +210,4 @@ class Speech():
 		self.words = msg.speech
 		self.timestamp = rospy.get_rostime()
 	
+		if dotprod != 0.0:

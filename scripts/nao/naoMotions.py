@@ -1,3 +1,8 @@
+# naoMotions.py
+# Contains Nao behaviors relevant to persuasion study
+# Christopher Datsikas Apr 2016
+# Adapted from Henny Admoni, Thomas Weng, and Aditi Ramachandran
+
 import os
 import sys
 import random
@@ -11,7 +16,7 @@ from naoqi import ALBehavior
 
 #____________________________________________________________
 
-class Gesture:
+class Robot:
     def __init__(self, host, port):
         self.host = host
         self.port = port
@@ -23,6 +28,7 @@ class Gesture:
         self.posture = None
         self.led = None
         self.connectNao()
+
     #initialize all nao devices____________________________________________________________
     def connectNao(self):
         #FRAME MANAGER FOR CALLING BEHAVIORS
@@ -69,37 +75,179 @@ class Gesture:
         except Exception, e:
             print "Error when saying a sentence: "+str(e)
 
+
+    def moveEffectorToPosition(self, target, effector, fractionMaxSpeed=0.5):
+            '''
+            Moves the specified end effector to the target position at 0.5 speed.
+
+            Input:
+                target    6D position in world coordinates, i.e., 
+                            (x, y, z, wx, wy, wz) where the first three
+                            entries are x, y, z points in meters, and the 
+                            last three are rotation coordinates in radians
+
+                effector    end effector to move, can be "Head", "LArm", "RArm", "Torso"
+
+                fractionMaxSpeed fraction of max speed to move
+            Output: none
+
+            Action: moves the desired end effector to the specified point
+
+            '''
+            # Set movement paramters
+            space = motion.FRAME_WORLD
+            useSensor = False
+            axisMask = 63 # control both position and rotation
+
+            self.motionProxy.post.setPosition(effector, space, target, 
+                                         fractionMaxSpeed, axisMask)
+
+
+    def moveEffectorsToPositions(self, targetList, 
+                                effectorList, fractionMaxSpeedList=[0.5]):
+        '''
+        Moves the effectors specified in effectorList to their respective
+        targets specified in targetList.
+        eg call: r.moveEffectorsToPositions([armTargetPos,headTargetPos], [arm,"Head"], [armSpeed,headSpeed])
+        '''
+
+        # If the default fractionMaxSpeed argument is used, make that list
+        # as long as the other lists
+        if len(fractionMaxSpeedList) == 1:
+            fractionMaxSpeedList = fractionMaxSpeedList * len(targetList)
+         
+        for target, effector, speed in zip(targetList, effectorList, fractionMaxSpeedList):
+            self.moveEffectorToPosition(target, effector, speed)
+
+
+    def getEffectorPosition(self, effector):
+        '''
+        Returns the 6D position vector of the current position of the chosen effector.
+
+        Input:
+            effector    Name of the effector, such as "Head", "LArm", "RArm"
+ 
+        Output:
+            currentPos  The current position of that effector, as a 6D vector
+ 
+        Action: none
+        '''
+
+        space = motion.FRAME_WORLD
+        useSensor = False
+
+        currentPos = self.motionProxy.getPosition(effector, space, useSensor)
+        return currentPos
+
+    def goToPose(self, poseName):
+        '''Go to named pose. Options include Crouch, Stand, StandInit, and Sit.
+           See http://doc.aldebaran.com/1-14/naoqi/motion/alrobotposture.html
+           for more information.
+           eg call: r.goToPose("Crouch")
+        '''
+        self.postureProxy.goToPosture(poseName, 0.5)
+
+    def shake(self):
+        #this bit of code makes the robot shake its head
+        #self.posture.goToPosture("Sit", 0.5)
+        self.motion.setStiffnesses("Head", 1.0)
+        #time.sleep(0.5)
+
+        #shake head
+        self.motion.setAngles("HeadPitch", 0, 0.05)
+        #self.motion.setAngles("HeadYaw", 0, 0.05)
+        #time.sleep(0.5)
+        self.motion.setAngles("HeadYaw", -0.5, 0.3)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadYaw", 0.5, 0.3)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadYaw", -0.5, 0.3)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadYaw", 0.5, 0.3)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadYaw", 0, 0.3)
+
+        time.sleep(1)
+        self.look()
+        time.sleep(0.5)
+        #self.genSpeech("i'm sorry, that's incorrect. try again!")
+
+        #move back to the original position
+        #time.sleep(2.5)
+        #self.posture.goToPosture("Sit", 0.3)
+        #self.motion.setAngles("HeadPitch", 0.3, 0.15)
+
+
+    #this bit of code makes the robot nod its head
+    def nod(self):
+        #self.posture.goToPosture("Sit", 0.5)
+        self.motion.setStiffnesses("Head", 1.0)
+        time.sleep(0.5)
+
+        #move head
+        #self.motion.setAngles("HeadPitch", 0, 0.5)
+        #time.sleep(0.5)
+        self.motion.setAngles("HeadPitch", 0.15, 0.25)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadPitch", 0, 0.25)
+        time.sleep(0.5)
+        self.motion.setAngles("HeadPitch", 0.15, 0.25)
+        #time.sleep(0.5)
+        #self.genSpeech("yes, that's correct. good job!")
+
+        #move back to original position
+        #time.sleep(3)
+        #self.posture.goToPosture("Sit", 1.0)
+
+    def wave(self):
+        #this bit of code makes the robot wave
+        #self.posture.goToPosture("Sit", 0.5)
+        #self.motion.closeHand("RHand")
+        #self.motion.closeHand("LHand")
+        #time.sleep(0.5)
+
+        self.motion.setAngles("RShoulderPitch",-1.0, 0.15)
+        self.motion.setAngles("RShoulderRoll", -1.2, 0.15)
+        self.motion.setAngles("RElbowRoll", 1.0, 0.1)
+        self.motion.setAngles("RElbowYaw", 0.5, 0.1)
+        self.motion.setAngles("RWristYaw", 0, 0.1)
+        self.motion.openHand("RHand")
+
+        time.sleep(0.7)
+        #self.motion.setAngles("RShoulderRoll", -1.2, 0.5)
+        #self.motion.setAngles("RHand", Open, 1.0)
+        #self.motion.setAngles("RElbowRoll",angleBotElbow,0.3)
+
+        #wave the hand 3 times, by moving the elbow
+        self.motion.setAngles("RElbowRoll", 1.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 0.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 1.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 0.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 1.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 0.5, 0.5)
+        time.sleep(0.5)
+        self.motion.setAngles("RElbowRoll", 1.0, 0.5)
+        #time.sleep(0.5)
+        #self.genSpeech("hello there!")
+
+        time.sleep(1)
+
+        self.motion.closeHand("RHand")
+        self.posture.goToPosture("Sit", 0.5)
+        #self.motion.setAngles("HeadPitch", 0.3, 0.15)
+
+
     def goodbye(self):
         self.genSpeech("finished")
         time.sleep(5)
         self.posture.goToPosture("SitRelax", 1.0)
 
-    #____________________________________________________________
 
-    def demo(self):
-        self.posture.goToPosture("Stand", 1.0)
-        self.led.fadeListRGB("FaceLeds",[0x00FFFFFF],[0.1])
-
-        self.genSpeech("Hello! My name is Nao.")     
-        #self.send_command("wave.xar")
-        self.posture.goToPosture("Stand", 1.0)
-
-        self.genSpeech("I am excited to play rock paper scissors with you. Let me demonstrate the gestures that I can make")
-        time.sleep(8)
-        
-        angleTopShoulder = 0.2
-        angleBotShoulder = 0.6
-
-        angleTopElbow = 1.4
-        angleBotElbow = 0.4
-        wristYaw = 0.3
-
-        self.motion.setAngles("RShoulderPitch",angleBotShoulder,0.1)
-        self.motion.setAngles("RElbowRoll",angleBotElbow,0.3)
-        time.sleep(0.8)
-
-        #INITIALIZE POSITION OF THE HAND
-        self.genSpeech("Let me show you how I do rock")     
 
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN
     def releaseNao(self):
