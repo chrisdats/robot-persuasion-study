@@ -22,7 +22,6 @@ HEADER_LENGTH = 3
 """
 the first [HEADER_LENGTH] fields of split string contain important metadata about the message
 followed by the actual message data, which can be variable length.
-
 """
 
 
@@ -50,15 +49,17 @@ class KinectParser:
         rospy.init_node(self.node_name)
 
         # Subscribe to the rosbridge to listen to Windows messages
+        # When new messages are received, self.kinect_parse_callback is invoked
         self.sub = rospy.Subscriber('/windows_rosbridge', String, self.kinect_parse_callback)
         
         # Publishers
         ##### Add new publishers for topics here #####
-        self.pub_audioloc = rospy.Publisher('/audio_loc', AudioLoc)
-        self.pub_faceinfo = rospy.Publisher('/face_info', FaceInfo)
-        self.pub_skelinfo = rospy.Publisher('/skeleton_info', SkeletonInfo)
-        self.pub_objinfo = rospy.Publisher('/objects_info', ObjectsInfo)
-        self.pub_speechinfo = rospy.Publisher('/speech_info', SpeechInfo)
+        size = 100
+        self.pub_audioloc = rospy.Publisher('/audio_loc', AudioLoc, queue_size = size)
+        self.pub_faceinfo = rospy.Publisher('/face_info', FaceInfo, queue_size = size)
+        self.pub_skelinfo = rospy.Publisher('/skeleton_info', SkeletonInfo, queue_size = size)
+        self.pub_objinfo = rospy.Publisher('/objects_info', ObjectsInfo, queue_size = size)
+        self.pub_speechinfo = rospy.Publisher('/speech_info', SpeechInfo, queue_size = size)
 
     def kinect_parse_callback(self, win_kinect_msg):
       # parse as json, identify id and key

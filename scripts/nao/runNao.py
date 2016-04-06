@@ -1,3 +1,8 @@
+# runNao.py
+# main Nao file, calls upon naoMotions.py and video_demo.py
+# Christopher Datsikas
+# Adapted from Thomas Weng
+
 import os
 import sys
 import random
@@ -27,6 +32,7 @@ except Exception as e:
 #Try to connect to it
 goNao = None
 try:
+    # Gesture class is initialized as goNao
     goNao = Gesture(ipAdd, 9559)
 except Exception as e:
     print "Could not find nao. Check that your ip is correct (ip.txt)"
@@ -92,10 +98,10 @@ class Demo:
     def task(self, gesture, index):
         self.goNao.genSpeech("Can you " + gesture + " the " + colors[index] + " block?")
         time.sleep(2)
-        if self.attention.run(gesture, index, 6):
+        if self.attention.run(gesture, index, 6): # checks if person did the task correctly
             self.goNao.genSpeech(good[random.randint(0,len(good)-1)])
             time.sleep(0.5)
-        else:
+        else: #if person failed to complete the task
             self.goNao.genSpeech(bad[random.randint(0,len(bad)-1)])
             time.sleep(3)
 
