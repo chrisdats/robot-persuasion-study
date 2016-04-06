@@ -1,9 +1,29 @@
-kinect2-pointing-recognition
-============================
 
-For the most up to date version, see the github repo: https://github.com/thomasweng15/kinect2_pointing_recognition
+robot-persuasion-study
+Code for robot persuasion study in the social robotics lab (Scaz Lab) 
 
-Code that enables us to generate and consume sensing data from the new Kinect
+Adapted from kinect2-pointing-recognition
+by Thomas Weng
+https://github.com/thomasweng15/kinect2_pointing_recognition
+
+Equipment
+Kinect v2
+Windows Machine
+Linux Machine
+Nao Robot
+
+Add the following lines to .bashrc (found in home directory)
+source /opt/ros/indigo/setup.bash
+export PYTHONPATH=${PYTHONPATH}:~/Documents/pynaoqi-python-2.7-naoqi-1.14-linux64
+source catkin_ws/devel/setup.bash
+
+So $PYTHONPATH should include python library in ros/indigo plus naoqi
+
+
+To Run
+1. roslaunch on Linux machine: roslaunch kinect2_pointing_recognition kinect_listen_and_parse.launch
+2.  press play on visual studio on Windows machine
+3. Monitor with commands such as: rostopic list, rostopic echo /skeleton_info
 
 
 FOR WINDOWS
