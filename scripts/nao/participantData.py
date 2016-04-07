@@ -13,6 +13,8 @@ import time
 from std_msgs.msg import String
 from kinect2_pointing_recognition.msg import SkeletonInfo, ObjectsInfo, FaceInfo, SpeechInfo
 
+item = 0
+
 def dot_prod(a, b):
 	return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]
 
@@ -33,7 +35,7 @@ class ComputeParticipant():
 		self.objects = Objects(num_objects)
 		self.speech = Speech()
 
-		self.rate = rospy.Rate(5) # 5hz, or 5 per second
+		self.rate = rospy.Rate(1) # 5hz, or 5 per second
 
 		self.head_target = None
 		self.leftarm_target = None
@@ -111,6 +113,64 @@ class ComputeParticipant():
 
 	def is_engaged(self, person_id):
 	 	rospy.loginfo("%s \t%s", "Engaged?", self.faces.array[person_id].engaged)
+
+	def eye_gaze_target(self, person_id):
+		j=0 
+		looking_angle = self.face_vs_obj_angle(person_id, j)
+		atItem = looking_angle is not None and looking_angle < self.look_aptr / 2
+
+		if atItem == True:
+			gazeTarget = "item"
+		elif self.faces.array[person_id].engaged == True:
+			gazeTarget = "camera"
+		elif self.faces.array[person_id].looking_away == True: 
+			gazeTarget = "away"
+		else:
+			gazeTarget = "other"
+
+		return gazeTarget
+
+	def monitor(self,time_limit):
+		# Header
+		rospy.loginfo("%s \t%s \t%s \t%s \t%s \t%s \t%s \t%s",
+			"Happy?",
+			"Engaged?",
+			"Looking Away",
+			"Eye Gaze Target",
+			"Head Center Pos",
+			"Face Orientation Vec",
+			"Item Pos",
+			"Nodding")
+		start = rospy.get_rostime().secs
+		while not rospy.is_shutdown():
+			if rospy.get_rostime().secs - start >= time_limit:
+				return False
+
+
+			# get person id of the person in frame
+			person_id = None
+			for i in range(0, self.skeletons.max_people):
+				if list(self.skeletons.array[i].head) != [0.0,0.0,0.0]:
+					person_id = i
+			if person_id == None:
+				rospy.loginfo("No one is detected in the frame.")
+				time.sleep(1)
+				continue		#why do you need continue here?
+
+			rospy.loginfo("%s \t%s \t\t%s \t\t%s \t%s \t%s \t%s \t%s",
+				self.faces.array[person_id].happy,
+				self.faces.array[person_id].engaged,
+				self.faces.array[person_id].looking_away,
+				self.eye_gaze_target(person_id),
+				self.faces.array[person_id].nose_pos,
+				self.faces.face_orientation_vec(person_id),
+				self.objects.array[item].pos,
+				"Nodding")
+
+			self.rate.sleep()
+
+	
+
 
 	def run(self, gesture, target, time_limit):
 		start = rospy.get_rostime().secs
@@ -209,5 +269,3 @@ class Speech():
 	def speech_callback(self, msg):
 		self.words = msg.speech
 		self.timestamp = rospy.get_rostime()
-	
-		if dotprod != 0.0:

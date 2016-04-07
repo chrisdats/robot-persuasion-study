@@ -133,7 +133,7 @@ def parse_objects_info(data_string):
 	Publishes an ObjectsInfo message, which contains 3D object coordinates
 
 	"""
-	num_objects = 4
+	num_objects = 1
 	fields_per_object = 1
 	obj_info_msg_array = []
 

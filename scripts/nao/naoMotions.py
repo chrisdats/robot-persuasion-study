@@ -139,13 +139,6 @@ class Robot:
         currentPos = self.motionProxy.getPosition(effector, space, useSensor)
         return currentPos
 
-    def goToPose(self, poseName):
-        '''Go to named pose. Options include Crouch, Stand, StandInit, and Sit.
-           See http://doc.aldebaran.com/1-14/naoqi/motion/alrobotposture.html
-           for more information.
-           eg call: r.goToPose("Crouch")
-        '''
-        self.postureProxy.goToPosture(poseName, 0.5)
 
     def shake(self):
         #this bit of code makes the robot shake its head
