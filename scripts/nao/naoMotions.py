@@ -7,6 +7,7 @@ import os
 import sys
 import random
 import time
+import motion
 
 import naoqi
 from naoqi import ALBroker
@@ -99,7 +100,7 @@ class Robot:
             useSensor = False
             axisMask = 63 # control both position and rotation
 
-            self.motionProxy.post.setPosition(effector, space, target, 
+            self.motion.post.setPosition(effector, space, target, 
                                          fractionMaxSpeed, axisMask)
 
 
@@ -136,7 +137,7 @@ class Robot:
         space = motion.FRAME_WORLD
         useSensor = False
 
-        currentPos = self.motionProxy.getPosition(effector, space, useSensor)
+        currentPos = self.motion.getPosition(effector, space, useSensor)
         return currentPos
 
 
@@ -161,8 +162,7 @@ class Robot:
         self.motion.setAngles("HeadYaw", 0, 0.3)
 
         time.sleep(1)
-        self.look()
-        time.sleep(0.5)
+
         #self.genSpeech("i'm sorry, that's incorrect. try again!")
 
         #move back to the original position

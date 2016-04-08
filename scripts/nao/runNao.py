@@ -19,8 +19,18 @@ from naoqi import ALBehavior
 from naoMotions import *
 from participantData import ComputeParticipant
 
+#http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
+# Nao Coodinates (x,y,z,wx,wy,wz) in meters
+armTargetPosItem = [-0.14040428400039673, -0.3072628080844879, 0.34422609210014343, 1.5012134313583374, 0.3255554735660553, -0.9553275108337402]
+headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
+headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
+headPitchAngleItem = 0.35  #-0.672 to +0.514
+headPitchAngleParticipant = -0.5
 
-# participantPos 
+armSpeed = 0.8
+headSpeed = 0.5
+postureSpeed = 0.3
+
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
@@ -61,17 +71,21 @@ class Demo:
     def timeout_callback(self, event):
         self.timeout = True
 
+    # THIS RUNS THE EXPERIMENT
     def run(self):
-        self.goNao.posture.goToPosture("Stand", 1.0)
-        time.sleep(5)
-        self.goNao.genSpeech("Hello! My name is Nao.")
-        self.goNao.genSpeech("Today we are going to be playing an economic game")
-        time.sleep(3)
+        #self.goNao.posture.goToPosture("Stand", 1.0)
+        #time.sleep(5)
+        #self.goNao.genSpeech("Hello! My name is Nao.")
+        #self.goNao.genSpeech("Today we are going to be playing an economic game")
+        #time.sleep(3)
 
-        self.trial(random.randint(1,len(itemList)))
+        self.demonstrateMotions()
+
+        self.trial(random.randint(0,len(itemList)-1))
 
         self.goNao.genSpeech("Thank you for your help. Bye now!")
         self.goNao.releaseNao()
+    # END OF EXPERIMENT
 
     def trial(self, trialNumber):
         """ imports speech data from file
@@ -83,24 +97,81 @@ class Demo:
         fileName = "itemScripts/"+ itemList[trialNumber] + ".txt"
         try:
             f = open(fileName, 'r')
-            data = f.readlines()
+            text = f.readline()
             f.close()
         except Exception as e:
             print "Could not open" + fileName
  
-        # begin recording participant data
-        self.participant.monitor(60)
-
-    def task(self, gesture, index):
-        # ex call: self.task("look at", BLUE)
-        self.goNao.genSpeech("Can you " + gesture + " the " + colors[index] + " block?")
+        self.goNao.posture.goToPosture("Stand", 0.6)
+        self.goNao.genSpeech(text)
+        self.goNao.moveEffectorToPosition(armTargetPosItem, "RArm", armSpeed)
         time.sleep(2)
-        if self.participant.run(gesture, index, 6): # checks if person did the task correctly
-            self.goNao.genSpeech(good[random.randint(0,len(good)-1)])
-            time.sleep(0.5)
-        else: #if person failed to complete the task
-            self.goNao.genSpeech(bad[random.randint(0,len(bad)-1)])
-            time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", 0.6)
+        time.sleep(2)
+        # begin recording participant data
+        #self.participant.monitor(60)
+
+    def demonstrateMotions(self):
+
+        # Intro
+        self.goNao.genSpeech("Hello! My name is Nao.")
+        time.sleep(3)
+        self.goNao.genSpeech("Let me demonstrate my movements to you.")
+
+        # Standing
+        self.goNao.posture.goToPosture("Stand", 0.6)
+        
+        time.sleep(2)
+        self.goNao.genSpeech("Now I am standing")
+        time.sleep(2)
+
+        # Pointing at the item
+        self.goNao.genSpeech("Now I am pointing at the item")
+        self.goNao.moveEffectorToPosition(armTargetPosItem, "RArm", armSpeed)
+        time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Looking at the item
+        self.goNao.genSpeech("Now I am looking at the item")
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+        #self.goNao.moveEffectorToPosition(headTargetPosItem, "Head", headSpeed)
+        print "Head:"
+        print self.goNao.getEffectorPosition("Head")
+        time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Looking and pointing at the item
+        self.goNao.genSpeech("Now I am looking and pointing at the item simultaneously")
+        self.goNao.moveEffectorsToPositions([armTargetPosItem, headTargetPosItem], ["RArm","Head"], [armSpeed, headSpeed])
+        time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Looking at participant
+        self.goNao.genSpeech("Now I am looking at the participant")
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
+        time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Nodding
+        self.goNao.genSpeech("Now I am nodding")
+        self.goNao.nod()
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Shaking my head
+        self.goNao.genSpeech("Now I am shaking my head")
+        self.goNao.shake()
+        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(3)
+
+        # Sit
+        self.goNao.genSpeech("Now I am going to sit")
+        self.goNao.posture.goToPosture("SitRelax", 0.6)
+        time.sleep(3)
 
 demo = Demo(goNao)
 demo.run()
