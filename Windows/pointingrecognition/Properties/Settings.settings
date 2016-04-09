@@ -6,13 +6,13 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="NumObjects" Type="System.UInt32" Scope="User">
-      <Value Profile="(Default)">2</Value>
+      <Value Profile="(Default)">1</Value>
     </Setting>
     <Setting Name="ObjectRGBThresholds" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0,0,105,73,55,166|55,51,0,200,105,12</Value>
+      <Value Profile="(Default)">0,0,234,215,171,255</Value>
     </Setting>
     <Setting Name="IpAddress" Type="System.String" Scope="User">
-      <Value Profile="(Default)">172.27.162.110</Value>
+      <Value Profile="(Default)">192.168.1.3</Value>
     </Setting>
     <Setting Name="DataFormat" Type="System.String" Scope="User">
       <Value Profile="(Default)">{"op":"publish","topic":"/windows_rosbridge","msg":{"data":"out_topic:0.0:kinect_1:XXXX"}}</Value>

@@ -20,6 +20,7 @@
         private KinectSensor kinectSensor = null;
 
         /// <summary>
+
         /// Current status text to display
         /// </summary>
         private string statusText = null;
@@ -96,7 +97,7 @@
         {
             if (Microsoft.Samples.Kinect.PointingRecognition.Properties.Settings.Default.SendData)
             {
-                this.socket.Send(data);
+                                                                                                                                             this.socket.Send(data);
             }
         }
 
