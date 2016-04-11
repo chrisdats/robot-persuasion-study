@@ -96,7 +96,7 @@ class Robot:
 
             '''
             # Set movement paramters
-            space = motion.FRAME_WORLD
+            space = motion.FRAME_ROBOT
             useSensor = False
             axisMask = 63 # control both position and rotation
 
@@ -134,18 +134,16 @@ class Robot:
         Action: none
         '''
 
-        space = motion.FRAME_WORLD
+        space = motion.FRAME_ROBOT
         useSensor = False
 
         currentPos = self.motion.getPosition(effector, space, useSensor)
         return currentPos
 
 
+    # this bit of code makes the robot shake its head
     def shake(self):
-        #this bit of code makes the robot shake its head
-        #self.posture.goToPosture("Sit", 0.5)
         self.motion.setStiffnesses("Head", 1.0)
-        #time.sleep(0.5)
 
         #shake head
         self.motion.setAngles("HeadPitch", 0, 0.05)
@@ -160,20 +158,11 @@ class Robot:
         self.motion.setAngles("HeadYaw", 0.5, 0.3)
         time.sleep(0.5)
         self.motion.setAngles("HeadYaw", 0, 0.3)
-
         time.sleep(1)
 
-        #self.genSpeech("i'm sorry, that's incorrect. try again!")
 
-        #move back to the original position
-        #time.sleep(2.5)
-        #self.posture.goToPosture("Sit", 0.3)
-        #self.motion.setAngles("HeadPitch", 0.3, 0.15)
-
-
-    #this bit of code makes the robot nod its head
+    # this bit of code makes the robot nod its head
     def nod(self):
-        #self.posture.goToPosture("Sit", 0.5)
         self.motion.setStiffnesses("Head", 1.0)
         time.sleep(0.5)
 
@@ -186,14 +175,9 @@ class Robot:
         time.sleep(0.5)
         self.motion.setAngles("HeadPitch", 0.15, 0.25)
         #time.sleep(0.5)
-        #self.genSpeech("yes, that's correct. good job!")
 
-        #move back to original position
-        #time.sleep(3)
-        #self.posture.goToPosture("Sit", 1.0)
-
+    # this bit of code makes the robot wave
     def wave(self):
-        #this bit of code makes the robot wave
         #self.posture.goToPosture("Sit", 0.5)
         #self.motion.closeHand("RHand")
         #self.motion.closeHand("LHand")
@@ -235,11 +219,11 @@ class Robot:
         #self.motion.setAngles("HeadPitch", 0.3, 0.15)
 
 
+
     def goodbye(self):
         self.genSpeech("finished")
         time.sleep(5)
         self.posture.goToPosture("SitRelax", 1.0)
-
 
 
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN

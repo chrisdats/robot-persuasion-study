@@ -9,6 +9,8 @@ import random
 import time
 import collections
 import rospy
+import threading
+import time
 
 import naoqi
 from naoqi import ALBroker
@@ -21,7 +23,7 @@ from participantData import ComputeParticipant
 
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
-armTargetPosItem = [-0.14040428400039673, -0.3072628080844879, 0.34422609210014343, 1.5012134313583374, 0.3255554735660553, -0.9553275108337402]
+armTargetPosItem = [0.15933576226234436, -0.06216268986463547, 0.2990882396697998, 1.1673258543014526, 0.542378842830658, 0.3403130769729614]
 headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
 headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
 headPitchAngleItem = 0.35  #-0.672 to +0.514
@@ -71,7 +73,7 @@ class Demo:
     def timeout_callback(self, event):
         self.timeout = True
 
-    # THIS RUNS THE EXPERIMENT
+    # THIS RUNS THE EXPERIMENT #################################
     def run(self):
         #self.goNao.posture.goToPosture("Stand", 1.0)
         #time.sleep(5)
@@ -85,7 +87,7 @@ class Demo:
 
         self.goNao.genSpeech("Thank you for your help. Bye now!")
         self.goNao.releaseNao()
-    # END OF EXPERIMENT
+    # END OF EXPERIMENT #########################################
 
     def trial(self, trialNumber):
         """ imports speech data from file
@@ -94,20 +96,40 @@ class Demo:
         """
         print trialNumber
         # imports speech data for a particular trial
-        fileName = "itemScripts/"+ itemList[trialNumber] + ".txt"
-        try:
-            f = open(fileName, 'r')
-            text = f.readline()
-            f.close()
-        except Exception as e:
-            print "Could not open" + fileName
- 
-        self.goNao.posture.goToPosture("Stand", 0.6)
-        self.goNao.genSpeech(text)
-        self.goNao.moveEffectorToPosition(armTargetPosItem, "RArm", armSpeed)
-        time.sleep(2)
-        self.goNao.posture.goToPosture("Stand", 0.6)
-        time.sleep(2)
+        # fileName = "itemScripts/"+ itemList[trialNumber] + ".txt"
+        # try:
+        #     f = open(fileName, 'r')
+        #     text = f.readline()
+        #     f.close()
+        # except Exception as e:
+        #     print "Could not open" + fileName
+        if trialNumber < 4:
+            self.goNao.posture.goToPosture("Stand", 0.6)
+            time.sleep(2)
+            self.goNao.genSpeech("I will begin.")
+            time.sleep(2)
+            self.pointAndLookAtItem()
+            self.goNao.genSpeech("These bars are such a treat.")
+            time.sleep(2)
+            self.goNao.moveEffectorToPosition(currentPos,"RArm")
+            self.lookAtParticipant()
+            self.goNao.speechDevice.say("Chocolove provides consistently good quality chocolate, in a lot of unique flavors.")
+            
+            self.lookAtItem()
+            self.goNao.speechDevice.say("Experience dark semisweet Belgian chocolate,")
+            self.lookAtParticipant()
+            self.goNao.speechDevice.say("whole dry roasted almonds and sea salt with 55 percent cocoa.")
+            self.lookAtItem()
+            self.goNao.speechDevice.say("The almonds are a delicious touch")
+            self.lookAtParticipant()
+            self.goNao.speechDevice.say("and if you like the combination of salt and chocolate, like a chocolate covered pretzel or m+ms in trail mix, you will")
+            self.pointAtItem()
+            self.goNao.speechDevice.say("love this flavor.")
+            time.sleep(2)
+            self.goNao.moveEffectorToPosition(currentPos,"RArm")
+            time.sleep(2)
+            self.goNao.posture.goToPosture("Stand", 0.6)
+            time.sleep(3)
         # begin recording participant data
         #self.participant.monitor(60)
 
@@ -120,38 +142,31 @@ class Demo:
 
         # Standing
         self.goNao.posture.goToPosture("Stand", 0.6)
-        
         time.sleep(2)
         self.goNao.genSpeech("Now I am standing")
         time.sleep(2)
 
         # Pointing at the item
         self.goNao.genSpeech("Now I am pointing at the item")
-        self.goNao.moveEffectorToPosition(armTargetPosItem, "RArm", armSpeed)
-        time.sleep(3)
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        self.pointAtItem()
+        time.sleep(2)
 
         # Looking at the item
         self.goNao.genSpeech("Now I am looking at the item")
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
-        #self.goNao.moveEffectorToPosition(headTargetPosItem, "Head", headSpeed)
-        print "Head:"
-        print self.goNao.getEffectorPosition("Head")
+        self.lookAtItem()
         time.sleep(3)
         self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
 
-        # Looking and pointing at the item
+        # Looking and pointing at the item simultaneously
         self.goNao.genSpeech("Now I am looking and pointing at the item simultaneously")
-        self.goNao.moveEffectorsToPositions([armTargetPosItem, headTargetPosItem], ["RArm","Head"], [armSpeed, headSpeed])
-        time.sleep(3)
+        self.pointAndLookAtItem()
         self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
 
         # Looking at participant
         self.goNao.genSpeech("Now I am looking at the participant")
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
+        self.lookAtParticipant()
         time.sleep(3)
         self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
@@ -172,6 +187,21 @@ class Demo:
         self.goNao.genSpeech("Now I am going to sit")
         self.goNao.posture.goToPosture("SitRelax", 0.6)
         time.sleep(3)
+    
+    def pointAtItem(self):
+        currentPos = self.goNao.getEffectorPosition("RArm")
+        self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
+
+    def lookAtItem(self):
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+
+    def pointAndLookAtItem(self):
+        currentPos = self.goNao.getEffectorPosition("RArm")
+        self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+
+    def lookAtParticipant(self):
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
 
 demo = Demo(goNao)
 demo.run()
