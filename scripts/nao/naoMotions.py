@@ -70,9 +70,12 @@ class Robot:
             exit(1)
 
     #SAY A SENTENCE___________________________________________________________________________________
-    def genSpeech(self, sentence):
+    def genSpeech(self, sentence, blocking=False):
         try:
-            self.speechDevice.post.say(sentence)
+            if blocking == False:
+                self.speechDevice.post.say(sentence) # non-blocking
+            else:
+                self.speechDevice.say(sentence)
         except Exception, e:
             print "Error when saying a sentence: "+str(e)
 
@@ -171,7 +174,7 @@ class Robot:
         #time.sleep(0.5)
         self.motion.setAngles("HeadPitch", 0.15, 0.25)
         time.sleep(0.5)
-        self.motion.setAngles("HeadPitch", 0, 0.25)
+        self.motion.setAngles("HeadPitch", -0.15, 0.25)
         time.sleep(0.5)
         self.motion.setAngles("HeadPitch", 0.15, 0.25)
         #time.sleep(0.5)

@@ -1,7 +1,7 @@
 # runNao.py
 # main Nao file, calls upon naoMotions.py and computeParticipant.py
 # Christopher Datsikas Apr 2016
-# Adapted from Thomas Weng
+# Adapted from Thomas Weng, Henny Admoni
 
 import os
 import sys
@@ -11,6 +11,8 @@ import collections
 import rospy
 import threading
 import time
+import Queue
+import re
 
 import naoqi
 from naoqi import ALBroker
@@ -24,15 +26,16 @@ from participantData import ComputeParticipant
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
 armTargetPosItem = [0.15933576226234436, -0.06216268986463547, 0.2990882396697998, 1.1673258543014526, 0.542378842830658, 0.3403130769729614]
+armTargetPosDefault = [0.03804556280374527, -0.11989212036132812, 0.21776995062828064, 1.4193202257156372, 1.1410943269729614, 0.1552099883556366]
 headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
 headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
 headPitchAngleItem = 0.35  #-0.672 to +0.514
 headPitchAngleParticipant = -0.5
+headPitchAngleDefault = -0.14730596542358398
 
 armSpeed = 0.8
 headSpeed = 0.5
 postureSpeed = 0.3
-
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
@@ -43,7 +46,6 @@ num_objects = 4
 
 # items
 itemList = ["chocolate", "chocolate", "chocolate"]
-
 
 #Get the Nao's IP
 ipAdd = None
@@ -62,6 +64,25 @@ try:
 except Exception as e:
     print "Could not find nao. Check that your ip is correct (ip.txt)"
     sys.exit()
+
+class myThread (threading.Thread):
+    def __init__(self, threadID, name, q):
+        threading.Thread.__init__(self)
+        self.threadID = threadID
+        self.name = name
+        self.q = q
+    def run(self):
+        print "Starting " + self.name
+        process_data(self.name, self.q)
+        print "Exiting " + self.name
+
+
+threadList = ["ScriptCommands", "OverrideCommands"]
+nameList = ["One", "Two", "Three", "Four", "Five"]
+queueLock = threading.Lock()
+workQueue = Queue.Queue(10)
+threads = []
+threadID = 1
 
 class Demo:
     def __init__(self, goNao):
@@ -84,6 +105,7 @@ class Demo:
         self.demonstrateMotions()
 
         self.trial(random.randint(0,len(itemList)-1))
+        # make sure to remove from list
 
         self.goNao.genSpeech("Thank you for your help. Bye now!")
         self.goNao.releaseNao()
@@ -95,43 +117,102 @@ class Demo:
          and performs behavior according to condition
         """
         print trialNumber
-        # imports speech data for a particular trial
-        # fileName = "itemScripts/"+ itemList[trialNumber] + ".txt"
-        # try:
-        #     f = open(fileName, 'r')
-        #     text = f.readline()
-        #     f.close()
-        # except Exception as e:
-        #     print "Could not open" + fileName
-        if trialNumber < 4:
-            self.goNao.posture.goToPosture("Stand", 0.6)
-            time.sleep(2)
-            self.goNao.genSpeech("I will begin.")
-            time.sleep(2)
-            self.pointAndLookAtItem()
-            self.goNao.genSpeech("These bars are such a treat.")
-            time.sleep(2)
-            self.goNao.moveEffectorToPosition(currentPos,"RArm")
-            self.lookAtParticipant()
-            self.goNao.speechDevice.say("Chocolove provides consistently good quality chocolate, in a lot of unique flavors.")
-            
-            self.lookAtItem()
-            self.goNao.speechDevice.say("Experience dark semisweet Belgian chocolate,")
-            self.lookAtParticipant()
-            self.goNao.speechDevice.say("whole dry roasted almonds and sea salt with 55 percent cocoa.")
-            self.lookAtItem()
-            self.goNao.speechDevice.say("The almonds are a delicious touch")
-            self.lookAtParticipant()
-            self.goNao.speechDevice.say("and if you like the combination of salt and chocolate, like a chocolate covered pretzel or m+ms in trail mix, you will")
-            self.pointAtItem()
-            self.goNao.speechDevice.say("love this flavor.")
-            time.sleep(2)
-            self.goNao.moveEffectorToPosition(currentPos,"RArm")
-            time.sleep(2)
-            self.goNao.posture.goToPosture("Stand", 0.6)
-            time.sleep(3)
+        # imports speech + gesture data for a particular trial
+        script_filename = "itemScripts/"+ itemList[trialNumber] + ".txt"
+        self.goNao.posture.goToPosture("Stand", 0.6) #blocking
+        self.readScript(script_filename)
+        time.sleep(2)
+
         # begin recording participant data
         #self.participant.monitor(60)
+
+    def readScript(self, script_filename):
+        """
+        Parse script and send speech commands to robot.
+
+        Parses the interaction script. Sends speech commands to Nao with appropriate
+        timings as determined by script. Broadcasts object references as ScriptObjectRef
+        ROS messages at appropriate times as determined by script.
+
+        Arguments: none
+
+        Returns: none (but causes robot to speak)
+        """
+        rospy.loginfo("Beginning to read script " + script_filename)
+
+        try:
+            self.script = open(script_filename, 'r')
+        except Exception as e:
+             print "Could not open" + script_fileName
+
+        alphanumeric = re.compile('[\W_]+')
+
+        for line in self.script:
+            utterance = ''
+            reference = ''
+            timing = '' # a timing command
+            inreference = False # is this char part of the reference?
+            intiming = False # is this char part of a timing cue?
+            # Parse any action commands
+            for char in line:
+                # Allow for comments
+                if char == '#':
+                    break # go to next line
+                # Find object references (bracketed with "<" and ">")
+                if char == "<" and not intiming:
+                    inreference = True
+                    continue
+                if char == "[" and not inreference:
+                    intiming = True
+                    continue
+                if inreference:
+                    # Read until the next '>'
+                    if not char == '>': 
+                        reference = reference + char
+                    else:
+                        # Speak the utterance to this point
+                        self.goNao.genSpeech(utterance, True) # blocking
+                        utterance = ''
+                        print str(reference)
+                        # Send the reference message
+                        self.process_data(reference)
+                        
+                        # Reset to be out of reference state
+                        reference = ''
+                        inreference = False
+                elif intiming:
+                    # A timing command affects the timing of the next utterance
+                    # Read until the next ']'
+                    if not char == ']':
+                        timing = timing + char
+                    else:
+                        #self.performTimingCommand(timing)
+                        
+                        # Reset to be out of timing state
+                        timing = ''
+                        intiming = False
+                # Extract utterances
+                else:
+                    utterance = utterance + char
+
+            # Speak what's left of the utterance
+            self.goNao.genSpeech(utterance, True)
+
+
+    def process_data(self, ref):
+        words = ref.split()
+
+        if words[0] == "pointandlook":
+            print "I am in point and look"
+            self.pointAndLookAtItem()
+        elif words[0] == "point" and words[1] == "item":
+            self.pointAtItem()
+        elif words[0] == "point" and words[1] == "none":
+            self.pointReturn()
+        elif words[0] == "look" and words[1] == "participant":
+            self.lookAtParticipant()
+        elif words[0] == "look" and words[1] == "item":
+            self.lookAtItem()
 
     def demonstrateMotions(self):
 
@@ -141,7 +222,7 @@ class Demo:
         self.goNao.genSpeech("Let me demonstrate my movements to you.")
 
         # Standing
-        self.goNao.posture.goToPosture("Stand", 0.6)
+        self.goNao.posture.goToPosture("Stand", 0.6) #blocking
         time.sleep(2)
         self.goNao.genSpeech("Now I am standing")
         time.sleep(2)
@@ -150,19 +231,23 @@ class Demo:
         self.goNao.genSpeech("Now I am pointing at the item")
         self.pointAtItem()
         time.sleep(2)
+        self.pointReturn()
+        time.sleep(2)
 
         # Looking at the item
         self.goNao.genSpeech("Now I am looking at the item")
         self.lookAtItem()
         time.sleep(3)
         self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        time.sleep(2)
 
         # Looking and pointing at the item simultaneously
         self.goNao.genSpeech("Now I am looking and pointing at the item simultaneously")
         self.pointAndLookAtItem()
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        time.sleep(2)
+        self.lookReturn()
+        self.pointReturn()
+        time.sleep(2)
 
         # Looking at participant
         self.goNao.genSpeech("Now I am looking at the participant")
@@ -176,6 +261,7 @@ class Demo:
         self.goNao.nod()
         self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
+        # make more pronounced
 
         # Shaking my head
         self.goNao.genSpeech("Now I am shaking my head")
@@ -184,10 +270,17 @@ class Demo:
         time.sleep(3)
 
         # Sit
-        self.goNao.genSpeech("Now I am going to sit")
-        self.goNao.posture.goToPosture("SitRelax", 0.6)
+        self.goNao.genSpeech("Now I am going to Crouch")
+        self.goNao.posture.goToPosture("Crouch", 0.6)
         time.sleep(3)
     
+
+    def lookReturn(self):
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleDefault, 0.15)
+
+    def pointReturn(self):
+        self.goNao.moveEffectorToPosition(armTargetPosDefault,"RArm", 0.8)
+
     def pointAtItem(self):
         currentPos = self.goNao.getEffectorPosition("RArm")
         self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
@@ -205,32 +298,3 @@ class Demo:
 
 demo = Demo(goNao)
 demo.run()
-
-#______________________________________________________________________________
-
-## Gesture only
-#r.moveEffectorToPosition(armTargetPos, "LArm", armSpeed)
-
-
-## Gaze only
-#r.moveEffectorToPosition(headTargetPos, "Head", headSpeed)
-
-
-## Verbal only
-#r.speak(targetSpeech)
-
-## 5. GAZE + GESTURE
-#r.moveEffectorsToPositions([armTargetPos,headTargetPos], ["LArm","Head"], [armSpeed, headSpeed])
-
-## 6. GAZE + VERBAL
-#r.speak(targetSpeech)
-#r.moveEffectorToPosition(headTargetPos, "Head", headSpeed)
-
-## 8. GESTURE + VERBAL
-#r.speak(targetSpeech)
-#r.moveEffectorToPosition(armTargetPos, "LArm", armSpeed)
-
-
-## 11. GAZE + GESTURE + VERBAL
-#r.moveEffectorsToPositions([armTargetPos,headTargetPos], ["LArm","Head"], [armSpeed, headSpeed])
-#r.speak(targetSpeech)
