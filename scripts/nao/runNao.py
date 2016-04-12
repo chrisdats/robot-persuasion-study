@@ -13,6 +13,7 @@ import threading
 import time
 import Queue
 import re
+from threading import Thread
 
 import naoqi
 from naoqi import ALBroker
@@ -26,7 +27,7 @@ from participantData import ComputeParticipant
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
 armTargetPosItem = [0.15933576226234436, -0.06216268986463547, 0.2990882396697998, 1.1673258543014526, 0.542378842830658, 0.3403130769729614]
-armTargetPosDefault = [0.03804556280374527, -0.11989212036132812, 0.21776995062828064, 1.4193202257156372, 1.1410943269729614, 0.1552099883556366]
+armTargetPosDefault = [0.028787896037101746, -0.12023936212062836, 0.21549509465694427, 1.4565576314926147, 1.1953319311141968, 0.16878308355808258]
 headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
 headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
 headPitchAngleItem = 0.35  #-0.672 to +0.514
@@ -45,7 +46,7 @@ max_people = 6
 num_objects = 4
 
 # items
-itemList = ["chocolate", "chocolate", "chocolate"]
+itemList = ["chocolate"]
 
 #Get the Nao's IP
 ipAdd = None
@@ -77,12 +78,6 @@ class myThread (threading.Thread):
         print "Exiting " + self.name
 
 
-threadList = ["ScriptCommands", "OverrideCommands"]
-nameList = ["One", "Two", "Three", "Four", "Five"]
-queueLock = threading.Lock()
-workQueue = Queue.Queue(10)
-threads = []
-threadID = 1
 
 class Demo:
     def __init__(self, goNao):
@@ -96,6 +91,7 @@ class Demo:
 
     # THIS RUNS THE EXPERIMENT #################################
     def run(self):
+        # Introduces nao
         #self.goNao.posture.goToPosture("Stand", 1.0)
         #time.sleep(5)
         #self.goNao.genSpeech("Hello! My name is Nao.")
@@ -104,24 +100,34 @@ class Demo:
 
         self.demonstrateMotions()
 
-        self.trial(random.randint(0,len(itemList)-1))
-        # make sure to remove from list
+        # Runs all the trials
+        random.shuffle(itemList)
+        for i in nameList:
+            self.trial(itemList[i])
 
+        # Concluces the experiment
+        time.sleep(2)
         self.goNao.genSpeech("Thank you for your help. Bye now!")
         self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
-    def trial(self, trialNumber):
+    def trial(self, trialName):
         """ imports speech data from file
          robot reads (tts) speech to participant
          and performs behavior according to condition
         """
-        print trialNumber
+        print trialName
         # imports speech + gesture data for a particular trial
-        script_filename = "itemScripts/"+ itemList[trialNumber] + ".txt"
+        script_filename = "itemScripts/"+ trialName + ".txt"
         self.goNao.posture.goToPosture("Stand", 0.6) #blocking
-        self.readScript(script_filename)
-        time.sleep(2)
+       
+        t1 = Thread(target=self.readScript, args=(script_filename, ))
+        #t2 = Thread(target=self.participant.monitor args=(60, ))
+
+        t1.start()
+        t2.start()
+        #self.readScript(script_filename)
+        #time.sleep(2)
 
         # begin recording participant data
         #self.participant.monitor(60)
@@ -143,7 +149,7 @@ class Demo:
         try:
             self.script = open(script_filename, 'r')
         except Exception as e:
-             print "Could not open" + script_fileName
+             print "Could not open" + script_filename
 
         alphanumeric = re.compile('[\W_]+')
 
@@ -175,7 +181,7 @@ class Demo:
                         utterance = ''
                         print str(reference)
                         # Send the reference message
-                        self.process_data(reference)
+                        self.process_cmd(reference)
                         
                         # Reset to be out of reference state
                         reference = ''
@@ -198,8 +204,10 @@ class Demo:
             # Speak what's left of the utterance
             self.goNao.genSpeech(utterance, True)
 
+        # exit the thread when the script is done
+        thread.exit()
 
-    def process_data(self, ref):
+    def process_cmd(self, ref):
         words = ref.split()
 
         if words[0] == "pointandlook":
