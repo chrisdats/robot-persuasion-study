@@ -116,31 +116,36 @@ class ComputeParticipant():
 
 	def eye_gaze_target(self, person_id):
 		j=0 
-		looking_angle = self.face_vs_obj_angle(person_id, j)
-		atItem = looking_angle is not None and looking_angle < self.look_aptr / 2
+		#looking_angle = self.face_vs_obj_angle(person_id, j)
+		#atItem = looking_angle is not None and looking_angle < self.look_aptr / 2
 
-		if atItem == True:
+		pitch = self.faces.face_pitch_value(person_id)
+		yaw = self.faces.face_yaw_value(person_id)
+
+		if pitch > -0.25 and yaw < 0.4 and yaw > -0.4:
+			gazeTarget = "kinect/nao"
+		elif pitch < -0.30 and yaw < 0.4 and yaw > -0.4:
 			gazeTarget = "item"
-		elif self.faces.array[person_id].engaged == True:
-			gazeTarget = "camera"
-		elif self.faces.array[person_id].looking_away == True: 
-			gazeTarget = "away"
+		elif yaw > 0.4:
+			gazeTarget = "left"
+		elif yaw < 0.4:
+			gazeTarget = "right"
 		else:
-			gazeTarget = "other"
+			gazeTarget = "unknown"
 
 		return gazeTarget
 
 	def monitor(self,time_limit):
 		# Header
-		rospy.loginfo("%s \t%s \t%s \t%s \t%s \t%s \t%s \t%s",
-			"Happy?",
-			"Engaged?",
-			"Looking Away",
-			"Eye Gaze Target",
-			"Head Center Pos",
-			"Face Orientation Vec",
-			"Item Pos",
-			"Nodding")
+		# rospy.loginfo("%s \t%s \t%s \t%s \t%s \t%s \t%s \t%s",
+		# 	"Happy?",
+		# 	"Engaged?",
+		# 	"Looking Away",
+		# 	"Eye Gaze Target",
+		# 	"Head Center Pos",
+		# 	"Face Orientation Vec",
+		# 	"Item Pos",
+		# 	"Nodding")
 		start = rospy.get_rostime().secs
 		while not rospy.is_shutdown():
 			if rospy.get_rostime().secs - start >= time_limit:
@@ -157,15 +162,20 @@ class ComputeParticipant():
 				time.sleep(1)
 				continue		#why do you need continue here?
 
-			rospy.loginfo("%s \t%s \t\t%s \t\t%s \t%s \t%s \t%s \t%s",
-				self.faces.array[person_id].happy,
-				self.faces.array[person_id].engaged,
-				self.faces.array[person_id].looking_away,
-				self.eye_gaze_target(person_id),
-				self.faces.array[person_id].nose_pos,
-				self.faces.face_orientation_vec(person_id),
-				self.objects.array[item].pos,
-				"Nodding")
+			gazeTarget = self.eye_gaze_target(person_id)
+			rospy.loginfo("%s %s", "gazeTarget: ", gazeTarget)
+			#rospy.loginfo("%s \t%s", "face vs obj angle", self.face_vs_obj_angle(person_id, 0))
+			#rospy.loginfo("%s \t%s", "face orientation vec", self.faces.face_orientation_vec(person_id))
+			#rospy.loginfo("\t%s \t%s", " head to obj vec", self.head_to_obj_vec(person_id, 0))
+			# rospy.loginfo("%s \t%s \t\t%s \t\t%s \t%s \t%s \t%s \t%s",
+			# 	self.faces.array[person_id].happy,
+			# 	self.faces.array[person_id].engaged,
+			# 	self.faces.array[person_id].looking_away,
+			# 	self.eye_gaze_target(person_id),
+			# 	self.faces.array[person_id].nose_pos,
+			# 	self.faces.face_orientation_vec(person_id),
+			# 	self.objects.array[item].pos,
+			# 	"Nodding")
 
 			self.rate.sleep()
 
@@ -244,11 +254,29 @@ class Faces():
 	def face_callback(self, msg):
 		self.array[int(msg.person_id)] = msg
 
+	def face_pitch_value(self, person_id):
+		if self.array[person_id].pitch == -1.0:
+			return 0.0
+		pitch_rad = math.radians(self.array[person_id].pitch)
+		return pitch_rad
+
+	def face_yaw_value(self, person_id):
+		if self.array[person_id].yaw == -1.0:
+			return 0.0
+		yaw_rad = math.radians(self.array[person_id].yaw)
+		return yaw_rad
+
 	def face_orientation_vec(self, person_id):
 		if self.array[person_id].yaw == -1.0 and self.array[person_id].pitch == -1.0: 
 			return [0.0, 0.0, 0.0]
 		yaw_rad = math.radians(self.array[person_id].yaw)
+		print "Yaw: "
+		print yaw_rad 
+		print "\t"
 		pitch_rad = math.radians(self.array[person_id].pitch)
+		print "Pitch: "
+		print pitch_rad
+		print "\n"
 		return [math.sin(yaw_rad), math.sin(pitch_rad), math.cos(yaw_rad)]
 
 class Objects():

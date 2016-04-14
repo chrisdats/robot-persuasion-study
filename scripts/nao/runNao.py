@@ -43,7 +43,7 @@ POINT_APERTURE = 0.4 # radians
 LOOK_APERTURE = 3.0
 TOUCH_DISTANCE = 0.1 # meters
 max_people = 6
-num_objects = 4
+num_objects = 1
 
 # items
 itemList = ["chocolate"]
@@ -78,6 +78,8 @@ class myThread (threading.Thread):
         print "Exiting " + self.name
 
 
+lockedOut = False
+endThreads = False
 
 class Demo:
     def __init__(self, goNao):
@@ -85,6 +87,8 @@ class Demo:
         self.participant = ComputeParticipant(max_people, num_objects, POINT_APERTURE, LOOK_APERTURE, TOUCH_DISTANCE)
        # self.postureProxy = postureProxy
         self.timeout = False
+        self.rate = rospy.Rate(1) # 5hz, or 5 per second
+
 
     def timeout_callback(self, event):
         self.timeout = True
@@ -92,23 +96,23 @@ class Demo:
     # THIS RUNS THE EXPERIMENT #################################
     def run(self):
         # Introduces nao
-        #self.goNao.posture.goToPosture("Stand", 1.0)
-        #time.sleep(5)
-        #self.goNao.genSpeech("Hello! My name is Nao.")
-        #self.goNao.genSpeech("Today we are going to be playing an economic game")
-        #time.sleep(3)
+        self.goNao.posture.goToPosture("Stand", 1.0)
+        time.sleep(3)
+        self.goNao.genSpeech("Hello! My name is Nao.")
+        self.goNao.genSpeech("Today we are going to be playing an economic game")
+        time.sleep(3)
 
-        self.demonstrateMotions()
+        #self.demonstrateMotions()
 
         # Runs all the trials
         random.shuffle(itemList)
-        for i in nameList:
-            self.trial(itemList[i])
+        for item in itemList:
+            self.trial(item)
 
         # Concluces the experiment
         time.sleep(2)
         self.goNao.genSpeech("Thank you for your help. Bye now!")
-        self.goNao.releaseNao()
+        #self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
     def trial(self, trialName):
@@ -122,7 +126,7 @@ class Demo:
         self.goNao.posture.goToPosture("Stand", 0.6) #blocking
        
         t1 = Thread(target=self.readScript, args=(script_filename, ))
-        #t2 = Thread(target=self.participant.monitor args=(60, ))
+        t2 = Thread(target=self.monitorParticipant, args=(60, ))
 
         t1.start()
         t2.start()
@@ -130,7 +134,46 @@ class Demo:
         #time.sleep(2)
 
         # begin recording participant data
-        #self.participant.monitor(60)
+        self.monitorParticipant(60)
+
+
+    def monitorParticipant(self, time_limit):
+        currentGazeTarget = "None"
+        previousGazeTarget = "None"
+        start = rospy.get_rostime().secs
+        while not rospy.is_shutdown():
+            if rospy.get_rostime().secs - start >= time_limit:
+                return False
+
+            # get person id of the person in frame
+            person_id = None
+            for i in range(0, self.participant.skeletons.max_people):
+                if list(self.participant.skeletons.array[i].head) != [0.0,0.0,0.0]:
+                    person_id = i
+            if person_id == None:
+                rospy.loginfo("No one is detected in the frame.")
+                time.sleep(1)
+                continue        #why do you need continue here?
+
+            currentGazeTarget = self.participant.eye_gaze_target(person_id)
+            rospy.loginfo("%s %s", "gaze Target: ", previousGazeTarget)
+            rospy.loginfo("%s %s\n", "Current Gaze Target: ", currentGazeTarget)
+            if currentGazeTarget != previousGazeTarget:
+                if currentGazeTarget == "item" and previousGazeTarget == "kinect/nao":
+                    lockedOut= True
+                    self.lookAtItem()
+                    time.sleep(3)
+                    self.goNao.posture.goToPosture("Stand", postureSpeed)
+                    lockedOut = False
+                #elif currentGazeTarget == left:
+                    #look left
+                #elif
+                    # look right
+                previousGazeTarget = currentGazeTarget
+            self.rate.sleep()
+
+            if endThreads == True:
+                t2.exit()
 
     def readScript(self, script_filename):
         """
@@ -181,7 +224,8 @@ class Demo:
                         utterance = ''
                         print str(reference)
                         # Send the reference message
-                        self.process_cmd(reference)
+                        if lockedOut == False:
+                            self.process_cmd(reference)
                         
                         # Reset to be out of reference state
                         reference = ''
@@ -205,7 +249,8 @@ class Demo:
             self.goNao.genSpeech(utterance, True)
 
         # exit the thread when the script is done
-        thread.exit()
+        endThreads = True
+        t1.exit()
 
     def process_cmd(self, ref):
         words = ref.split()
