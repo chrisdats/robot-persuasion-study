@@ -232,7 +232,8 @@ class Robot:
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN
     def releaseNao(self):
         try:
-            self.posture.goToPosture("SitRelax", 1.0)
+            self.posture.goToPosture("Crouch", 0.6)
+            time.sleep(1)
             self.motion.stiffnessInterpolation("Body",0.0,self.stiffness)
         except Exception, e:
             print "Error when sitting down nao and making nao unstiff: "+str(e)

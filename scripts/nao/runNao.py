@@ -31,7 +31,7 @@ armTargetPosDefault = [0.028787896037101746, -0.12023936212062836, 0.21549509465
 headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
 headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
 headPitchAngleItem = 0.35  #-0.672 to +0.514
-headPitchAngleParticipant = -0.5
+headPitchAngleParticipant = -0.19
 headPitchAngleDefault = -0.14730596542358398
 
 armSpeed = 0.8
@@ -66,20 +66,10 @@ except Exception as e:
     print "Could not find nao. Check that your ip is correct (ip.txt)"
     sys.exit()
 
-class myThread (threading.Thread):
-    def __init__(self, threadID, name, q):
-        threading.Thread.__init__(self)
-        self.threadID = threadID
-        self.name = name
-        self.q = q
-    def run(self):
-        print "Starting " + self.name
-        process_data(self.name, self.q)
-        print "Exiting " + self.name
 
 
 lockedOut = False
-endThreads = False
+exitFlag = False
 
 class Demo:
     def __init__(self, goNao):
@@ -87,7 +77,7 @@ class Demo:
         self.participant = ComputeParticipant(max_people, num_objects, POINT_APERTURE, LOOK_APERTURE, TOUCH_DISTANCE)
        # self.postureProxy = postureProxy
         self.timeout = False
-        self.rate = rospy.Rate(1) # 5hz, or 5 per second
+        self.rate = rospy.Rate(5) # 5hz, or 5 per second
 
 
     def timeout_callback(self, event):
@@ -96,13 +86,15 @@ class Demo:
     # THIS RUNS THE EXPERIMENT #################################
     def run(self):
         # Introduces nao
+        
         self.goNao.posture.goToPosture("Stand", 1.0)
-        time.sleep(3)
+        time.sleep(2)
         self.goNao.genSpeech("Hello! My name is Nao.")
-        self.goNao.genSpeech("Today we are going to be playing an economic game")
+        self.goNao.genSpeech("I have a few item that I would like to show to you today.")
         time.sleep(3)
 
         #self.demonstrateMotions()
+        #self.participant.monitor(90)
 
         # Runs all the trials
         random.shuffle(itemList)
@@ -112,7 +104,7 @@ class Demo:
         # Concluces the experiment
         time.sleep(2)
         self.goNao.genSpeech("Thank you for your help. Bye now!")
-        #self.goNao.releaseNao()
+        self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
     def trial(self, trialName):
@@ -125,24 +117,28 @@ class Demo:
         script_filename = "itemScripts/"+ trialName + ".txt"
         self.goNao.posture.goToPosture("Stand", 0.6) #blocking
        
+        exitFlag = False
         t1 = Thread(target=self.readScript, args=(script_filename, ))
-        t2 = Thread(target=self.monitorParticipant, args=(60, ))
+        t2 = Thread(target=self.monitorParticipant, args=(100, ))
 
         t1.start()
         t2.start()
-        #self.readScript(script_filename)
-        #time.sleep(2)
+        #t1.join()
+        t2.join()
 
-        # begin recording participant data
-        self.monitorParticipant(60)
+
 
 
     def monitorParticipant(self, time_limit):
-        currentGazeTarget = "None"
-        previousGazeTarget = "None"
+        gazeTargetHistory = []
         start = rospy.get_rostime().secs
         while not rospy.is_shutdown():
             if rospy.get_rostime().secs - start >= time_limit:
+                print "Time Out - End of monitor Participant"
+                return False
+
+            if exitFlag == True:
+                print "Exit Flag True - End of monitor Participant"
                 return False
 
             # get person id of the person in frame
@@ -155,25 +151,37 @@ class Demo:
                 time.sleep(1)
                 continue        #why do you need continue here?
 
+            # Get eye gaze target and add it to the history of 4 most recent gaze targets
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
-            rospy.loginfo("%s %s", "gaze Target: ", previousGazeTarget)
             rospy.loginfo("%s %s\n", "Current Gaze Target: ", currentGazeTarget)
-            if currentGazeTarget != previousGazeTarget:
-                if currentGazeTarget == "item" and previousGazeTarget == "kinect/nao":
-                    lockedOut= True
-                    self.lookAtItem()
-                    time.sleep(3)
-                    self.goNao.posture.goToPosture("Stand", postureSpeed)
-                    lockedOut = False
-                #elif currentGazeTarget == left:
-                    #look left
-                #elif
-                    # look right
-                previousGazeTarget = currentGazeTarget
-            self.rate.sleep()
+            if len(gazeTargetHistory) >= 4:
+                gazeTargetHistory.pop(0) 
+            gazeTargetHistory.append(currentGazeTarget)
 
-            if endThreads == True:
-                t2.exit()
+            if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
+                print "Override by looking at item"
+                lockedOut= True
+                self.lookAtItem()
+                time.sleep(1.5)
+                self.lookAtParticipant()
+                lockedOut = False
+            elif all(gazeTarget == "left" for gazeTarget in gazeTargetHistory):
+                print "Override by looking left"
+                lockedOut= True
+                self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
+                time.sleep(1.5)
+                self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
+                lockedOut = False
+            elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
+                print "Override by looking right"
+                lockedOut= True
+                self.goNao.motion.setAngles("HeadYaw", -0.25, 0.15)
+                time.sleep(1.5)
+                self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
+                lockedOut = False
+                previousGazeTarget = currentGazeTarget
+            
+            self.rate.sleep()
 
     def readScript(self, script_filename):
         """
@@ -247,10 +255,11 @@ class Demo:
 
             # Speak what's left of the utterance
             self.goNao.genSpeech(utterance, True)
+            time.sleep(0.5)
 
         # exit the thread when the script is done
-        endThreads = True
-        t1.exit()
+        exitFlag = True
+        print("Exit Flag set to True")
 
     def process_cmd(self, ref):
         words = ref.split()
@@ -260,7 +269,7 @@ class Demo:
             self.pointAndLookAtItem()
         elif words[0] == "point" and words[1] == "item":
             self.pointAtItem()
-        elif words[0] == "point" and words[1] == "none":
+        elif words[0] == "point" and words[1] == "return":
             self.pointReturn()
         elif words[0] == "look" and words[1] == "participant":
             self.lookAtParticipant()

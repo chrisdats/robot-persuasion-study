@@ -35,7 +35,7 @@ class ComputeParticipant():
 		self.objects = Objects(num_objects)
 		self.speech = Speech()
 
-		self.rate = rospy.Rate(1) # 5hz, or 5 per second
+		self.rate = rospy.Rate(5) # 5hz, or 5 per second
 
 		self.head_target = None
 		self.leftarm_target = None
@@ -122,13 +122,13 @@ class ComputeParticipant():
 		pitch = self.faces.face_pitch_value(person_id)
 		yaw = self.faces.face_yaw_value(person_id)
 
-		if pitch > -0.25 and yaw < 0.4 and yaw > -0.4:
+		if pitch > -0.28 and yaw < 0.4 and yaw > -0.4:
 			gazeTarget = "kinect/nao"
-		elif pitch < -0.30 and yaw < 0.4 and yaw > -0.4:
+		elif pitch < -0.33 and yaw < 0.4 and yaw > -0.4:
 			gazeTarget = "item"
 		elif yaw > 0.4:
 			gazeTarget = "left"
-		elif yaw < 0.4:
+		elif yaw < -0.4:
 			gazeTarget = "right"
 		else:
 			gazeTarget = "unknown"
@@ -163,6 +163,7 @@ class ComputeParticipant():
 				continue		#why do you need continue here?
 
 			gazeTarget = self.eye_gaze_target(person_id)
+			self.faces.face_orientation_vec(person_id)
 			rospy.loginfo("%s %s", "gazeTarget: ", gazeTarget)
 			#rospy.loginfo("%s \t%s", "face vs obj angle", self.face_vs_obj_angle(person_id, 0))
 			#rospy.loginfo("%s \t%s", "face orientation vec", self.faces.face_orientation_vec(person_id))
