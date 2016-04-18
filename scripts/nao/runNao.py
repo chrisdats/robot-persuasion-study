@@ -40,7 +40,7 @@ postureSpeed = 0.3
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
-LOOK_APERTURE = 3.0
+LOOK_APERTURE = 0.6 # radians
 TOUCH_DISTANCE = 0.1 # meters
 max_people = 6
 num_objects = 1
@@ -168,14 +168,14 @@ class Demo:
             elif all(gazeTarget == "left" for gazeTarget in gazeTargetHistory):
                 print "Override by looking left"
                 lockedOut= True
-                self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
+                self.goNao.motion.setAngles("HeadYaw", -0.25, 0.15)
                 time.sleep(1.5)
                 self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
                 lockedOut = False
             elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
                 print "Override by looking right"
                 lockedOut= True
-                self.goNao.motion.setAngles("HeadYaw", -0.25, 0.15)
+                self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
                 self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
                 lockedOut = False

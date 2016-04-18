@@ -35,7 +35,7 @@ class ComputeParticipant():
 		self.objects = Objects(num_objects)
 		self.speech = Speech()
 
-		self.rate = rospy.Rate(5) # 5hz, or 5 per second
+		self.rate = rospy.Rate(1) # 5hz, or 5 per second
 
 		self.head_target = None
 		self.leftarm_target = None
@@ -69,7 +69,7 @@ class ComputeParticipant():
 	def head_to_obj_vec(self, person_id, object_id):
 		if list(self.skeletons.array[person_id].head) == [0.0, 0.0, 0.0]:
 			return [0.0, 0.0, 0.0]
-		return array(self.skeletons.array[person_id].head) - self.objects.array[object_id].pos
+		return self.objects.array[object_id].pos - array(self.skeletons.array[person_id].head)
 
 	def point_vs_obj_angles(self, person_id, object_id):
 		head_to_handtips = self.skeletons.head_to_handtip_vecs(person_id)
@@ -162,12 +162,35 @@ class ComputeParticipant():
 				time.sleep(1)
 				continue		#why do you need continue here?
 
-			gazeTarget = self.eye_gaze_target(person_id)
-			self.faces.face_orientation_vec(person_id)
-			rospy.loginfo("%s %s", "gazeTarget: ", gazeTarget)
+
+			#gazeTarget = self.eye_gaze_target(person_id)
+			#self.faces.face_orientation_vec(person_id)
+			#rospy.loginfo("%s %s", "gazeTarget: ", gazeTarget)
+
+			pitch = self.faces.face_pitch_value(person_id)
+			yaw = self.faces.face_yaw_value(person_id)
+
+			object_id = 0
+			print "[x,y,z] Head Coord" + str(self.skeletons.array[person_id].head)
+			print "[x,y,z] Object Coord", str(self.objects.array[object_id].pos)
+			print " head to obj vec", str(self.head_to_obj_vec(person_id, 0))
+			print " "
+
+			print "Pitch (degrees)" + str(self.faces.array[person_id].pitch)
+			print "Yaw (degrees)" + str(self.faces.array[person_id].yaw)
+			print " "
+
+			print "Pitch (rad)" + str(pitch)
+			print "Yaw (rad)" + str(yaw)
+			print "face orientation vec" + str(self.faces.face_orientation_vec(person_id))
+			print " "
+
+			print "face vs obj angle" + str(self.face_vs_obj_angle(person_id, 0))
+			print " "
+			print "----------------------------------------"
+			print " "
 			#rospy.loginfo("%s \t%s", "face vs obj angle", self.face_vs_obj_angle(person_id, 0))
 			#rospy.loginfo("%s \t%s", "face orientation vec", self.faces.face_orientation_vec(person_id))
-			#rospy.loginfo("\t%s \t%s", " head to obj vec", self.head_to_obj_vec(person_id, 0))
 			# rospy.loginfo("%s \t%s \t\t%s \t\t%s \t%s \t%s \t%s \t%s",
 			# 	self.faces.array[person_id].happy,
 			# 	self.faces.array[person_id].engaged,
@@ -271,14 +294,8 @@ class Faces():
 		if self.array[person_id].yaw == -1.0 and self.array[person_id].pitch == -1.0: 
 			return [0.0, 0.0, 0.0]
 		yaw_rad = math.radians(self.array[person_id].yaw)
-		print "Yaw: "
-		print yaw_rad 
-		print "\t"
 		pitch_rad = math.radians(self.array[person_id].pitch)
-		print "Pitch: "
-		print pitch_rad
-		print "\n"
-		return [math.sin(yaw_rad), math.sin(pitch_rad), math.cos(yaw_rad)]
+		return [-math.sin(yaw_rad)*math.cos(pitch_rad), math.sin(pitch_rad), -math.cos(yaw_rad)*math.cos(pitch_rad)]
 
 class Objects():
 	def __init__(self, num_objects):
@@ -298,3 +315,6 @@ class Speech():
 	def speech_callback(self, msg):
 		self.words = msg.speech
 		self.timestamp = rospy.get_rostime()
+
+comPart = ComputeParticipant(6, 1, 0.3, 0.3, 0.1)
+comPart.monitor(50)
