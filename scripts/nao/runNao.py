@@ -105,7 +105,8 @@ class Demo:
 
         # Concludes the experiment
         time.sleep(2)
-        self.goNao.genSpeech("Thank you for your help. Please call over the experimenter. Bye now!")
+        self.goNao.genSpeech("Thank you for your help. We are now finished.")
+        self.goNao.genSpeech("Please call over the experimenter and make sure to fill out the exit survey. Bye now!")
         self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
@@ -117,8 +118,17 @@ class Demo:
         print trialName
         # imports speech + gesture data for a particular trial
         script_filename = "itemScripts/"+ trialName + ".txt"
-        self.goNao.posture.goToPosture("Stand", 0.6) #blocking
+        #self.goNao.posture.goToPosture("Stand", 0.6) #blocking
        
+        self.goNao.genSpeech("Please retreive the item in folder " + str(trialName))
+        self.goNao.genSpeech("Please place the item in the center of the red rectangle.")
+        self.goNao.genSpeech("Then, type the name of the item")
+        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        user_input=raw_input("Type name of the object and hit enter.")
+        print "Please return to the black x"
+        self.goNao.genSpeech("Great, now stand on the black x and I will begin.")
+        time.sleep(5)
+
         # create a logger to record all the robot commands that occured
         # for this particular participant
         FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
@@ -138,7 +148,12 @@ class Demo:
         t1.join()
         t2.join()
 
-
+        self.goNao.genSpeech("Thanks for listening")
+        self.goNao.genSpeech("Please head to the computer and record your willingness to pay in the google form.")
+        self.goNao.genSpeech("When you are done please hit enter in the controller window to continue the experiment.")
+        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        user_input=raw_input("Please hit enter here when you are done filling out the google form.")
+        print "Great!"
 
     def monitorParticipant(self, time_limit):
         gazeTargetHistory = []
