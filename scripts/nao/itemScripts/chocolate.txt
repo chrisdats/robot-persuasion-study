@@ -1,12 +1,21 @@
-<pointandlook item> These bars are <point return> <look participant> such a treat and America's best selling chocholate. 
-Chocolove provides consistently good quality chocolate, in a lot of unique flavors. 
-<look item> Experience dark <look participant> semisweet Belgian chocolate,
-whole dry roasted almonds and sea salt with 55 percent cocoa. 
-<look item> The almonds are a delicious touch, and <look participant> if you like the combination of salt and chocolate, like a chocolate covered pretzel or m and ms in trail mix, you will love this flavor.
-The chocolate is very smooth and buttery, but not too sweet. 
-Crunchy almonds and sea salt crystals make a tantilizing combination. 
-<look item> It is a great gift <look participant> so you can give it to your mother because its delicious. 
+
+<pointandlook item> Here we have a decadent bar <point return> <look participant> of chocolate made in Belgium, with the flavor of <point list> almond, sea salt, and dark chocolate. 
+
+<look participant> Dark chocolate is definitely <point self>my favorite kind of chocolate! <point return>
+
+This bar is 55 percent coco content which is very high <point up>, meaning it is <point return> a relatively high quality bar.
+ 
+Additionally, it is organic. Unlike other chocolates that are farmed with underpaid laborers with outdated methods, <pointandlook item> this is certified <look participant><point return> by Switzerland as For Life.
+
+This means that the coca beans were cultivated in a socially responsible and sustainable manner, with care given to the coca bean farmers and their families. So it helps protects the environment and it <point item> helps draw out <point return> all the taste from the coca beans. 
+
+
+<look item> The almonds are a delicious touch, and <look participant> <point participant> if you like the combination <point return> of salt and chocolate, like a chocolate covered pretzel or m and ms in trail mix, you will love this flavor. Crunchy almonds and sea salt crystals make a tantilizing combination which brings out the complexity of the chocolate. It very smooth and buttery, but not too sweet. 
+
+<look item> It is a great gift <look participant> so you can give it to your mother because its delicious.
+
 But with a love poem <point item> inside, these bars <point return> are also great to share with a special someone.
-Also, unlike other chocolates that are farmed with underpaid laborers with outdated methods, <pointandlook item> this is certified <look participant><point return> by Switzerland as For Life.
-This means that the coca beans were cultivated in a socially responsible and sustainable manner, with care given to the coca bean farmers and their families. So it helps protects the environment and it <point item> helps draw out <point return> all the taste from the coca beans. <point item>
-This is one of my favorite <point return> chocolate bars myself and I would definitely recommend it to anyone looking for a delicious high-quality chocolate bar.
+
+You can also <point chop> chop it up into pieces and share with friends.
+
+<point item> This is one of my favorite <point return> chocolate bars myself and I would definitely recommend it to anyone looking for a delicious high-quality chocolate bar.

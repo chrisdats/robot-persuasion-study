@@ -14,7 +14,7 @@ import time
 import Queue
 import re
 from threading import Thread
-
+ 
 import naoqi
 from naoqi import ALBroker
 from naoqi import ALModule
@@ -26,12 +26,14 @@ from participantData import ComputeParticipant
 
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
-armTargetPosItem = [0.15933576226234436, -0.06216268986463547, 0.2990882396697998, 1.1673258543014526, 0.542378842830658, 0.3403130769729614]
+armTargetPosItem = [0.04168321192264557, -0.10189437866210938, 0.22695526480674744, 1.2665989398956299, 1.1364772319793701, -0.021242152899503708]
 armTargetPosDefault = [0.028787896037101746, -0.12023936212062836, 0.21549509465694427, 1.4565576314926147, 1.1953319311141968, 0.16878308355808258]
-headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
-headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
-headPitchAngleItem = 0.35  #-0.672 to +0.514
-headPitchAngleParticipant = -0.19
+#headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
+#headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
+headPitchAngleItem = 0.314  #-0.672 to +0.514
+headYawAngleItem = -0.682
+headPitchAngleParticipant = -0.25
+headYawAngleParticipant = 0.0
 headPitchAngleDefault = -0.14730596542358398
 
 armSpeed = 0.8
@@ -40,7 +42,7 @@ postureSpeed = 0.3
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
-LOOK_APERTURE = 0.6 # radians
+LOOK_APERTURE = 1.1 # radians
 TOUCH_DISTANCE = 0.1 # meters
 max_people = 6
 num_objects = 1
@@ -67,7 +69,6 @@ except Exception as e:
     sys.exit()
 
 
-
 lockedOut = False
 exitFlag = False
 
@@ -77,7 +78,7 @@ class Demo:
         self.participant = ComputeParticipant(max_people, num_objects, POINT_APERTURE, LOOK_APERTURE, TOUCH_DISTANCE)
        # self.postureProxy = postureProxy
         self.timeout = False
-        self.rate = rospy.Rate(5) # 5hz, or 5 per second
+        self.rate = rospy.Rate(10) # 5hz, or 5 per second
 
 
     def timeout_callback(self, event):
@@ -87,7 +88,7 @@ class Demo:
     def run(self):
         # Introduces nao
         
-        self.goNao.posture.goToPosture("Stand", 1.0)
+        self.goNao.posture.goToPosture("Stand", 0.8)
         time.sleep(2)
         self.goNao.genSpeech("Hello! My name is Nao.")
         self.goNao.genSpeech("I have a few item that I would like to show to you today.")
@@ -101,9 +102,9 @@ class Demo:
         for item in itemList:
             self.trial(item)
 
-        # Concluces the experiment
+        # Concludes the experiment
         time.sleep(2)
-        self.goNao.genSpeech("Thank you for your help. Bye now!")
+        self.goNao.genSpeech("Thank you for your help. Please call over the experimenter. Bye now!")
         self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
@@ -128,15 +129,16 @@ class Demo:
 
 
 
-
     def monitorParticipant(self, time_limit):
         gazeTargetHistory = []
         start = rospy.get_rostime().secs
         while not rospy.is_shutdown():
+            # exits the function if we have timed out
             if rospy.get_rostime().secs - start >= time_limit:
                 print "Time Out - End of monitor Participant"
                 return False
 
+            # monitors exit flag from other thread
             if exitFlag == True:
                 print "Exit Flag True - End of monitor Participant"
                 return False
@@ -151,29 +153,29 @@ class Demo:
                 time.sleep(1)
                 continue        #why do you need continue here?
 
-            # Get eye gaze target and add it to the history of 4 most recent gaze targets
+            # Get eye gaze target and add it to the history of 3 most recent gaze targets
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
             rospy.loginfo("%s %s\n", "Current Gaze Target: ", currentGazeTarget)
-            if len(gazeTargetHistory) >= 4:
+            if len(gazeTargetHistory) >= 3:
                 gazeTargetHistory.pop(0) 
             gazeTargetHistory.append(currentGazeTarget)
 
             if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
-                print "Override by looking at item"
+                print "Contingent by looking at item"
                 lockedOut= True
                 self.lookAtItem()
                 time.sleep(1.5)
                 self.lookAtParticipant()
                 lockedOut = False
             elif all(gazeTarget == "left" for gazeTarget in gazeTargetHistory):
-                print "Override by looking left"
+                print "Contingent by looking left"
                 lockedOut= True
                 self.goNao.motion.setAngles("HeadYaw", -0.25, 0.15)
                 time.sleep(1.5)
                 self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
                 lockedOut = False
             elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
-                print "Override by looking right"
+                print "Contingent by looking right"
                 lockedOut= True
                 self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
@@ -262,6 +264,7 @@ class Demo:
         print("Exit Flag set to True")
 
     def process_cmd(self, ref):
+        # splits each reference into its two words <word0 word1>
         words = ref.split()
 
         if words[0] == "pointandlook":
@@ -337,26 +340,31 @@ class Demo:
         time.sleep(3)
     
 
-    def lookReturn(self):
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleDefault, 0.15)
+    #def lookReturn(self):
+    #    self.goNao.motion.setAngles("HeadPitch", headPitchAngleDefault, 0.15)
 
     def pointReturn(self):
         self.goNao.moveEffectorToPosition(armTargetPosDefault,"RArm", 0.8)
 
     def pointAtItem(self):
-        currentPos = self.goNao.getEffectorPosition("RArm")
         self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
 
     def lookAtItem(self):
         self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+        self.goNao.motion.setAngles("HeadYaw", headYawAngleItem, 0.25)
 
     def pointAndLookAtItem(self):
-        currentPos = self.goNao.getEffectorPosition("RArm")
         self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
         self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+        self.goNao.motion.setAngles("HeadYaw", headYawAngleItem, 0.25)
 
     def lookAtParticipant(self):
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
+        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.25)
+        self.goNao.motion.setAngles("HeadYaw", headYawAngleParticipant, 0.25)
+
+    #def pointAtParticipant(self):
+
+    #def idleGesture(self):
 
 demo = Demo(goNao)
 demo.run()
