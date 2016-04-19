@@ -7,6 +7,7 @@ import os
 import sys
 import random
 import time
+import logging
 import collections
 import rospy
 import threading
@@ -118,13 +119,23 @@ class Demo:
         script_filename = "itemScripts/"+ trialName + ".txt"
         self.goNao.posture.goToPosture("Stand", 0.6) #blocking
        
+        # create a logger to record all the robot commands that occured
+        # for this particular participant
+        FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
+        logging.basicConfig(level=logging.DEBUG, format=FORMAT)   
+        log_filename = participantNumber + trialName + ".txt"       
+        file_handler = logging.FileHandler(log_filename)
+        file_handler.setFormatter(logging.Formatter(FORMAT))
+        logging.getLogger().addHandler(file_handler)
+        start_time = time.time()
+
         exitFlag = False
         t1 = Thread(target=self.readScript, args=(script_filename, ))
         t2 = Thread(target=self.monitorParticipant, args=(100, ))
 
         t1.start()
         t2.start()
-        #t1.join()
+        t1.join()
         t2.join()
 
 
@@ -162,20 +173,27 @@ class Demo:
 
             if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking at item"
+                elapsed_time = time.time() - start_time
+                logging.info("<look item>" + " " + str(elapsed_time))
                 lockedOut= True
                 self.lookAtItem()
                 time.sleep(1.5)
                 self.lookAtParticipant()
                 lockedOut = False
-            elif all(gazeTarget == "left" for gazeTarget in gazeTargetHistory):
-                print "Contingent by looking left"
+            elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
+                print "Contingent by looking up"
+                elapsed_time = time.time() - start_time
+                logging.info("<look up>" + " " + str(elapsed_time))
                 lockedOut= True
-                self.goNao.motion.setAngles("HeadYaw", -0.25, 0.15)
+                self.goNao.motion.setAngles("HeadYaw", -0.0, 0.15)
+                self.goNao.motion.setAngles("HeadPitch", -0.4, 0.15)
                 time.sleep(1.5)
-                self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
+                self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
                 lockedOut = False
             elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking right"
+                elapsed_time = time.time() - start_time
+                logging.info("<look right>" + " " + str(elapsed_time))
                 lockedOut= True
                 self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
@@ -230,11 +248,15 @@ class Demo:
                         reference = reference + char
                     else:
                         # Speak the utterance to this point
+                        elapsed_time = time.time() - start_time
+                        logging.info(utterance + " " + str(elapsed_time))
                         self.goNao.genSpeech(utterance, True) # blocking
                         utterance = ''
                         print str(reference)
                         # Send the reference message
                         if lockedOut == False:
+                            elapsed_time = time.time() - start_time
+                            logging.info("<" + reference + "> " + str(elapsed_time))
                             self.process_cmd(reference)
                         
                         # Reset to be out of reference state
@@ -256,6 +278,8 @@ class Demo:
                     utterance = utterance + char
 
             # Speak what's left of the utterance
+            elapsed_time = time.time() - start_time
+            logging.info(utterance + " " + str(elapsed_time))
             self.goNao.genSpeech(utterance, True)
             time.sleep(0.5)
 

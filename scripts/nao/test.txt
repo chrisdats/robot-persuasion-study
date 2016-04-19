@@ -1,0 +1,4 @@
+2016-04-19 09:58:01,762 [INFO] (MainThread) Startinghi
+2016-04-19 09:58:04,765 [INFO] (MainThread) Endingbye
+2016-04-19 09:58:18,561 [INFO] (MainThread) Starting 1461074298.56
+2016-04-19 09:58:21,565 [INFO] (MainThread) Ending bye
