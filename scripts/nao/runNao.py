@@ -27,28 +27,35 @@ from participantData import ComputeParticipant
 
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
-# These coordinates are for crouch position
-RArmTargetItem = [0.1596788913011551, -0.25627022981643677, 0.27666962146759033, 1.0591833591461182, 0.19004228711128235, -0.548386812210083]
-RArmTargetParticipant = [0.1977016031742096, -0.12935318052768707, 0.36685818433761597, 1.4542509317398071, -0.1924528181552887, 0.08652161061763763]
-RArmTargetOpen = [0.15322326123714447, -0.09104180335998535, 0.3085833787918091, 1.522914171218872, -0.25367528200149536, 0.706211268901825]
-RArmTargetDefault = [0.10287497192621231, -0.031998250633478165, 0.16709882020950317, -1.329634189605713, 0.5766682028770447, -0.9145272374153137]
-LArmTargetDefault = [0.10287497192621231, -0.031998250633478165, 0.16709882020950317, -1.329634189605713, 0.5766682028770447, -0.9145272374153137]
+# These coordinates are for the sit position Nao3
+RArmTargetItem = [0.08865346759557724, -0.22455188632011414, 0.21142783761024475, 1.56281316280365, -0.0054118018597364426, -0.5769132971763611]
+RArmTargetParticipant = [0.10347125679254532, -0.09411738067865372, 0.28878143429756165, 1.0531508922576904, -0.5454456806182861, 0.24398885667324066]
+RArmTargetParticipant2 = [0.08484018594026566, -0.04775525629520416, 0.2966286242008209, 0.9779533743858337, -0.6467088460922241, 0.5922301411628723]
+RArmTargetLift = [0.08617198467254639, -0.05527321994304657, 0.22831135988235474, 0.11964680254459381, -0.3332363963127136, 1.0237292051315308]
+LArmTargetLift = [0.07553913444280624, 0.03513256087899208, 0.24100753664970398, -0.46564310789108276, -0.5226525664329529, -0.8622301816940308]
+RArmTargetDefault = [0.08699753880500793, -0.04760340601205826, 0.1661260426044464, 0.6560360193252563, -0.16207846999168396, 0.8656076788902283]
+LArmTargetDefault = [0.0664924681186676, 0.037688370794057846, 0.16274607181549072, -0.5783596634864807, -0.02439243346452713, -0.8660477995872498]
+RArmTargetCapo = [0.04031921923160553, -0.022381991147994995, 0.30415746569633484, -0.06435168534517288, -0.9264166951179504, 1.6822551488876343]
 
-headPitchAngleItem = 0.24  #-0.672 to +0.514
-headYawAngleItem = -0.65
-headPitchAngleParticipant = -0.22
+headPitchAngleItem = 0.35  #-0.672 to +0.514
+headYawAngleItem = -0.60
+
+headPitchAngleParticipant = -0.023
 headYawAngleParticipant = 0.0
-headPitchAngleUp = 0.670
-headYawAngleUp = 0.21
-headPitchAngleDefault = -0.14730596542358398
+
+headPitchAngleUp = -0.52
+headYawAngleUp = 0.10
+
+headPitchAngleDefault = -0.063
+headYawAngleDefault = 0.0
 
 armSpeed = 0.8
-headSpeed = 0.5
-postureSpeed = 0.3
+headSpeed = 0.15
+postureSpeed = 0.6
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
-LOOK_APERTURE = 1.1 # radians
+LOOK_APERTURE = 1.25 # radians
 TOUCH_DISTANCE = 0.1 # meters
 max_people = 6
 num_objects = 1
@@ -76,7 +83,6 @@ except Exception as e:
 
 
 lockedOut = False
-exitFlag = False
 
 class Demo:
     def __init__(self, goNao):
@@ -84,26 +90,28 @@ class Demo:
         self.participant = ComputeParticipant(max_people, num_objects, POINT_APERTURE, LOOK_APERTURE, TOUCH_DISTANCE)
        # self.postureProxy = postureProxy
         self.timeout = False
-        self.rate = rospy.Rate(10) # 5hz, or 5 per second
-
+        self.rate = rospy.Rate(25) # 5hz, or 5 per second
+        self.participantNumber = "P10"
+        self.condition = "contingent"
+        self.exitFlag = False
 
     def timeout_callback(self, event):
         self.timeout = True
 
-    # THIS RUNS THE EXPERIMENT #################################
+    # THIS RUNS THE EXPERIMENT ##########################################
     def run(self):
-        # Introduces nao
+        # Introduces naoexitFlag
         
-        #self.goNao.posture.goToPosture("Sit", 0.8)
+        self.goNao.posture.goToPosture("Sit", 0.8)
         time.sleep(2)
         self.goNao.genSpeech("Hello! My name is Nao.")
         self.goNao.genSpeech("I have a few item that I would like to show to you today.")
         time.sleep(3)
 
-        #self.demonstrateMotions()
-        #self.participant.monitor(90)
+        #self.participant.monitor(60)
 
         # Runs all the trials
+        #TODO: create tuple to shuffle
         random.shuffle(itemList)
         for item in itemList:
             self.trial(item)
@@ -112,8 +120,8 @@ class Demo:
         time.sleep(2)
         self.goNao.genSpeech("Thank you for your help. We are now finished.")
         self.goNao.genSpeech("Please call over the experimenter and make sure to fill out the exit survey. Bye now!")
-        #self.goNao.releaseNao()
-    # END OF EXPERIMENT #########################################
+        self.goNao.releaseNao()
+    # END OF EXPERIMENT ################################################
 
     def trial(self, trialName):
         """ imports speech data from file
@@ -127,10 +135,11 @@ class Demo:
        
         self.goNao.genSpeech("Please retreive the item in folder " + str(trialName))
         self.goNao.genSpeech("Please place the item in the center of the red rectangle.")
-        self.goNao.genSpeech("Then, type the name of the item")
-        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-        user_input=raw_input("Type name of the object and hit enter.")
-        print "Please return to the black x"
+        self.goNao.genSpeech("Then, type the name of the item into the computer")
+        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        print "First, please place the item in the center of the red rectangle" 
+        user_input_item_name=raw_input("Type name of the item and hit enter. ")
+        print "Thanks! Please return to the black x"
         self.goNao.genSpeech("Great, now stand on the black x and I will begin.")
         time.sleep(5)
 
@@ -138,30 +147,39 @@ class Demo:
         # for this particular participant
         FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
         logging.basicConfig(level=logging.DEBUG, format=FORMAT)   
-        log_filename = participantNumber + trialName + ".txt"       
+        log_filename = self.participantNumber + trialName + ".txt"       
         file_handler = logging.FileHandler(log_filename)
         file_handler.setFormatter(logging.Formatter(FORMAT))
         logging.getLogger().addHandler(file_handler)
         start_time = time.time()
 
-        exitFlag = False
-        t1 = Thread(target=self.readScript, args=(script_filename, ))
-        t2 = Thread(target=self.monitorParticipant, args=(100, ))
+        
+        self.exitFlag = False
+
+        # second thread is executed only when in contingent condition
+        # TODO: fix this
+        t1 = Thread(target=self.readScript, args=(script_filename, start_time, ))
+        if self.condition == "contingent":
+            t2 = Thread(target=self.monitorParticipant, args=(130, start_time, ))
 
         t1.start()
-        t2.start()
-        t1.join()
-        t2.join()
+        if self.condition == "contingent":
+            t2.start()
 
+        t1.join()
+        if self.condition == "contingent":
+            t2.join()
+
+        time.sleep(2)
         self.goNao.genSpeech("Thanks for listening")
-        self.goNao.genSpeech("Please head to the computer and record your willingness to pay in the google form.")
-        self.goNao.genSpeech("When you are done please hit enter in the controller window to continue the experiment.")
-        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-        user_input=raw_input("Please hit enter here when you are done filling out the google form.")
+        self.goNao.genSpeech("Please head to the computer and record your willingness to pay")
+        print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        print "You just heard about the " , user_input_item_name
+        user_input_WTP=raw_input("Please enter your willingness to pay (0.00-5.00) ")
         print "Great!"
 
-    def monitorParticipant(self, time_limit):
-        gazeTargetHistory = []
+    def monitorParticipant(self, time_limit, start_time):
+        gazeTargetHistory = []  # create empty array to store past values
         start = rospy.get_rostime().secs
         while not rospy.is_shutdown():
             # exits the function if we have timed out
@@ -169,8 +187,9 @@ class Demo:
                 print "Time Out - End of monitor Participant"
                 return False
 
+            print self.exitFlag
             # monitors exit flag from other thread
-            if exitFlag == True:
+            if self.exitFlag == True:
                 print "Exit Flag True - End of monitor Participant"
                 return False
 
@@ -185,45 +204,48 @@ class Demo:
                 continue        #why do you need continue here?
 
             # Get eye gaze target and add it to the history of 3 most recent gaze targets
+            # this is done to avoid false positives
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
             rospy.loginfo("%s %s\n", "Current Gaze Target: ", currentGazeTarget)
             if len(gazeTargetHistory) >= 3:
                 gazeTargetHistory.pop(0) 
             gazeTargetHistory.append(currentGazeTarget)
 
+            ### Socially Contingent Rules
+            # If the participant is looking at the item, robot looks at item, then returns gaze to participant
             if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking at item"
                 elapsed_time = time.time() - start_time
                 logging.info("<look item>" + " " + str(elapsed_time))
-                lockedOut= True
+                lockedOut= True # locks out other thread until motion is complete
                 self.lookAtItem()
                 time.sleep(1.5)
                 self.lookAtParticipant()
                 lockedOut = False
+            # if participant looks up, robot looks up, then returns gaze to participant
             elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking up"
                 elapsed_time = time.time() - start_time
                 logging.info("<look up>" + " " + str(elapsed_time))
-                lockedOut= True
-                self.goNao.motion.setAngles("HeadYaw", -0.0, 0.15)
-                self.goNao.motion.setAngles("HeadPitch", -0.4, 0.15)
+                lockedOut= True # locks out other thread until motion is complete
+                self.lookUp()
                 time.sleep(1.5)
-                self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.15)
+                self.lookAtParticipant()
                 lockedOut = False
+            # if participant looks right, robot looks right, then returns gaze to participant
             elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking right"
                 elapsed_time = time.time() - start_time
                 logging.info("<look right>" + " " + str(elapsed_time))
-                lockedOut= True
+                lockedOut= True # locks out other thread until motion is complete
                 self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
                 self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
                 lockedOut = False
-                previousGazeTarget = currentGazeTarget
             
             self.rate.sleep()
 
-    def readScript(self, script_filename):
+    def readScript(self, script_filename, start_time):
         """
         Parse script and send speech commands to robot.
 
@@ -288,7 +310,8 @@ class Demo:
                     if not char == ']':
                         timing = timing + char
                     else:
-                        #self.performTimingCommand(timing)
+                        # delay for the amount indicated in the txt script [timing]
+                        time.sleep(timing)
                         
                         # Reset to be out of timing state
                         timing = ''
@@ -297,14 +320,14 @@ class Demo:
                 else:
                     utterance = utterance + char
 
-            # Speak what's left of the utterance
+            # Speak what's left of the utterance #TODO: skip empty lines
             elapsed_time = time.time() - start_time
-            logging.info(utterance + " " + str(elapsed_time))
+            logging.info(utterance.rstrip('\n') + " " + str(elapsed_time))
             self.goNao.genSpeech(utterance, True)
             time.sleep(0.5)
 
         # exit the thread when the script is done
-        exitFlag = True
+        self.exitFlag = True
         print("Exit Flag set to True")
 
     def process_cmd(self, ref):
@@ -312,8 +335,8 @@ class Demo:
         words = ref.split()
 
         if words[0] == "pointandlook":
-            print "I am in point and look"
-            self.pointAndLookAtItem()
+            self.pointAtItem()
+            self.lookAtItem()
         elif words[0] == "point" and words[1] == "item":
             self.pointAtItem()
         elif words[0] == "point" and words[1] == "return":
@@ -322,25 +345,35 @@ class Demo:
             self.lookAtParticipant()
         elif words[0] == "look" and words[1] == "item":
             self.lookAtItem()
+        elif words[0] == "point" and words[1] == "open":
+            self.pointLift("both")
+        elif words[0] == "point" and words[1] == "lift":
+            self.pointLift("right")
+        elif words[0] == "point" and words[1] == "head":
+            self.pointAtCapo()
+        elif words[0] == "point" and words[1] == "participant":
+            self.pointAtParticipant()
+        else:
+            print "command not found"
 
     def testMotion(self):
         # Pointing at the item
         #self.goNao.motion.setStiffnesses("Head", 0.2)
         #time.sleep(1)
-        print self.goNao.motion.getStiffnesses("Body") , '\n'
-        time.sleep(1)
+        #print self.goNao.motion.getStiffnesses("Body") , '\n'
         self.goNao.posture.goToPosture("Sit", 0.6)
         time.sleep(1)
+
+        self.pointAtCapo()
+        time.sleep(2)
+        self.pointReturn()
+        time.sleep(2)
+
+        time.sleep(3)
+        self.goNao.releaseNao()
+        time.sleep(1)
         print self.goNao.motion.getStiffnesses("Body")
-        time.sleep(1)
-        self.goNao.motion.setAngles("HeadPitch", -0.20, 0.25)
-        time.sleep(1)
-        self.goNao.motion.stiffnessInterpolation("Body",0.0,1.0)
-        time.sleep(1)
-        print self.goNao.motion.getStiffnesses("Body")
-        #self.goNao.genSpeech("Now I am pointing at the item")
-        #self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
-        #time.sleep(3)
+
 
     def demonstrateMotions(self):
 
@@ -349,11 +382,11 @@ class Demo:
         time.sleep(3)
         self.goNao.genSpeech("Let me demonstrate my movements to you.")
 
-        # Standing
-        #self.goNao.posture.goToPosture("Stand", 0.6) #blocking
-        #time.sleep(2)
-        #self.goNao.genSpeech("Now I am standing")
-        #time.sleep(2)
+        # Sitting
+        self.goNao.posture.goToPosture("Sit", 0.6) #blocking
+        time.sleep(2)
+        self.goNao.genSpeech("Now I am Sititng")
+        time.sleep(2)
 
         # Pointing at the item
         self.goNao.genSpeech("Now I am pointing at the item")
@@ -365,69 +398,124 @@ class Demo:
         # Looking at the item
         self.goNao.genSpeech("Now I am looking at the item")
         self.lookAtItem()
-        time.sleep(3)
-        #self.goNao.posture.goToPosture("Stand", postureSpeed)
+        time.sleep(2)
+        self.lookReturn()
         time.sleep(2)
 
         # Looking and pointing at the item simultaneously
         self.goNao.genSpeech("Now I am looking and pointing at the item simultaneously")
-        self.pointAndLookAtItem()
+        self.pointAtItem()
+        self.lookAtItem()
         time.sleep(2)
-        self.lookReturn()
         self.pointReturn()
+        self.lookReturn()
         time.sleep(2)
 
         # Looking at participant
         self.goNao.genSpeech("Now I am looking at the participant")
         self.lookAtParticipant()
-        time.sleep(3)
-        #self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        time.sleep(2)
+        self.lookReturn()
+        time.sleep(2)
+
+        # Pointing at participant
+        self.goNao.genSpeech("Now I am pointing at the participant")
+        self.pointAtParticipant()
+        time.sleep(2)
+        self.pointReturn()
+        time.sleep(2)
+
+        # Looking Up
+        self.goNao.genSpeech("Now I am looking up")
+        self.lookUp()
+        time.sleep(2)
+        self.lookReturn()
+        time.sleep(2)
+
+        # Open Gesture
+        self.goNao.genSpeech("Open Gesture")
+        self.goNao.genSpeech("Now I am lifting both arms")
+        self.pointLift("both")
+        time.sleep(2)
+        self.pointReturn()
+        time.sleep(2)
+
+        # Point at its own head
+        self.goNao.genSpeech("Now I am pointing at my own head.")
+        self.pointAtCapo()
+        time.sleep(2)
+        self.pointReturn()
+        time.sleep(2)
 
         # Nodding
-        self.goNao.genSpeech("Now I am nodding")
-        self.goNao.nod()
-        #self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        #self.goNao.genSpeech("Now I am nodding")
+        #self.goNao.nod()
+        #self.goNao.posture.goToPosture("Sit", postureSpeed)
+        #time.sleep(2)
         # make more pronounced
 
         # Shaking my head
-        self.goNao.genSpeech("Now I am shaking my head")
-        self.goNao.shake()
-        #self.goNao.posture.goToPosture("Stand", postureSpeed)
-        time.sleep(3)
+        #self.goNao.genSpeech("Now I am shaking my head")
+        #self.goNao.shake()
+        #self.goNao.posture.goToPosture("Sit", postureSpeed)
+        #time.sleep(2)
 
-        # Sit
-        #self.goNao.genSpeech("Now I am going to Sit")
-        #self.goNao.posture.goToPosture("Sit", 0.6)
-        #time.sleep(3)
+        # End interaction: sit and set stiffness to zero
+        self.goNao.releaseNao()
     
 
-    #def lookReturn(self):
-    #    self.goNao.motion.setAngles("HeadPitch", headPitchAngleDefault, 0.15)
-
+    # Gaze Commands
     def pointReturn(self):
-        self.goNao.moveEffectorToPosition(RArmTargetDefault,"RArm", 0.3)
+        self.goNao.moveEffectorToPosition(RArmTargetDefault,"RArm", armSpeed)
+        self.goNao.moveEffectorToPosition(LArmTargetDefault,"LArm", armSpeed)
 
     def pointAtItem(self):
-        self.goNao.moveEffectorToPosition(RArmTargetItem,"RArm", 0.3)
+        self.goNao.moveEffectorToPosition(RArmTargetItem,"RArm", armSpeed)
+
+    def pointAtParticipant(self):
+        self.goNao.moveEffectorToPosition(RArmTargetParticipant,"RArm", armSpeed)
+
+    def pointLift(self, whichArms):
+        if whichArms == "left":
+            self.goNao.moveEffectorToPosition(LArmTargetLift,"LArm", armSpeed)
+        elif whichArms == "right":
+            self.goNao.moveEffectorToPosition(RArmTargetLift,"RArm", armSpeed)
+        elif whichArms == "both":
+            self.goNao.moveEffectorToPosition(RArmTargetLift,"RArm", armSpeed)
+            self.goNao.moveEffectorToPosition(LArmTargetLift,"LArm", armSpeed)
+
+    def pointAtCapo(self):
+        self.goNao.moveEffectorToPosition(RArmTargetCapo,"RArm", armSpeed)
+
+
+    # Gesture Commands
+    def lookReturn(self):
+        names = ["HeadPitch", "HeadYaw"]
+        angles = [headPitchAngleDefault, headYawAngleDefault]
+        fractionMaxSpeed = headSpeed
+        self.goNao.motion.setAngles(names, angles, fractionMaxSpeed)
 
     def lookAtItem(self):
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
-        self.goNao.motion.setAngles("HeadYaw", headYawAngleItem, 0.25)
-
-    def pointAndLookAtItem(self):
-        self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
-        self.goNao.motion.setAngles("HeadYaw", headYawAngleItem, 0.25)
+        names = ["HeadPitch", "HeadYaw"]
+        angles = [headPitchAngleItem, headYawAngleItem]
+        fractionMaxSpeed = headSpeed
+        self.goNao.motion.setAngles(names, angles, fractionMaxSpeed)
 
     def lookAtParticipant(self):
-        self.goNao.motion.setAngles("HeadPitch", headPitchAngleParticipant, 0.25)
-        self.goNao.motion.setAngles("HeadYaw", headYawAngleParticipant, 0.25)
+        names = ["HeadPitch", "HeadYaw"]
+        angles = [headPitchAngleParticipant, headYawAngleParticipant]
+        fractionMaxSpeed = headSpeed
+        self.goNao.motion.setAngles(names, angles, fractionMaxSpeed)
+
+    def lookUp(self):
+        names = ["HeadPitch", "HeadYaw"]
+        angles = [headPitchAngleUp, headYawAngleUp]
+        fractionMaxSpeed = headSpeed
+        self.goNao.motion.setAngles(names, angles, fractionMaxSpeed)  
 
     #def pointAtParticipant(self):
 
     #def idleGesture(self):
 
 demo = Demo(goNao)
-demo.testMotion()
+demo.run()

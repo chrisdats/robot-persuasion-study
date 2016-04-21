@@ -101,7 +101,7 @@ class Robot:
             # Set movement paramters
             space = motion.FRAME_ROBOT
             useSensor = False
-            axisMask = 63 # control both position and rotation
+            axisMask = 7 # just control position, not rotation
 
             self.motion.post.setPosition(effector, space, target, 
                                          fractionMaxSpeed, axisMask)
@@ -227,9 +227,9 @@ class Robot:
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN
     def releaseNao(self):
         try:
-            self.posture.goToPosture("Crouch", 0.6)
+            self.posture.goToPosture("Sit", 0.6)
             time.sleep(1)
-            self.motion.stiffnessInterpolation("Body",0.0,self.stiffness)
+            self.motion.stiffnessInterpolation("Body", 0.0, 1.0)
         except Exception, e:
             print "Error when sitting down nao and making nao unstiff: "+str(e)
 #____________________________________________________________

@@ -13,7 +13,7 @@ import time
 from std_msgs.msg import String
 from kinect2_pointing_recognition.msg import SkeletonInfo, ObjectsInfo, FaceInfo, SpeechInfo
 
-refreshRate = 10  # hz
+refreshRate = 25 # hz
 
 def dot_prod(a, b):
 	return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]
@@ -129,8 +129,8 @@ class ComputeParticipant():
 			gazeTarget = "item"
 		elif yaw < -0.45:
 			gazeTarget = "right"
-		elif pitch > 0.36:
-			gazeTarget = "ceiling"
+		elif pitch > 0.32:
+			gazeTarget = "up"
 		else:
 			gazeTarget = "unknown"
 
