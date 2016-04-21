@@ -15,7 +15,7 @@ import time
 import Queue
 import re
 from threading import Thread
- 
+
 import naoqi
 from naoqi import ALBroker
 from naoqi import ALModule
@@ -27,14 +27,19 @@ from participantData import ComputeParticipant
 
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
-armTargetPosItem = [0.04168321192264557, -0.10189437866210938, 0.22695526480674744, 1.2665989398956299, 1.1364772319793701, -0.021242152899503708]
-armTargetPosDefault = [0.028787896037101746, -0.12023936212062836, 0.21549509465694427, 1.4565576314926147, 1.1953319311141968, 0.16878308355808258]
-#headTargetPosItem =  [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.044422950595617294, 0.503412663936615, -1.3181275129318237]
-#headTargetPosParticipant = [-0.16018611192703247, -0.11574727296829224, 0.4552813768386841, 0.04351760447025299, -0.4655193090438843, -1.3529722690582275]
-headPitchAngleItem = 0.314  #-0.672 to +0.514
-headYawAngleItem = -0.682
-headPitchAngleParticipant = -0.25
+# These coordinates are for crouch position
+RArmTargetItem = [0.1596788913011551, -0.25627022981643677, 0.27666962146759033, 1.0591833591461182, 0.19004228711128235, -0.548386812210083]
+RArmTargetParticipant = [0.1977016031742096, -0.12935318052768707, 0.36685818433761597, 1.4542509317398071, -0.1924528181552887, 0.08652161061763763]
+RArmTargetOpen = [0.15322326123714447, -0.09104180335998535, 0.3085833787918091, 1.522914171218872, -0.25367528200149536, 0.706211268901825]
+RArmTargetDefault = [0.10287497192621231, -0.031998250633478165, 0.16709882020950317, -1.329634189605713, 0.5766682028770447, -0.9145272374153137]
+LArmTargetDefault = [0.10287497192621231, -0.031998250633478165, 0.16709882020950317, -1.329634189605713, 0.5766682028770447, -0.9145272374153137]
+
+headPitchAngleItem = 0.24  #-0.672 to +0.514
+headYawAngleItem = -0.65
+headPitchAngleParticipant = -0.22
 headYawAngleParticipant = 0.0
+headPitchAngleUp = 0.670
+headYawAngleUp = 0.21
 headPitchAngleDefault = -0.14730596542358398
 
 armSpeed = 0.8
@@ -89,7 +94,7 @@ class Demo:
     def run(self):
         # Introduces nao
         
-        self.goNao.posture.goToPosture("Stand", 0.8)
+        #self.goNao.posture.goToPosture("Sit", 0.8)
         time.sleep(2)
         self.goNao.genSpeech("Hello! My name is Nao.")
         self.goNao.genSpeech("I have a few item that I would like to show to you today.")
@@ -107,7 +112,7 @@ class Demo:
         time.sleep(2)
         self.goNao.genSpeech("Thank you for your help. We are now finished.")
         self.goNao.genSpeech("Please call over the experimenter and make sure to fill out the exit survey. Bye now!")
-        self.goNao.releaseNao()
+        #self.goNao.releaseNao()
     # END OF EXPERIMENT #########################################
 
     def trial(self, trialName):
@@ -118,7 +123,7 @@ class Demo:
         print trialName
         # imports speech + gesture data for a particular trial
         script_filename = "itemScripts/"+ trialName + ".txt"
-        #self.goNao.posture.goToPosture("Stand", 0.6) #blocking
+        #self.goNao.posture.goToPosture("Sit", 0.6) #blocking
        
         self.goNao.genSpeech("Please retreive the item in folder " + str(trialName))
         self.goNao.genSpeech("Please place the item in the center of the red rectangle.")
@@ -318,6 +323,25 @@ class Demo:
         elif words[0] == "look" and words[1] == "item":
             self.lookAtItem()
 
+    def testMotion(self):
+        # Pointing at the item
+        #self.goNao.motion.setStiffnesses("Head", 0.2)
+        #time.sleep(1)
+        print self.goNao.motion.getStiffnesses("Body") , '\n'
+        time.sleep(1)
+        self.goNao.posture.goToPosture("Sit", 0.6)
+        time.sleep(1)
+        print self.goNao.motion.getStiffnesses("Body")
+        time.sleep(1)
+        self.goNao.motion.setAngles("HeadPitch", -0.20, 0.25)
+        time.sleep(1)
+        self.goNao.motion.stiffnessInterpolation("Body",0.0,1.0)
+        time.sleep(1)
+        print self.goNao.motion.getStiffnesses("Body")
+        #self.goNao.genSpeech("Now I am pointing at the item")
+        #self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
+        #time.sleep(3)
+
     def demonstrateMotions(self):
 
         # Intro
@@ -326,10 +350,10 @@ class Demo:
         self.goNao.genSpeech("Let me demonstrate my movements to you.")
 
         # Standing
-        self.goNao.posture.goToPosture("Stand", 0.6) #blocking
-        time.sleep(2)
-        self.goNao.genSpeech("Now I am standing")
-        time.sleep(2)
+        #self.goNao.posture.goToPosture("Stand", 0.6) #blocking
+        #time.sleep(2)
+        #self.goNao.genSpeech("Now I am standing")
+        #time.sleep(2)
 
         # Pointing at the item
         self.goNao.genSpeech("Now I am pointing at the item")
@@ -342,7 +366,7 @@ class Demo:
         self.goNao.genSpeech("Now I am looking at the item")
         self.lookAtItem()
         time.sleep(3)
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        #self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(2)
 
         # Looking and pointing at the item simultaneously
@@ -357,36 +381,36 @@ class Demo:
         self.goNao.genSpeech("Now I am looking at the participant")
         self.lookAtParticipant()
         time.sleep(3)
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        #self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
 
         # Nodding
         self.goNao.genSpeech("Now I am nodding")
         self.goNao.nod()
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        #self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
         # make more pronounced
 
         # Shaking my head
         self.goNao.genSpeech("Now I am shaking my head")
         self.goNao.shake()
-        self.goNao.posture.goToPosture("Stand", postureSpeed)
+        #self.goNao.posture.goToPosture("Stand", postureSpeed)
         time.sleep(3)
 
         # Sit
-        self.goNao.genSpeech("Now I am going to Crouch")
-        self.goNao.posture.goToPosture("Crouch", 0.6)
-        time.sleep(3)
+        #self.goNao.genSpeech("Now I am going to Sit")
+        #self.goNao.posture.goToPosture("Sit", 0.6)
+        #time.sleep(3)
     
 
     #def lookReturn(self):
     #    self.goNao.motion.setAngles("HeadPitch", headPitchAngleDefault, 0.15)
 
     def pointReturn(self):
-        self.goNao.moveEffectorToPosition(armTargetPosDefault,"RArm", 0.8)
+        self.goNao.moveEffectorToPosition(RArmTargetDefault,"RArm", 0.3)
 
     def pointAtItem(self):
-        self.goNao.moveEffectorToPosition(armTargetPosItem,"RArm", 0.8)
+        self.goNao.moveEffectorToPosition(RArmTargetItem,"RArm", 0.3)
 
     def lookAtItem(self):
         self.goNao.motion.setAngles("HeadPitch", headPitchAngleItem, 0.25)
@@ -406,4 +430,4 @@ class Demo:
     #def idleGesture(self):
 
 demo = Demo(goNao)
-demo.run()
+demo.testMotion()

@@ -218,15 +218,10 @@ class Robot:
         time.sleep(1)
 
         self.motion.closeHand("RHand")
-        self.posture.goToPosture("Sit", 0.5)
+        #self.posture.goToPosture("Sit", 0.5)
         #self.motion.setAngles("HeadPitch", 0.3, 0.15)
 
 
-
-    def goodbye(self):
-        self.genSpeech("finished")
-        time.sleep(5)
-        self.posture.goToPosture("SitRelax", 1.0)
 
 
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN
