@@ -23,7 +23,7 @@ try:
     memoryProxy = ALProxy("ALMemory", ipAdd, 9559)
 except Exception, e:
     print "Error when creating memory proxy:"+str(e)
-    exit(1
+    exit(1)
 
 asr.setLanguage("English")
 vocabulary = ["yes", "no", "please"]
@@ -32,6 +32,6 @@ asr.setVocabulary(vocabulary, False)
 # Start the speech recognition engine with user Test_ASR
 asr.subscribe("Test_ASR")
 print 'Speech recognition engine started'
-time.sleep(20)
+time.sleep(10)
 asr.unsubscribe("Test_ASR")
 memoryProxy.getData("LastWordRecognized")

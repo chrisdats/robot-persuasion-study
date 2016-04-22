@@ -1,0 +1,2773 @@
+2016-04-22 01:33:20,913 [INFO] (Thread-10 ) Beginning to read script itemScripts/D.txt
+2016-04-22 01:33:20,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:20,914 [INFO] (Thread-10 )  0.00112009048462
+2016-04-22 01:33:20,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:20,929 [INFO] (Thread-10 ) <look participant> 0.0158681869507
+2016-04-22 01:33:20,935 [INFO] (Thread-10 )  If you are looking for ultra smooth writing with ultra soft, comfortable grip,  0.0223050117493
+2016-04-22 01:33:20,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:20,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:21,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:22,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:23,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:24,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,394 [INFO] (Thread-10 ) <point item> 4.48033809662
+2016-04-22 01:33:25,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,399 [INFO] (Thread-10 )  this is the pen for you!  4.48587417603
+2016-04-22 01:33:25,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:25,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:26,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,063 [INFO] (Thread-10 ) <point return> 6.1496732235
+2016-04-22 01:33:27,073 [INFO] (Thread-10 )   6.16022610664
+2016-04-22 01:33:27,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,106 [INFO] (Thread-10 ) <look item> 6.19287610054
+2016-04-22 01:33:27,111 [INFO] (Thread-10 )  6.19743108749
+2016-04-22 01:33:27,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,649 [INFO] (Thread-10 )   6.73581218719
+2016-04-22 01:33:27,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:27,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,177 [INFO] (Thread-10 ) This 1.4mm extra-smooth  7.26362705231
+2016-04-22 01:33:28,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:28,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:29,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:30,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,388 [INFO] (Thread-10 ) <look participant> 10.4750621319
+2016-04-22 01:33:31,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,395 [INFO] (Thread-10 )  writing system has the easy-glide feel of a gel pen, but the smear-resistant properties of quick-drying ink, making it a great pen for lefties. 10.4819550514
+2016-04-22 01:33:31,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:31,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:32,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:33,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:34,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:35,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:36,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:37,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:38,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:39,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,703 [INFO] (Thread-10 )  19.7901611328
+2016-04-22 01:33:40,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:40,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,228 [INFO] (Thread-10 ) Also, you never have  20.3147711754
+2016-04-22 01:33:41,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:41,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:42,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,079 [INFO] (Thread-10 ) <point lift> 22.1662380695
+2016-04-22 01:33:43,084 [INFO] (Thread-10 )  to scratch them on  22.171254158
+2016-04-22 01:33:43,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:43,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,571 [INFO] (Thread-10 ) <point return> 23.6578621864
+2016-04-22 01:33:44,580 [INFO] (Thread-10 )  something to get them to work, they write the first time, every time.  23.6672141552
+2016-04-22 01:33:44,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:44,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:45,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:46,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:47,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,594 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:48,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,833 [INFO] (Thread-10 )  28.9196050167
+2016-04-22 01:33:49,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:49,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,360 [INFO] (Thread-10 ) Additionally,  29.4468750954
+2016-04-22 01:33:50,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:50,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,142 [INFO] (Thread-10 ) <look item> 30.2285752296
+2016-04-22 01:33:51,147 [INFO] (Thread-10 )  there's no cap to use since  30.2342581749
+2016-04-22 01:33:51,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,514 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,834 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,914 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,954 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:51,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,434 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,474 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:52,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,154 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,320 [INFO] (Thread-10 ) <look participant> 32.4068040848
+2016-04-22 01:33:53,324 [INFO] (Thread-10 )  it's retractable, preventing it from drying out.  32.4109950066
+2016-04-22 01:33:53,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:53,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,194 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,754 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,794 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:54,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,034 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,634 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,874 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:55,994 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,114 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,314 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,675 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,715 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:56,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,345 [INFO] (Thread-10 ) The ink matches barrel color, making  36.43217206
+2016-04-22 01:33:57,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:57,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,074 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,234 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,274 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,355 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,395 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,554 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,595 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,635 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,674 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,714 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,755 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,795 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,835 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,875 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,915 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,955 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:58,995 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,035 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,075 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,115 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,155 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,195 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,235 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,275 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,315 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,354 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,394 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,435 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,475 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,515 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,555 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:33:59,595 [INFO] (Thread-11 ) Current Gaze Target:  item
+
+2016-04-22 01:33:59,635 [INFO] (Thread-11 ) Current Gaze Target:  item
+
+2016-04-22 01:33:59,674 [INFO] (Thread-11 ) Current Gaze Target:  item
+
+2016-04-22 01:33:59,675 [INFO] (Thread-11 ) <look item> 38.7615911961 contingentCmd
+2016-04-22 01:34:00,187 [INFO] (Thread-10 ) <point participant> 39.2738192081
+2016-04-22 01:34:00,191 [INFO] (Thread-10 )  choosing the proper  39.2780761719
+2016-04-22 01:34:01,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,681 [INFO] (Thread-10 ) <point return> 40.7680962086
+2016-04-22 01:34:01,698 [INFO] (Thread-10 )  pen hassle-free.   40.784496069
+2016-04-22 01:34:01,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:01,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:02,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,626 [INFO] (Thread-11 ) Current Gaze Target:  unknown
+
+2016-04-22 01:34:03,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,829 [INFO] (Thread-10 )  42.9153530598
+2016-04-22 01:34:03,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:03,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,356 [INFO] (Thread-10 ) This is a great pen for notes, letters, anything you may need! 43.4428920746
+2016-04-22 01:34:04,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:04,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:05,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:06,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:07,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:08,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,267 [INFO] (Thread-10 )  48.3536851406
+2016-04-22 01:34:09,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,791 [INFO] (Thread-10 )  48.877805233
+2016-04-22 01:34:09,816 [INFO] (Thread-10 ) <point participant> 48.9029471874
+2016-04-22 01:34:09,820 [INFO] (Thread-10 )  What college student doesn't  48.9067091942
+2016-04-22 01:34:09,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:09,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:10,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,942 [INFO] (Thread-10 ) <point return> 51.0289490223
+2016-04-22 01:34:11,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:11,954 [INFO] (Thread-10 )  want a  51.0408270359
+2016-04-22 01:34:11,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,881 [INFO] (Thread-10 ) <look item> 51.9677910805
+2016-04-22 01:34:12,885 [INFO] (Thread-10 )  smooth and comfortable pen to  51.9721472263
+2016-04-22 01:34:12,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:12,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:13,826 [INFO] (Thread-11 ) Current Gaze Target:  unknown
+
+2016-04-22 01:34:13,866 [INFO] (Thread-11 ) Current Gaze Target:  unknown
+
+2016-04-22 01:34:13,906 [INFO] (Thread-11 ) Current Gaze Target:  unknown
+
+2016-04-22 01:34:13,946 [INFO] (Thread-11 ) Current Gaze Target:  unknown
+
+2016-04-22 01:34:13,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:14,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,206 [INFO] (Thread-10 ) <look participant> 54.2933211327
+2016-04-22 01:34:15,210 [INFO] (Thread-10 )  write with? 54.2966780663
+2016-04-22 01:34:15,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,786 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,826 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,866 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,906 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,946 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:15,986 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,026 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,066 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,106 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,146 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,186 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,226 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,266 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,306 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,346 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,386 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,426 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,466 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,506 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,546 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,586 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,626 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,666 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,706 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:16,746 [INFO] (Thread-11 ) Current Gaze Target:  kinect/nao
+
+2016-04-22 01:34:36,917 [INFO] (Dummy-12  ) signal_shutdown [atexit]
+2016-04-22 01:34:36,920 [INFO] (Dummy-12  ) topic[/rosout] removing connection to /rosout
+2016-04-22 01:34:36,920 [INFO] (Dummy-12  ) topic[/speech_info] removing connection to http://efit1:37924/
+2016-04-22 01:34:36,921 [INFO] (Dummy-12  ) topic[/face_info] removing connection to http://efit1:37924/
+2016-04-22 01:34:36,921 [INFO] (Dummy-12  ) topic[/skeleton_info] removing connection to http://efit1:37924/
+2016-04-22 01:34:36,921 [INFO] (Dummy-12  ) topic[/objects_info] removing connection to http://efit1:37924/
+2016-04-22 01:34:36,921 [INFO] (Dummy-12  ) atexit

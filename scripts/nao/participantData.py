@@ -123,14 +123,14 @@ class ComputeParticipant():
 		pitch = self.faces.face_pitch_value(person_id)
 		yaw = self.faces.face_yaw_value(person_id)
 
-		if self.faces.array[person_id].looking_away == False:
+		if  pitch > 0.38:
+			gazeTarget = "up"
+		elif self.faces.array[person_id].looking_away == False:
 			gazeTarget = "kinect/nao"
 		elif atItem == True:
 			gazeTarget = "item"
 		elif yaw < -0.45:
 			gazeTarget = "right"
-		elif pitch > 0.32:
-			gazeTarget = "up"
 		else:
 			gazeTarget = "unknown"
 

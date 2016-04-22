@@ -99,7 +99,7 @@ class Robot:
 
             '''
             # Set movement paramters
-            space = motion.FRAME_ROBOT
+            space = motion.FRAME_TORSO
             useSensor = False
             axisMask = 7 # just control position, not rotation
 
@@ -137,7 +137,7 @@ class Robot:
         Action: none
         '''
 
-        space = motion.FRAME_ROBOT
+        space = motion.FRAME_TORSO
         useSensor = False
 
         currentPos = self.motion.getPosition(effector, space, useSensor)
@@ -227,7 +227,7 @@ class Robot:
     # RELEASE THE JOINTS SO IT WON'T COMPLAIN
     def releaseNao(self):
         try:
-            self.posture.goToPosture("Sit", 0.6)
+            #self.posture.goToPosture("Sit", 0.6)
             time.sleep(1)
             self.motion.stiffnessInterpolation("Body", 0.0, 1.0)
         except Exception, e:

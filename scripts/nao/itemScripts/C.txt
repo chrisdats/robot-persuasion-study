@@ -2,7 +2,7 @@
 <pointandlook item> 
 Here we have a decadent bar <point return> <look participant> of chocolate made in Belgium, with the flavor of <point lift> almond, sea salt, <point return>and dark chocolate.
 
-<look participant> Dark chocolate <point head> is definitely my favorite kind of chocolate! <point return>
+<look participant> Dark <point head> chocolate is definitely my favorite kind of chocolate! <point return>
 
 This bar is 55 percent coco content which <point lift> is very high, <point return> meaning it is a relatively high quality bar.
  
@@ -24,3 +24,4 @@ You can <point lift> also chop it <point return> up into pieces and share with f
 
 <point item>
 This is one of my favorite <point return> chocolate bars myself and I would definitely recommend it to anyone looking for a delicious high-quality chocolate bar.
+<point return>
