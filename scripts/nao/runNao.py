@@ -127,26 +127,32 @@ class Demo:
        # self.postureProxy = postureProxy
         self.timeout = False
         self.rate = rospy.Rate(25) # 5hz, or 5 per second
-        self.participantNumber = "P00"
-        self.condition = "contingent"
+        self.participantNumber = "P09"
+        self.condition = "contingent" # scripted, contingent, or random
         self.exitFlag = False
+
+        # if a directory for the participant logs does not exist, create it
+        #directory = "/nao/" + self.participantNumber
+        #print directory
+        #if not os.path.exists(directory):
+        #    os.makedirs(directory)
+
 
     def timeout_callback(self, event):
         self.timeout = True
 
     # THIS RUNS THE EXPERIMENT ##########################################
     def run(self):
-        # Introduces naoexitFlag
-        
-        #self.goNao.posture.goToPosture("Sit", 0.8)
         time.sleep(2)
         self.goNao.genSpeech("Hello! My name is Nao.")
-        self.goNao.genSpeech("I have a few item that I would like to convince you to purchase")
+        self.goNao.genSpeech("I have a few items that I would like to show to you today.")
         time.sleep(3)
 
-        #self.participant.monitor(60)
+        # used to see what the kinect spits out about participant data
+        #time_out = 60
+        #self.participant.monitor(time_out)
 
-        # Runs all the trials
+        # Runs all the trials in randomized order
         random.shuffle(folderLetterList)
         for folderLetter in folderLetterList:
             self.trial(folderLetter)
@@ -165,38 +171,49 @@ class Demo:
          robot reads (tts) speech to participant
          and performs behavior according to condition
         """
-        print trialName
         # imports speech + gesture data for a particular trial
         script_filename = "itemScripts/"+ trialName + ".txt"
         time.sleep(1)
        
+        # instructions for participant to go and retreive item
         self.goNao.genSpeech("We are going to begin a round.")
         self.goNao.genSpeech("Please retreive the item in folder " + str(trialName))
         self.goNao.genSpeech("Please place the item in the center of the red rectangle.")
-        self.goNao.genSpeech("Please leave the yellow folder under the blackboard.")
+        #self.goNao.genSpeech("Please leave the yellow folder under the blackboard.")
         self.goNao.genSpeech("Then, type the name of the item into the computer")
         print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         print "First, please retrieve the item in folder " + str(trialName) + " and place it in the center of the red rectangle." 
         user_input_item_name=raw_input("Type name of the item and hit enter. ")
+        if user_input_item_name == "exit":
+            return
         print "Thanks! Please return to the black x"
         self.goNao.genSpeech("Great, now stand on the black x and I will begin.")
         time.sleep(10)
 
-        # create a logger to record all the robot commands that occured
-        # for this particular participant
+        # create two loggers to record all the robot commands that occured
+        # for this particular participant, as well as participant data 
         FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
-        logging.basicConfig(level=logging.DEBUG, format=FORMAT)   
-        log_filename = self.participantNumber + "/" + self.participantNumber + trialName + ".txt"       
-        file_handler = logging.FileHandler(log_filename)
+        log_filename1 =  self.participantNumber + "/" + self.participantNumber + trialName + ".txt" 
+        logger1 = logging.getLogger('logger1')
+        logging.basicConfig(level=logging.DEBUG, format=FORMAT)        
+        file_handler = logging.FileHandler(log_filename1)
         file_handler.setFormatter(logging.Formatter(FORMAT))
-        logging.getLogger().addHandler(file_handler)
+        logger1.addHandler(file_handler)
+
+        log_filename2 =  self.participantNumber + "/" + self.participantNumber + trialName + "stream.txt"  
+        logger2 = logging.getLogger('logger2')
+        logging.basicConfig(level=logging.DEBUG, format=FORMAT)        
+        file_handler = logging.FileHandler(log_filename2)
+        file_handler.setFormatter(logging.Formatter(FORMAT))
+        logger2.addHandler(file_handler)
+
+        # start time for the logs
         start_time = time.time()
 
-        
         self.exitFlag = False
 
         # second thread is executed only when in contingent condition
-        # TODO: fix this
+        # TODO: fix 
         t1 = Thread(target=self.readScript, args=(script_filename, start_time, ))
         if self.condition == "contingent":
             t2 = Thread(target=self.monitorParticipant, args=(130, start_time, ))
@@ -209,6 +226,7 @@ class Demo:
         if self.condition == "contingent":
             t2.join()
 
+        # Script is completed
         time.sleep(2)
         self.goNao.genSpeech("Thanks for listening")
         self.goNao.genSpeech("Please head to the computer and record your willingness to pay")
@@ -218,7 +236,7 @@ class Demo:
         print "You just heard about the" , user_input_item_name
         user_input_WTP=raw_input("Please enter your willingness to pay (0.00-5.00) ")
         with open("results.txt", "a") as myfile:
-            myfile.write(self.participantNumber+ "," + trialName + "," + user_input_WTP + "," + user_input_item_name + '\n')
+            myfile.write(self.participantNumber+ "," + self.condition + "," + trialName + "," + user_input_WTP + "," + user_input_item_name + '\n')
 
         self.goNao.genSpeech("Great! This is the end of a round. Please put the item back into the folder")
         print "Great! This is the end of a round. Please put the item back into the folder"
@@ -226,18 +244,19 @@ class Demo:
 
     def monitorParticipant(self, time_limit, start_time):
         gazeTargetHistory = []  # create empty array to store past values
+        logger1 = logging.getLogger("logger1")  # return reference to logger object
+        logger2 = logging.getLogger("logger2")  # return reference to logger object
         start = rospy.get_rostime().secs
         while not rospy.is_shutdown():
             # exits the function if we have timed out
             if rospy.get_rostime().secs - start >= time_limit:
-                print "Time Out - End of monitor Participant"
-                return False
+                rospy.loginfo("Time Out - End of monitor Participant")
+                return False       # kills the thread
 
-            print self.exitFlag
             # monitors exit flag from other thread
             if self.exitFlag == True:
-                print "Exit Flag True - End of monitor Participant"
-                return False
+                rospy.loginfo("Exit Flag True - End of monitor Participant")
+                return False        # kills the thread
 
             # get person id of the person in frame
             person_id = None
@@ -246,13 +265,15 @@ class Demo:
                     person_id = i
             if person_id == None:
                 rospy.loginfo("No one is detected in the frame.")
+                logger2.info("No one is detected in the frame.")
                 time.sleep(1)
                 continue        #why do you need continue here?
 
             # Get eye gaze target and add it to the history of 3 most recent gaze targets
             # this is done to avoid false positives
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
-            rospy.loginfo("%s %s\n", "Current Gaze Target: ", currentGazeTarget) #TODO
+            happy = self.participant.is_happy(person_id)
+            logger2.info("%s %s %s %s\n", "Current Gaze Target: ", currentGazeTarget, "Is happy", happy)
             if len(gazeTargetHistory) >= 3:
                 gazeTargetHistory.pop(0) 
             gazeTargetHistory.append(currentGazeTarget)
@@ -261,32 +282,38 @@ class Demo:
             # If the participant is looking at the item, robot looks at item, then returns gaze to participant
             if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking at item"
-                elapsed_time = time.time() - start_time
-                logging.info("<look item>" + " " + str(elapsed_time) + " contingentCmd")
                 lockedOut= True # locks out other thread until motion is complete
+                elapsed_time = time.time() - start_time
+                logger1.info("<look item>" + " " + str(elapsed_time) + " contingentCmd")
                 self.lookAtItem()
                 time.sleep(1.5)
+                elapsed_time = time.time() - start_time
+                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
                 self.lookAtParticipant()
                 lockedOut = False
             # if participant looks up, robot looks up, then returns gaze to participant
             elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking up"
-                elapsed_time = time.time() - start_time
-                logging.info("<look up>" + " " + str(elapsed_time) + " contingentCmd")
                 lockedOut= True # locks out other thread until motion is complete
+                elapsed_time = time.time() - start_time
+                logger1.info("<look up>" + " " + str(elapsed_time) + " contingentCmd")
                 self.lookUp()
                 time.sleep(1.5)
+                elapsed_time = time.time() - start_time
+                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
                 self.lookAtParticipant()
                 lockedOut = False
             # if participant looks right, robot looks right, then returns gaze to participant
             elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
                 print "Contingent by looking right"
-                elapsed_time = time.time() - start_time
-                logging.info("<look right>" + " " + str(elapsed_time) + " contingentCmd")
                 lockedOut= True # locks out other thread until motion is complete
+                elapsed_time = time.time() - start_time
+                logger1.info("<look right>" + " " + str(elapsed_time) + " contingentCmd")
                 self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
-                self.goNao.motion.setAngles("HeadYaw", 0.0, 0.15)
+                elapsed_time = time.time() - start_time
+                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                self.lookAtParticipant()
                 lockedOut = False
             
             self.rate.sleep()
@@ -303,6 +330,7 @@ class Demo:
 
         Returns: none (but causes robot to speak)
         """
+        logger1 = logging.getLogger("logger1")  # return reference to logger object
         rospy.loginfo("Beginning to read script " + script_filename)
 
         try:
@@ -335,16 +363,17 @@ class Demo:
                     if not char == '>': 
                         reference = reference + char
                     else:
-                        # Speak the utterance to this point
-                        elapsed_time = time.time() - start_time
-                        logging.info(utterance + " " + str(elapsed_time))
-                        self.goNao.genSpeech(utterance, True) # blocking
-                        utterance = ''
+                        # if utterance is not all whitespace, speak it
+                        if any(char.isalpha() for char in utterance):
+                            elapsed_time = time.time() - start_time
+                            logger1.info(utterance + " " + str(elapsed_time))
+                            self.goNao.genSpeech(utterance, True) # blocking
+                            utterance = ''
                         print str(reference)
                         # Send the reference message
                         if lockedOut == False:
                             elapsed_time = time.time() - start_time
-                            logging.info("<" + reference + "> " + str(elapsed_time))
+                            logger1.info("<" + reference + "> " + str(elapsed_time))
                             self.process_cmd(reference)
                         
                         # Reset to be out of reference state
@@ -366,11 +395,12 @@ class Demo:
                 else:
                     utterance = utterance + char
 
-            # Speak what's left of the utterance #TODO: skip empty lines
-            elapsed_time = time.time() - start_time
-            logging.info(utterance.rstrip('\n') + " " + str(elapsed_time))
-            self.goNao.genSpeech(utterance, True)
-            time.sleep(0.5)
+            # If what's left of the utterance is not whitespace, speak it
+            if any(char.isalpha() for char in utterance):
+                elapsed_time = time.time() - start_time
+                logger1.info(utterance.rstrip('\n') + " " + str(elapsed_time))
+                self.goNao.genSpeech(utterance, True)
+            time.sleep(0.5) # 0.5 sec delay between each line
 
         # exit the thread when the script is done
         self.exitFlag = True
@@ -405,6 +435,9 @@ class Demo:
             print "command not found"
 
     def testMotion(self):
+        """ 
+        Short script to check NAO is OK
+        """
         # Pointing at the item
         #self.goNao.motion.setStiffnesses("Head", 0.2)
         time.sleep(1)
@@ -425,6 +458,9 @@ class Demo:
 
 
     def demonstrateMotions(self):
+        """
+        Demonstrates all the motions that are available to nao during this interaction
+        """
 
         # Intro
         self.goNao.genSpeech("Hello! My name is Nao.")

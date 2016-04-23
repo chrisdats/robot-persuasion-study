@@ -110,6 +110,7 @@ class ComputeParticipant():
 
 	def is_happy(self, person_id):
 	 	rospy.loginfo("%s \t%s", "Happy?", self.faces.array[person_id].happy)
+	 	return self.faces.array[person_id].happy
 
 	def is_engaged(self, person_id):
 	 	rospy.loginfo("%s \t%s", "Engaged?", self.faces.array[person_id].engaged)

@@ -1,4 +1,4 @@
-There is nothing better for a dorm room or apartment <point open> than a scented candle! <point return>
+There is nothing better for a dorm room or apartment <point lift> than a scented candle! <point return>
 <pointandlook item>
 This candle's scent is <point return> <look participant> Chilled Sangria, which is a wonderful aroma for any time.
 
@@ -11,7 +11,7 @@ Just light the candle, and a pool of scented oil forms that quickly releases <po
 These candles have <look participant> a variety of benefits including: 
 calms the nerves and relieves anxiety, 
 proves a relaxing scent for mediation, 
-induces sleep for those who suffer from insomnia, 
+induces sleep for those <point lift> who suffer from insomnia, <point return>
 serve as a great bug repellant, 
 eliminates unwanted cleaning and cooking odors, 
 and can be used as a soothing massage oil.

@@ -1,5 +1,2 @@
-P00,E,4.43,water bottle
-P00,E,4.45,
-P00,F,1.22,test
-P00,F,2.22,Candle
-P00,F,2.23,candle
+P00,contingent,F,1.12,test
+P00,contingent,F,4.45,test
