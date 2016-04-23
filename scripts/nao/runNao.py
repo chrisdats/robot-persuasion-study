@@ -97,7 +97,8 @@ max_people = 6
 num_objects = 1
 
 # items
-folderLetterList = ["F"]
+#folderLetterList = ["A", "B", "C", "D", "E", "F"]
+folderLetterList = ["A"]
 
 #Get the Nao's IP
 ipAdd = None
@@ -106,7 +107,7 @@ try:
     ipAdd = ipFile.readline().replace("\n","").replace("\r","")
 except Exception as e:
     print "Could not open file ip.txt"
-    ipAdd = raw_input("Please write Nao's IP address... ") 
+    ipAdd = raw_input("Please write Nao's IP address... ")
 
 #Try to connect to it
 goNao = None
@@ -127,7 +128,7 @@ class Demo:
        # self.postureProxy = postureProxy
         self.timeout = False
         self.rate = rospy.Rate(25) # 5hz, or 5 per second
-        self.participantNumber = "P09"
+        self.participantNumber = "PB"
         self.condition = "contingent" # scripted, contingent, or random
         self.exitFlag = False
 
@@ -193,7 +194,7 @@ class Demo:
         # create two loggers to record all the robot commands that occured
         # for this particular participant, as well as participant data 
         FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
-        log_filename1 =  self.participantNumber + "/" + self.participantNumber + trialName + ".txt" 
+        log_filename1 =  self.participantNumber + "/" + self.participantNumber + trialName + "full.txt" 
         logger1 = logging.getLogger('logger1')
         logging.basicConfig(level=logging.DEBUG, format=FORMAT)        
         file_handler = logging.FileHandler(log_filename1)
@@ -206,6 +207,14 @@ class Demo:
         file_handler = logging.FileHandler(log_filename2)
         file_handler.setFormatter(logging.Formatter(FORMAT))
         logger2.addHandler(file_handler)
+
+        FORMAT3 = '%(message)s'
+        log_filename3 =  self.participantNumber + "/" + self.participantNumber + trialName + "overrides.txt" 
+        logger3 = logging.getLogger('logger3')
+        logging.basicConfig(level=logging.DEBUG, format=FORMAT3)        
+        file_handler = logging.FileHandler(log_filename3)
+        file_handler.setFormatter(logging.Formatter(FORMAT3))
+        logger3.addHandler(file_handler)
 
         # start time for the logs
         start_time = time.time()
@@ -244,8 +253,9 @@ class Demo:
 
     def monitorParticipant(self, time_limit, start_time):
         gazeTargetHistory = []  # create empty array to store past values
-        logger1 = logging.getLogger("logger1")  # return reference to logger object
-        logger2 = logging.getLogger("logger2")  # return reference to logger object
+        logger1 = logging.getLogger("logger1")  # full 
+        logger2 = logging.getLogger("logger2")  # stream
+        logger3 = logging.getLogger("logger3")  # cmds
         start = rospy.get_rostime().secs
         while not rospy.is_shutdown():
             # exits the function if we have timed out
@@ -273,7 +283,7 @@ class Demo:
             # this is done to avoid false positives
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
             happy = self.participant.is_happy(person_id)
-            logger2.info("%s %s %s %s\n", "Current Gaze Target: ", currentGazeTarget, "Is happy", happy)
+            logger2.info("%s %s %s %s", "Current Gaze Target: ", currentGazeTarget, "Is happy", happy)
             if len(gazeTargetHistory) >= 3:
                 gazeTargetHistory.pop(0) 
             gazeTargetHistory.append(currentGazeTarget)
@@ -285,10 +295,12 @@ class Demo:
                 lockedOut= True # locks out other thread until motion is complete
                 elapsed_time = time.time() - start_time
                 logger1.info("<look item>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look item>" + "," + str(elapsed_time))
                 self.lookAtItem()
                 time.sleep(1.5)
                 elapsed_time = time.time() - start_time
                 logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look participant>" + "," + str(elapsed_time))
                 self.lookAtParticipant()
                 lockedOut = False
             # if participant looks up, robot looks up, then returns gaze to participant
@@ -297,10 +309,12 @@ class Demo:
                 lockedOut= True # locks out other thread until motion is complete
                 elapsed_time = time.time() - start_time
                 logger1.info("<look up>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look up>" + "," + str(elapsed_time))
                 self.lookUp()
                 time.sleep(1.5)
                 elapsed_time = time.time() - start_time
                 logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look participant>" + "," + str(elapsed_time))
                 self.lookAtParticipant()
                 lockedOut = False
             # if participant looks right, robot looks right, then returns gaze to participant
@@ -309,10 +323,12 @@ class Demo:
                 lockedOut= True # locks out other thread until motion is complete
                 elapsed_time = time.time() - start_time
                 logger1.info("<look right>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look item>" + "," + str(elapsed_time))
                 self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
                 time.sleep(1.5)
                 elapsed_time = time.time() - start_time
                 logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                logger3.info("<look item>" + "," + str(elapsed_time))
                 self.lookAtParticipant()
                 lockedOut = False
             

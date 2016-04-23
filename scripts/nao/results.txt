@@ -1,2 +1,20 @@
 P00,contingent,F,1.12,test
 P00,contingent,F,4.45,test
+P09,contingent,A,3.23,sunglasses-test
+P09,contingent,B,1.23,gum-test
+P09,contingent,F,4.46,candle-test
+P09,contingent,C,4.55,chocolate-test
+P09,contingent,D,2.11,pen-test
+P09,contingent,E,1.11,waterbottle-test
+P09,contingent,C,1.11,chocolate bar
+P09,contingent,A,0,glasses
+P09,contingent,B,1.3,orbit gum
+P09,contingent,C,5,chocolate bar
+P09,contingent,E,4,-30q-2|\1`waternoptle
+P09,contingent,F,0,candle
+P09,contingent,D,.01,pen
+PB,contingent,A,4,test
+PB,contingent,A,2.25,testqw
+PB,contingent,A,1.11,test
+PB,contingent,A,1.22,test
+PB,contingent,A,2.22,h
