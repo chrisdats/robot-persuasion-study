@@ -1,0 +1,14 @@
+<look item>,6.52275514603
+<look participant>,8.02946019173
+<look item>,16.3556010723
+<look participant>,17.8684999943
+<look item>,20.554746151
+<look participant>,22.0847601891
+<look item>,38.1310210228
+<look item>,39.6385099888
+<look up>,41.3647770882
+<look participant>,42.8750221729
+<look up>,44.0435349941
+<look participant>,45.5489501953
+<look up>,46.594987154
+<look participant>,48.1049540043

@@ -1,0 +1,108 @@
+2016-04-24 22:10:58,376 [INFO] (Thread-10 ) <point item> 0.00335288047791
+2016-04-24 22:10:58,888 [INFO] (Thread-10 )  This is a pack of  0.515188932419
+2016-04-24 22:11:00,117 [INFO] (Thread-10 ) <point return> 1.74390983582
+2016-04-24 22:11:00,143 [INFO] (Thread-10 )  orbit's peppermint sugarfree gum. 1.76995491982
+2016-04-24 22:11:03,244 [INFO] (Thread-10 ) Orbit gum is one of the  4.87098884583
+2016-04-24 22:11:04,960 [INFO] (Thread-10 ) <point participant> 6.58723092079
+2016-04-24 22:11:04,989 [INFO] (Thread-10 )  most effecitive gums  6.61622786522
+2016-04-24 22:11:06,773 [INFO] (Thread-10 ) <point return> 8.40037488937
+2016-04-24 22:11:06,827 [INFO] (Thread-10 )  out there.  8.45369195938
+2016-04-24 22:11:08,292 [INFO] (Thread-10 ) It has  9.91952395439
+2016-04-24 22:11:09,028 [INFO] (Thread-10 ) <point open> 10.6550858021
+2016-04-24 22:11:09,057 [INFO] (Thread-10 )  long lasting freshness  10.6844220161
+2016-04-24 22:11:10,455 [INFO] (Thread-12 ) <look item> 12.0820670128 overlayedCmd
+2016-04-24 22:11:11,046 [INFO] (Thread-10 ) <point return> 12.6731758118
+2016-04-24 22:11:11,073 [INFO] (Thread-10 )  after you have it.  12.7004117966
+2016-04-24 22:11:11,960 [INFO] (Thread-12 ) <look participant> 13.5874369144 overlayedCmd
+2016-04-24 22:11:12,890 [INFO] (Thread-10 ) After you chew this gum you won't be afraid to sit next to people and you will  14.5169539452
+2016-04-24 22:11:17,266 [INFO] (Thread-10 ) <point open> 18.8927819729
+2016-04-24 22:11:17,301 [INFO] (Thread-10 )  be an oasis of  18.9283618927
+2016-04-24 22:11:18,758 [INFO] (Thread-10 ) <point return> 20.3854010105
+2016-04-24 22:11:18,851 [INFO] (Thread-10 )  freshness, coolness, and happiness. 20.4778988361
+2016-04-24 22:11:22,633 [INFO] (Thread-10 ) It is also one of the most flavorfull gums that cleans  24.2602789402
+2016-04-24 22:11:26,352 [INFO] (Thread-10 ) <point head> 27.9790468216
+2016-04-24 22:11:26,397 [INFO] (Thread-10 )  up that dirty mouth feeling  28.0244100094
+2016-04-24 22:11:28,380 [INFO] (Thread-10 ) <point return> 30.007133007
+2016-04-24 22:11:28,409 [INFO] (Thread-10 )  and gives you a sense of refreshment.  30.0363957882
+2016-04-24 22:11:31,253 [INFO] (Thread-10 ) Our motto is Eat, Drink, Chew, so after you eat you can chew some Orbit to keep the good taste going. 32.880371809
+2016-04-24 22:11:39,812 [INFO] (Thread-10 ) Furthermore, chewing this gum  41.4392659664
+2016-04-24 22:11:41,012 [INFO] (Thread-12 ) <look item> 42.6391968727 overlayedCmd
+2016-04-24 22:11:42,092 [INFO] (Thread-10 ) <point participant> 43.7195417881
+2016-04-24 22:11:42,109 [INFO] (Thread-10 )  will keep you away  43.7362759113
+2016-04-24 22:11:42,518 [INFO] (Thread-12 ) <look participant> 44.1449999809 overlayedCmd
+2016-04-24 22:11:43,461 [INFO] (Thread-10 ) <point return> 45.0876557827
+2016-04-24 22:11:43,497 [INFO] (Thread-10 )  from the dentist. We know how terrible it is to go to the dentist and subject oursleves to all  45.1244177818
+2016-04-24 22:11:50,160 [INFO] (Thread-10 ) <point up> 51.7871878147
+2016-04-24 22:11:50,182 [INFO] (Thread-10 )  of the tools that they use on our mouths.  51.8093209267
+2016-04-24 22:11:51,166 [INFO] (Thread-12 ) <look item> 52.7928578854 overlayedCmd
+2016-04-24 22:11:52,672 [INFO] (Thread-12 ) <look participant> 54.2987689972 overlayedCmd
+2016-04-24 22:11:52,990 [INFO] (Thread-10 ) <point return> 54.6167600155
+2016-04-24 22:11:53,615 [INFO] (Thread-10 ) With Orbit we make sure to keep our teeth clean for  55.2418658733
+2016-04-24 22:11:57,118 [INFO] (Thread-10 ) <point participant> 58.7452487946
+2016-04-24 22:11:57,163 [INFO] (Thread-10 )  even longer than just  58.7898199558
+2016-04-24 22:11:58,822 [INFO] (Thread-10 ) <point return> 60.4489519596
+2016-04-24 22:11:58,870 [INFO] (Thread-10 )  toothbrush and toothpaste.  60.496819973
+2016-04-24 22:12:01,461 [INFO] (Thread-10 ) Orbit has been awarded to American Dental Association's Seal of Acceptance for preventing cavaties and keeping our teeth healthy. 63.088395834
+2016-04-24 22:12:03,038 [INFO] (Thread-12 ) <look item> 64.6647379398 overlayedCmd
+2016-04-24 22:12:04,545 [INFO] (Thread-12 ) <look participant> 66.1717598438 overlayedCmd
+2016-04-24 22:12:06,190 [INFO] (Thread-12 ) <look item> 67.8165199757 overlayedCmd
+2016-04-24 22:12:07,695 [INFO] (Thread-12 ) <look participant> 69.3221669197 overlayedCmd
+2016-04-24 22:12:09,859 [INFO] (Thread-10 ) <point return> 71.4865188599
+2016-04-25 14:29:19,467 [INFO] (Thread-10 ) <point item> 0.00127196311951
+2016-04-25 14:29:19,976 [INFO] (Thread-10 )  This is a pack of  0.510271787643
+2016-04-25 14:29:20,988 [INFO] (Thread-11 ) <look item> 1.52202987671 contingentCmd
+2016-04-25 14:29:21,214 [INFO] (Thread-10 ) <point return> 1.74771499634
+2016-04-25 14:29:21,236 [INFO] (Thread-10 )  orbit's peppermint sugarfree gum. 1.77019476891
+2016-04-25 14:29:22,494 [INFO] (Thread-11 ) <look participant> 3.02816081047 contingentCmd
+2016-04-25 14:29:24,292 [INFO] (Thread-10 ) Orbit gum is one of the  4.8259408474
+2016-04-25 14:29:26,013 [INFO] (Thread-10 ) <point participant> 6.54691886902
+2016-04-25 14:29:26,024 [INFO] (Thread-10 )  most effecitive gums  6.55797386169
+2016-04-25 14:29:27,823 [INFO] (Thread-10 ) <point return> 8.35690188408
+2016-04-25 14:29:27,844 [INFO] (Thread-10 )  out there.  8.37832188606
+2016-04-25 14:29:29,273 [INFO] (Thread-10 ) It has  9.80668282509
+2016-04-25 14:29:30,005 [INFO] (Thread-10 ) <point open> 10.538394928
+2016-04-25 14:29:30,021 [INFO] (Thread-10 )  long lasting freshness  10.5550889969
+2016-04-25 14:29:30,023 [INFO] (Thread-11 ) <look item> 10.556388855 contingentCmd
+2016-04-25 14:29:31,532 [INFO] (Thread-11 ) <look participant> 12.0661888123 contingentCmd
+2016-04-25 14:29:31,962 [INFO] (Thread-10 ) <point return> 12.4956419468
+2016-04-25 14:29:31,975 [INFO] (Thread-10 )  after you have it.  12.5085389614
+2016-04-25 14:29:33,579 [INFO] (Thread-11 ) <look right> 14.1126790047 contingentCmd
+2016-04-25 14:29:33,774 [INFO] (Thread-10 ) After you chew this gum you won't be afraid to sit next to people and you will  14.3081758022
+2016-04-25 14:29:35,092 [INFO] (Thread-11 ) <look participant> 15.6253647804 contingentCmd
+2016-04-25 14:29:37,098 [INFO] (Thread-11 ) <look right> 17.6321527958 contingentCmd
+2016-04-25 14:29:38,145 [INFO] (Thread-10 ) <point open> 18.6789469719
+2016-04-25 14:29:38,161 [INFO] (Thread-10 )  be an oasis of  18.6943728924
+2016-04-25 14:29:38,606 [INFO] (Thread-11 ) <look participant> 19.1401498318 contingentCmd
+2016-04-25 14:29:39,596 [INFO] (Thread-10 ) <point return> 20.129368782
+2016-04-25 14:29:39,613 [INFO] (Thread-10 )  freshness, coolness, and happiness. 20.146807909
+2016-04-25 14:29:43,344 [INFO] (Thread-10 ) It is also one of the most flavorfull gums that cleans  23.8774049282
+2016-04-25 14:29:45,494 [INFO] (Thread-11 ) <look item> 26.0281128883 contingentCmd
+2016-04-25 14:29:47,003 [INFO] (Thread-11 ) <look participant> 27.5369899273 contingentCmd
+2016-04-25 14:29:47,049 [INFO] (Thread-10 ) <point head> 27.582679987
+2016-04-25 14:29:47,059 [INFO] (Thread-10 )  up that dirty mouth feeling  27.5929338932
+2016-04-25 14:29:49,024 [INFO] (Thread-10 ) <point return> 29.5582668781
+2016-04-25 14:29:49,045 [INFO] (Thread-10 )  and gives you a sense of refreshment.  29.5785889626
+2016-04-25 14:29:51,856 [INFO] (Thread-10 ) Our motto is Eat, Drink, Chew, so after you eat you can chew some Orbit to keep the good taste going. 32.3896269798
+2016-04-25 14:29:54,371 [INFO] (Thread-11 ) <look item> 34.9044389725 contingentCmd
+2016-04-25 14:29:55,881 [INFO] (Thread-11 ) <look participant> 36.4144527912 contingentCmd
+2016-04-25 14:30:00,353 [INFO] (Thread-10 ) Furthermore, chewing this gum  40.8869719505
+2016-04-25 14:30:02,616 [INFO] (Thread-10 ) <point participant> 43.1498398781
+2016-04-25 14:30:02,644 [INFO] (Thread-10 )  will keep you away  43.1783089638
+2016-04-25 14:30:03,983 [INFO] (Thread-10 ) <point return> 44.5165989399
+2016-04-25 14:30:04,006 [INFO] (Thread-10 )  from the dentist. We know how terrible it is to go to the dentist and subject oursleves to all  44.539839983
+2016-04-25 14:30:05,606 [INFO] (Thread-11 ) <look item> 46.1399548054 contingentCmd
+2016-04-25 14:30:07,115 [INFO] (Thread-11 ) <look participant> 47.6489288807 contingentCmd
+2016-04-25 14:30:10,635 [INFO] (Thread-10 ) <point up> 51.1686120033
+2016-04-25 14:30:10,645 [INFO] (Thread-10 )  of the tools that they use on our mouths.  51.1790077686
+2016-04-25 14:30:13,443 [INFO] (Thread-10 ) <point return> 53.9769928455
+2016-04-25 14:30:13,958 [INFO] (Thread-10 ) With Orbit we make sure to keep our teeth clean for  54.4920978546
+2016-04-25 14:30:17,399 [INFO] (Thread-10 ) <point participant> 57.9328348637
+2016-04-25 14:30:17,407 [INFO] (Thread-10 )  even longer than just  57.9407579899
+2016-04-25 14:30:18,998 [INFO] (Thread-10 ) <point return> 59.531681776
+2016-04-25 14:30:19,014 [INFO] (Thread-10 )  toothbrush and toothpaste.  59.5474407673
+2016-04-25 14:30:21,001 [INFO] (Thread-11 ) <look item> 61.5346128941 contingentCmd
+2016-04-25 14:30:21,551 [INFO] (Thread-10 ) Orbit has been awarded to American Dental Association's Seal of Acceptance for preventing cavaties and keeping our teeth healthy. 62.0845727921
+2016-04-25 14:30:22,512 [INFO] (Thread-11 ) <look participant> 63.0461878777 contingentCmd
+2016-04-25 14:30:24,040 [INFO] (Thread-11 ) <look item> 64.5733909607 contingentCmd
+2016-04-25 14:30:25,552 [INFO] (Thread-11 ) <look participant> 66.0862958431 contingentCmd
+2016-04-25 14:30:29,935 [INFO] (Thread-10 ) <point return> 70.4690048695

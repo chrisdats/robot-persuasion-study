@@ -26,44 +26,11 @@ from naoMotions import *
 from participantData import ComputeParticipant
 
 #http://doc.aldebaran.com/1-14/family/robots/joints_robot.html
+## These variables define the positions of where the NAO should move to or how it should move
+# all these values were found empirically
 # Nao Coodinates (x,y,z,wx,wy,wz) in meters
-# These coordinates are for the sit position Nao3
 
-# for official "sit" posture
-#RArmTargetItem = [0.08865346759557724, -0.22455188632011414, 0.21142783761024475, 1.56281316280365, -0.0054118018597364426, -0.5769132971763611]
-#RArmTargetParticipant = [0.10347125679254532, -0.09411738067865372, 0.28878143429756165, 1.0531508922576904, -0.5454456806182861, 0.24398885667324066]
-#RArmTargetParticipant2 = [0.08484018594026566, -0.04775525629520416, 0.2966286242008209, 0.9779533743858337, -0.6467088460922241, 0.5922301411628723]
-#RArmTargetLift = [0.08617198467254639, -0.05527321994304657, 0.22831135988235474, 0.11964680254459381, -0.3332363963127136, 1.0237292051315308]
-#LArmTargetLift = [0.07553913444280624, 0.03513256087899208, 0.24100753664970398, -0.46564310789108276, -0.5226525664329529, -0.8622301816940308]
-#RArmTargetDefault = [0.08699753880500793, -0.04760340601205826, 0.1661260426044464, 0.6560360193252563, -0.16207846999168396, 0.8656076788902283]
-#LArmTargetDefault = [0.0664924681186676, 0.037688370794057846, 0.16274607181549072, -0.5783596634864807, -0.02439243346452713, -0.8660477995872498]
-#RArmTargetCapo = [0.04031921923160553, -0.022381991147994995, 0.30415746569633484, -0.06435168534517288, -0.9264166951179504, 1.6822551488876343]
-#RArmTargetUp = [0.009432021528482437, -0.08175484091043472, 0.371983140707016, -0.8779908418655396, -1.0446586608886719, 1.6765592098236084]
-
-# for custom posture to get rid of the knee situation
-# RArmTargetItem = [0.27113649249076843, -0.1597001850605011, 0.24354188144207, -0.4636474847793579, 0.5175201892852783, -0.815000057220459]
-# RArmTargetParticipant = [0.35123905539512634, 0.03591252863407135, 0.2890858054161072, 0.1437036097049713, 0.1828632652759552, 0.505771279335022]
-# RArmTargetLift = [0.32420217990875244, 0.017824910581111908, 0.2558828294277191, 0.3244765102863312, 0.32813310623168945, 0.6213055849075317]
-# LArmTargetLift = [0.31409716606140137, 0.10803753137588501, 0.21965578198432922, -0.692030668258667, 0.004523070063441992, -0.5290369391441345]
-# RArmTargetDefault = [0.22943827509880066, -0.01901804655790329, 0.16480287909507751, 0.46975523233413696, 1.012012004852295, 0.7680749297142029]
-# LArmTargetDefault = [0.21610277891159058, 0.07438623905181885, 0.13450753688812256, -1.0386477708816528, 0.481380432844162, -0.9133720397949219]
-# RArmTargetCapo = [0.2779078781604767, 0.08055191487073898, 0.3424759805202484, 0.4772016704082489, -0.4996189475059509, 1.2079194784164429]
-# RArmTargetUp = [0.32541969418525696, 0.06272923201322556, 0.417009174823761, 0.6178413033485413, -0.7007210850715637, 0.7312569618225098]
-
-# for "in chair" custom position
-# RArmTargetItem = [0.1787424385547638, -0.13102713227272034, 0.20228078961372375, 0.8831148147583008, 0.48292243480682373, -0.07802501320838928]
-# RArmTargetParticipant = [0.26121291518211365, -0.02853187546133995, 0.3383389711380005, 0.2403903752565384, -0.20407554507255554, 0.3436628580093384]
-# RArmTargetLift = [0.24034619331359863, -0.0266873799264431, 0.28032568097114563, 0.41311052441596985, -0.10404398292303085, 0.4189245402812958]
-# LArmTargetLift = [0.232427716255188, 0.08839939534664154, 0.26824894547462463, -0.20066113770008087, -0.05390549823641777, -0.5235291719436646]
-# RArmTargetDefault = [0.1262950748205185, 0.0066351620480418205, 0.20487400889396667, 0.7301231622695923, 0.1812235713005066, 0.8010936975479126]
-# LArmTargetDefault = [0.07123622298240662, 0.10694202780723572, 0.1942804455757141, -0.25017789006233215, 0.3708241581916809, 0.030952192842960358]
-# RArmTargetCapo = [0.1892612874507904, 0.008467502892017365, 0.37676820158958435, 0.3789498209953308, -0.9486193060874939, 0.8554478883743286]
-# RArmTargetUp = [0.1916750967502594, -0.045830000191926956, 0.4810193181037903, 0.2855706214904785, -1.1820805072784424, 0.5192687511444092]
-
-#RArmTargetDefault = [0.0673317015171051, -0.056636203080415726, 0.20075754821300507, 0.43358147144317627, 0.3018096685409546, 0.2926729917526245]
-#RArmTargetItem = [0.04852019250392914, -0.2269805371761322, 0.2249896377325058, 0.08219961076974869, 0.33574655652046204, -0.560173749923706]
-
-# Frame_TORSO "in chair"
+# Frame_TORSO "in chair" custom position
 RArmTargetDefault = [0.14, -0.06, -0.05, 0.4327031672000885, 0.6230831742286682, 0.46302056312561035]
 RArmTargetItem = [0.15759922564029694, -0.2066766321659088, -0.005902979522943497, 0.5399747490882874, 0.4663883447647095, -0.5464719533920288]
 RArmTargetParticipant = [0.2067900449037552, -0.03441447764635086, 0.08661369979381561, 0.7018489837646484, -0.15505152940750122, 0.3424641489982605]
@@ -91,14 +58,11 @@ postureSpeed = 0.6
 
 # Get sensing
 POINT_APERTURE = 0.4 # radians
-LOOK_APERTURE = 1.25 # radians
+LOOK_APERTURE = 1.40 # radians
 TOUCH_DISTANCE = 0.1 # meters
 max_people = 6
-num_objects = 1
+num_objects = 1     # only tracking the red rectangle
 
-# items
-#folderLetterList = ["A", "B", "C", "D", "E", "F"]
-folderLetterList = ["A"]
 
 #Get the Nao's IP
 ipAdd = None
@@ -125,13 +89,17 @@ class Demo:
     def __init__(self, goNao):
         self.goNao = goNao
         self.participant = ComputeParticipant(max_people, num_objects, POINT_APERTURE, LOOK_APERTURE, TOUCH_DISTANCE)
-       # self.postureProxy = postureProxy
         self.timeout = False
         self.rate = rospy.Rate(25) # 5hz, or 5 per second
-        self.participantNumber = "PB"
-        self.condition = "contingent" # scripted, contingent, or random
         self.exitFlag = False
+        # CHANGE VALUES FOR EACH PARTICIPANT HERE #
+        self.folderLetterList = ["A", "B", "C", "D", "E", "F"]
+        #self.folderLetterList = ["F"]
+        self.participantNumber = "P46"      # make sure folder with this name exists
+        self.condition = "randomized"         # scripted, contingent, or randomized
+        self.randomizedParticipant = "P45"
 
+        # TODO
         # if a directory for the participant logs does not exist, create it
         #directory = "/nao/" + self.participantNumber
         #print directory
@@ -154,8 +122,8 @@ class Demo:
         #self.participant.monitor(time_out)
 
         # Runs all the trials in randomized order
-        random.shuffle(folderLetterList)
-        for folderLetter in folderLetterList:
+        random.shuffle(self.folderLetterList)
+        for folderLetter in self.folderLetterList:
             self.trial(folderLetter)
 
         # Concludes the experiment
@@ -180,70 +148,97 @@ class Demo:
         self.goNao.genSpeech("We are going to begin a round.")
         self.goNao.genSpeech("Please retreive the item in folder " + str(trialName))
         self.goNao.genSpeech("Please place the item in the center of the red rectangle.")
-        #self.goNao.genSpeech("Please leave the yellow folder under the blackboard.")
         self.goNao.genSpeech("Then, type the name of the item into the computer")
+
+        # Participant records name of item and begins experiment
         print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         print "First, please retrieve the item in folder " + str(trialName) + " and place it in the center of the red rectangle." 
         user_input_item_name=raw_input("Type name of the item and hit enter. ")
-        if user_input_item_name == "exit":
+        if user_input_item_name == "exit" or user_input_item_name == "Exit":
+            self.lookReturn()
+            self.pointReturn()
+            self.goNao.releaseNao()
+            sys.exit()
+        elif user_input_item_name == "skip" or user_input_item_name == "Skip":
             return
+        elif len(user_input_item_name.strip()) < 1:
+            user_input_item_name=raw_input("Please again, type name of the item and hit enter. ")
         print "Thanks! Please return to the black x"
         self.goNao.genSpeech("Great, now stand on the black x and I will begin.")
-        time.sleep(10)
+        time.sleep(10) # time for participant to get to the black x
 
-        # create two loggers to record all the robot commands that occured
+        # create three loggers to record all the robot commands that occured
         # for this particular participant, as well as participant data 
         FORMAT = '%(asctime)-15s [%(levelname)s] (%(threadName)-10s) %(message)s'
         log_filename1 =  self.participantNumber + "/" + self.participantNumber + trialName + "full.txt" 
         logger1 = logging.getLogger('logger1')
         logging.basicConfig(level=logging.DEBUG, format=FORMAT)        
-        file_handler = logging.FileHandler(log_filename1)
-        file_handler.setFormatter(logging.Formatter(FORMAT))
-        logger1.addHandler(file_handler)
+        file_handler1 = logging.FileHandler(log_filename1)
+        file_handler1.setFormatter(logging.Formatter(FORMAT))
+        logger1.addHandler(file_handler1)
 
         log_filename2 =  self.participantNumber + "/" + self.participantNumber + trialName + "stream.txt"  
         logger2 = logging.getLogger('logger2')
         logging.basicConfig(level=logging.DEBUG, format=FORMAT)        
-        file_handler = logging.FileHandler(log_filename2)
-        file_handler.setFormatter(logging.Formatter(FORMAT))
-        logger2.addHandler(file_handler)
+        file_handler2 = logging.FileHandler(log_filename2)
+        file_handler2.setFormatter(logging.Formatter(FORMAT))
+        logger2.addHandler(file_handler2)
 
         FORMAT3 = '%(message)s'
         log_filename3 =  self.participantNumber + "/" + self.participantNumber + trialName + "overrides.txt" 
         logger3 = logging.getLogger('logger3')
         logging.basicConfig(level=logging.DEBUG, format=FORMAT3)        
-        file_handler = logging.FileHandler(log_filename3)
-        file_handler.setFormatter(logging.Formatter(FORMAT3))
-        logger3.addHandler(file_handler)
+        file_handler3 = logging.FileHandler(log_filename3)
+        file_handler3.setFormatter(logging.Formatter(FORMAT3))
+        logger3.addHandler(file_handler3)
 
-        # start time for the logs
+        #  official start time for the logs
         start_time = time.time()
 
         self.exitFlag = False
 
-        # second thread is executed only when in contingent condition
-        # TODO: fix 
+        ## Multithreading magic:
+        # Scripted - readScript + monitorParticipant(not contigent)
+        # Contingent - readScript + monitorParticipant(contingent)
+        # Randomized - readScript + monitorParticipant(not contingent) + overlayedCommands
+        # readScript is the same for all conditions
         t1 = Thread(target=self.readScript, args=(script_filename, start_time, ))
-        if self.condition == "contingent":
-            t2 = Thread(target=self.monitorParticipant, args=(130, start_time, ))
+        if self.condition == "scripted":
+            t2 = Thread(target=self.monitorParticipant, args=(130, start_time, False, ))
+        elif self.condition == "contingent":
+            t2 = Thread(target=self.monitorParticipant, args=(130, start_time, True, ))
+        elif self.condition == "randomized":
+            overlay_filename = self.randomizedParticipant + "/" + self.randomizedParticipant + trialName + "overrides.txt"
+            print "overlay_filename:" + overlay_filename
+            t2 = Thread(target=self.monitorParticipant, args=(130, start_time, False, ))
+            t3 = Thread(target=self.overlayedCommands, args=(130, start_time, overlay_filename ))
 
         t1.start()
-        if self.condition == "contingent":
-            t2.start()
+        t2.start()
+        if self.condition == "randomized":
+            t3.start()
 
         t1.join()
-        if self.condition == "contingent":
-            t2.join()
+        t2.join()
+        if self.condition == "randomized":
+            t3.join()
 
+        # remove the filehandlers to each trial only gets written to one file
+        logger1.removeHandler(file_handler1)
+        logger2.removeHandler(file_handler2)
+        logger3.removeHandler(file_handler3)
+        
         # Script is completed
         time.sleep(2)
         self.goNao.genSpeech("Thanks for listening")
-        self.goNao.genSpeech("Please head to the computer and record your willingness to pay")
+        self.goNao.genSpeech("Please head to the computer and record the maximum amount you are willing to spend on this item.")
         
         # participant records their willingness to pay and their data is saved
         print "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
         print "You just heard about the" , user_input_item_name
         user_input_WTP=raw_input("Please enter your willingness to pay (0.00-5.00) ")
+        if len(user_input_WTP.strip()) < 1:
+            user_input_WTP=raw_input("Please re-enter your willingness to pay (0.00-5.00) ")
         with open("results.txt", "a") as myfile:
             myfile.write(self.participantNumber+ "," + self.condition + "," + trialName + "," + user_input_WTP + "," + user_input_item_name + '\n')
 
@@ -251,7 +246,7 @@ class Demo:
         print "Great! This is the end of a round. Please put the item back into the folder"
         time.sleep(5)
 
-    def monitorParticipant(self, time_limit, start_time):
+    def monitorParticipant(self, time_limit, start_time, sendCommands):
         gazeTargetHistory = []  # create empty array to store past values
         logger1 = logging.getLogger("logger1")  # full 
         logger2 = logging.getLogger("logger2")  # stream
@@ -283,54 +278,64 @@ class Demo:
             # this is done to avoid false positives
             currentGazeTarget = self.participant.eye_gaze_target(person_id)
             happy = self.participant.is_happy(person_id)
-            logger2.info("%s %s %s %s", "Current Gaze Target: ", currentGazeTarget, "Is happy", happy)
+            lookingAngle = self.participant.face_vs_obj_angle(person_id, 0)
+            logger2.info("%s %s %s %s %s %s", "Is_happy", happy, "Current_Gaze_Target: ", currentGazeTarget, "lookingAngle:", lookingAngle)
+            #rospy.loginfo("%s %s %s %s %s %s", "Is_happy", happy, "Current_Gaze_Target: ", currentGazeTarget, "lookingAngle:", lookingAngle)
             if len(gazeTargetHistory) >= 3:
                 gazeTargetHistory.pop(0) 
             gazeTargetHistory.append(currentGazeTarget)
 
             ### Socially Contingent Rules
-            # If the participant is looking at the item, robot looks at item, then returns gaze to participant
-            if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
-                print "Contingent by looking at item"
-                lockedOut= True # locks out other thread until motion is complete
-                elapsed_time = time.time() - start_time
-                logger1.info("<look item>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look item>" + "," + str(elapsed_time))
-                self.lookAtItem()
-                time.sleep(1.5)
-                elapsed_time = time.time() - start_time
-                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look participant>" + "," + str(elapsed_time))
-                self.lookAtParticipant()
-                lockedOut = False
-            # if participant looks up, robot looks up, then returns gaze to participant
-            elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
-                print "Contingent by looking up"
-                lockedOut= True # locks out other thread until motion is complete
-                elapsed_time = time.time() - start_time
-                logger1.info("<look up>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look up>" + "," + str(elapsed_time))
-                self.lookUp()
-                time.sleep(1.5)
-                elapsed_time = time.time() - start_time
-                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look participant>" + "," + str(elapsed_time))
-                self.lookAtParticipant()
-                lockedOut = False
-            # if participant looks right, robot looks right, then returns gaze to participant
-            elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
-                print "Contingent by looking right"
-                lockedOut= True # locks out other thread until motion is complete
-                elapsed_time = time.time() - start_time
-                logger1.info("<look right>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look item>" + "," + str(elapsed_time))
-                self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
-                time.sleep(1.5)
-                elapsed_time = time.time() - start_time
-                logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
-                logger3.info("<look item>" + "," + str(elapsed_time))
-                self.lookAtParticipant()
-                lockedOut = False
+            if sendCommands == True:
+                # If the participant is looking at the item, robot looks at item, then returns gaze to participant
+                if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
+                    print "Contingent by looking at item"
+                    lockedOut= True # locks out other thread until motion is complete
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look item>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look item>" + "," + str(elapsed_time) + ", contingentCmd")
+                    self.lookAtItem()
+                    time.sleep(1.5)
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look participant>" + "," + str(elapsed_time) + ",contingentCmd")
+                    self.lookAtParticipant()
+                    lockedOut = False
+                # if participant looks up, robot looks up, then returns gaze to participant
+                elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
+                    print "Contingent by looking up"
+                    lockedOut= True # locks out other thread until motion is complete
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look up>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look up>" + "," + str(elapsed_time) + ",contingentCmd")
+                    self.lookUp()
+                    time.sleep(1.5)
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look participant>" + "," + str(elapsed_time) + ",contingentCmd")
+                    self.lookAtParticipant()
+                    lockedOut = False
+                # if participant looks right, robot looks right, then returns gaze to participant
+                elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
+                    print "Contingent by looking right"
+                    lockedOut= True # locks out other thread until motion is complete
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look right>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look right>" + "," + str(elapsed_time) + ",contingentCmd")  # was item (bug)
+                    self.goNao.motion.setAngles("HeadYaw", 0.25, 0.15)
+                    time.sleep(1.5)
+                    elapsed_time = time.time() - start_time
+                    logger1.info("<look participant>" + " " + str(elapsed_time) + " contingentCmd")
+                    logger3.info("<look participant>" + "," + str(elapsed_time) + ",contingentCmd")   # was item (bug)
+                    self.lookAtParticipant()
+                    lockedOut = False
+            elif sendCommands == False:
+                if all(gazeTarget == "item" for gazeTarget in gazeTargetHistory):
+                    logger3.info("<look item>" + ", wouldHaveBeencontingentCmd")
+                elif all(gazeTarget == "up" for gazeTarget in gazeTargetHistory):
+                    logger3.info("<look up>" + ",wouldHaveBeencontingentCmd")
+                elif all(gazeTarget == "right" for gazeTarget in gazeTargetHistory):
+                    logger3.info("<look right>" +  ",wouldHaveBeencontingentCmd")
             
             self.rate.sleep()
 
@@ -385,12 +390,12 @@ class Demo:
                             logger1.info(utterance + " " + str(elapsed_time))
                             self.goNao.genSpeech(utterance, True) # blocking
                             utterance = ''
-                        print str(reference)
+                        print str(reference) + " scripted"
                         # Send the reference message
                         if lockedOut == False:
                             elapsed_time = time.time() - start_time
                             logger1.info("<" + reference + "> " + str(elapsed_time))
-                            self.process_cmd(reference)
+                            self.process_cmd(reference,)
                         
                         # Reset to be out of reference state
                         reference = ''
@@ -422,6 +427,40 @@ class Demo:
         self.exitFlag = True
         print("Exit Flag set to True")
 
+    def overlayedCommands(self, time_limit, start_time, filename):
+        print "in overlayedCommands function"
+        logger1 = logging.getLogger("logger1")  # return reference to logger object
+        logger3 = logging.getLogger("logger3")  # cmds
+
+        # get the commands send to previous participant in contingent condition
+        with open(filename, "r") as file:
+            # store all the overlayed commans in a queue
+            q = Queue.Queue(300)
+            for line in file:
+                q.put(line)
+                print "reading in:"
+                print line
+
+        # execute each command at the right time
+        while q.empty() == False:
+            line = q.get()          # get the topmost item in the queue
+            words = line.split(",") # parse the line
+            #words[1] = words[1].split(" ")[0]
+            elapsed_time = 0 
+            #print words[1]
+            while (time.time() - start_time) < float(words[1]):
+                elapsed_time = time.time() - start_time 
+                # do nothing,  hang here until time 
+
+            # when we reach the correct time
+            logger1.info(words[0] + " " + str(elapsed_time) + " overlayedCmd " + self.randomizedParticipant)
+            logger3.info(words[0] + "," + str(elapsed_time) + ",overlayedCmd,"+ self.randomizedParticipant)
+            words[0] = words[0].replace('<','') # remove the open and 
+            words[0] = words[0].replace('>','') # close brackets
+            print words[0] + " overlayed"
+            self.process_cmd(words[0]) #send command
+
+
     def process_cmd(self, ref):
         # splits each reference into its two words <word0 word1>
         words = ref.split()
@@ -447,6 +486,8 @@ class Demo:
             self.pointAtParticipant()
         elif words[0] == "point" and words[1] == "up":
             self.pointUp()
+        elif words[0] == "look" and words[1] == "up":
+            self.lookUp()
         else:
             print "command not found"
 

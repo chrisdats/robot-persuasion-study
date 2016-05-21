@@ -46,3 +46,43 @@
 2016-04-23 01:49:35,280 [INFO] (Thread-10 ) <point participant> 53.8692100048
 2016-04-23 01:49:35,285 [INFO] (Thread-10 )   to make you look fashionable like never before.  53.8745341301
 2016-04-23 01:49:38,152 [INFO] (Thread-10 ) <point return> 56.7417080402
+2016-04-24 02:14:03,129 [INFO] (Thread-10 ) <point participant> 0.00235795974731
+2016-04-24 02:14:03,638 [INFO] (Thread-10 ) Grab your eyeballs,  0.511255025864
+2016-04-24 02:14:04,794 [INFO] (Thread-10 ) <point return> 1.66779208183
+2016-04-24 02:14:04,805 [INFO] (Thread-10 )  and prepare to step out even when it is extremely sunny  1.67848610878
+2016-04-24 02:14:08,658 [INFO] (Thread-10 ) <pointandlook item> 5.53141903877
+2016-04-24 02:14:09,168 [INFO] (Thread-10 ) with these wayfarer style sunglasses.  6.04155993462
+2016-04-24 02:14:11,947 [INFO] (Thread-10 ) <point return> 8.82027602196
+2016-04-24 02:14:11,957 [INFO] (Thread-10 ) <look participant> 8.83020496368
+2016-04-24 02:14:12,461 [INFO] (Thread-10 ) Featuring a flexible  9.33481693268
+2016-04-24 02:14:14,096 [INFO] (Thread-10 ) <look item> 10.9691910744
+2016-04-24 02:14:14,100 [INFO] (Thread-10 )  polycarbonate frame, these full-rim sunglasses  10.9731049538
+2016-04-24 02:14:17,701 [INFO] (Thread-10 ) <look participant> 14.5745220184
+2016-04-24 02:14:17,706 [INFO] (Thread-10 )  are lightweight and durable. 14.5793180466
+2016-04-24 02:14:19,975 [INFO] (Thread-10 ) <point item> 16.8485560417
+2016-04-24 02:14:19,980 [INFO] (Thread-10 )  Take a look at these stylish and trendy shades.  16.8538739681
+2016-04-24 02:14:22,931 [INFO] (Thread-10 ) <point return> 19.8041329384
+2016-04-24 02:14:22,931 [INFO] (Thread-11 ) <look item> 19.8048751354 contingentCmd
+2016-04-24 02:14:22,944 [INFO] (Thread-10 )  This pair of hot Vintage sunglasses makes looking good easy, wouldn't you agree? 19.8176980019
+2016-04-24 02:14:24,442 [INFO] (Thread-11 ) <look participant> 21.3154549599 contingentCmd
+2016-04-24 02:14:28,127 [INFO] (Thread-11 ) <look item> 25.0007629395 contingentCmd
+2016-04-24 02:14:28,610 [INFO] (Thread-10 ) <look item> 25.483782053
+2016-04-24 02:14:29,117 [INFO] (Thread-10 ) These sunglasses will  25.989921093
+2016-04-24 02:14:29,633 [INFO] (Thread-11 ) <look participant> 26.5064580441 contingentCmd
+2016-04-24 02:14:30,955 [INFO] (Thread-10 ) <look participant> 27.8281271458
+2016-04-24 02:14:30,961 [INFO] (Thread-10 )  take good care  27.8342609406
+2016-04-24 02:14:32,232 [INFO] (Thread-10 ) <point participant> 29.1052720547
+2016-04-24 02:14:32,239 [INFO] (Thread-10 )  of your vision protecting  29.1124479771
+2016-04-24 02:14:34,029 [INFO] (Thread-10 ) <point head> 30.9028379917
+2016-04-24 02:14:34,036 [INFO] (Thread-10 )  your eyes from  30.9093410969
+2016-04-24 02:14:35,408 [INFO] (Thread-10 ) <point up> 32.2814061642
+2016-04-24 02:14:35,414 [INFO] (Thread-10 )  harmful sun rays.  32.2876341343
+2016-04-24 02:14:37,166 [INFO] (Thread-10 ) <point return> 34.0397000313
+2016-04-24 02:14:37,676 [INFO] (Thread-10 ) They feature next generation Tri-Layer UV400 Lens Technology, absorbing over 99% of harmful UVA and UVB spectrums.  34.54987216
+2016-04-24 02:14:47,525 [INFO] (Thread-10 ) These non-polarized sunglasses will protect your eyes from the harmful sunrays and pollution.  44.398319006
+2016-04-24 02:14:54,085 [INFO] (Thread-10 ) <look item> 50.9586961269
+2016-04-24 02:14:54,590 [INFO] (Thread-10 ) These sunglasses were designed  51.4632840157
+2016-04-24 02:14:56,866 [INFO] (Thread-10 ) <look participant> 53.7397630215
+2016-04-24 02:14:56,870 [INFO] (Thread-10 ) <point participant> 53.7437810898
+2016-04-24 02:14:56,875 [INFO] (Thread-10 )   to make you look fashionable like never before.  53.7482190132
+2016-04-24 02:14:59,727 [INFO] (Thread-10 ) <point return> 56.6007840633

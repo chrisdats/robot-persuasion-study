@@ -109,7 +109,7 @@ class ComputeParticipant():
 		return [magn(handtips_to_obj[0]), magn(handtips_to_obj[1])]
 
 	def is_happy(self, person_id):
-	 	rospy.loginfo("%s \t%s", "Happy?", self.faces.array[person_id].happy)
+	 	#rospy.loginfo("%s \t%s", "Happy?", self.faces.array[person_id].happy)
 	 	return self.faces.array[person_id].happy
 
 	def is_engaged(self, person_id):
@@ -117,7 +117,7 @@ class ComputeParticipant():
 
 	def eye_gaze_target(self, person_id):
 		looking_angle = self.face_vs_obj_angle(person_id, 0)
-		print str(looking_angle) + " " + str(self.look_aptr)
+		#print str(looking_angle) + " " + str(self.look_aptr)
 
 		atItem = looking_angle is not None and looking_angle < self.look_aptr / 2
 
@@ -126,10 +126,10 @@ class ComputeParticipant():
 
 		if  pitch > 0.38:
 			gazeTarget = "up"
-		elif self.faces.array[person_id].looking_away == False:
-			gazeTarget = "kinect/nao"
 		elif atItem == True:
 			gazeTarget = "item"
+		elif self.faces.array[person_id].looking_away == False:
+			gazeTarget = "kinect/nao"
 		elif yaw < -0.45:
 			gazeTarget = "right"
 		else:

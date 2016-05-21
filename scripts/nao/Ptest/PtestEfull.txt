@@ -1,0 +1,59 @@
+2016-04-24 11:17:36,107 [INFO] (Thread-20 ) <look item> 0.501825094223
+2016-04-24 11:17:36,115 [INFO] (Thread-20 )  Polar Bottle is the  0.508893013
+2016-04-24 11:17:37,804 [INFO] (Thread-20 ) <look participant> 2.19857215881
+2016-04-24 11:17:37,808 [INFO] (Thread-20 )  original insulated plastic sport bottle 2.20267605782
+2016-04-24 11:17:41,376 [INFO] (Thread-20 ) and has been keeping   5.77014803886
+2016-04-24 11:17:42,883 [INFO] (Thread-20 ) <point lift> 7.27749204636
+2016-04-24 11:17:42,888 [INFO] (Thread-20 )  liquids colder, longer,  7.28219294548
+2016-04-24 11:17:44,803 [INFO] (Thread-20 ) <point return> 9.19749999046
+2016-04-24 11:17:44,813 [INFO] (Thread-20 )  since 1994. 9.20693206787
+2016-04-24 11:17:47,373 [INFO] (Thread-20 ) This company  11.7673790455
+2016-04-24 11:17:48,536 [INFO] (Thread-20 ) <point open> 12.9300789833
+2016-04-24 11:17:48,547 [INFO] (Thread-20 )  has a long history of  12.9412331581
+2016-04-24 11:17:50,369 [INFO] (Thread-20 ) <point return> 14.7630701065
+2016-04-24 11:17:50,381 [INFO] (Thread-20 )  making great great bottles. 14.7752010822
+2016-04-24 11:17:52,922 [INFO] (Thread-20 ) <point item> 17.3161900043
+2016-04-24 11:17:52,936 [INFO] (Thread-20 )  Take a look! This  17.3306519985
+2016-04-24 11:17:54,913 [INFO] (Thread-20 ) <point return> 19.3068771362
+2016-04-24 11:17:54,925 [INFO] (Thread-20 )  specific bottle is made with the most advanced insulating technique, brightly colored foil pattern, and an innovative removable valve system. 19.3190581799
+2016-04-24 11:18:04,442 [INFO] (Thread-20 ) Combining the thermal properties of an insulated vacuum bottle  28.8358721733
+2016-04-24 11:18:08,856 [INFO] (Thread-20 ) with the lightweight, flexible features of a plastic bottle,  33.250054121
+2016-04-24 11:18:12,492 [INFO] (Thread-20 ) <look item> 36.8860681057
+2016-04-24 11:18:12,997 [INFO] (Thread-20 ) Polar Bottle's insulated water bottle  37.3912270069
+2016-04-24 11:18:14,488 [INFO] (Thread-21 ) <look item> 38.8826899529 contingentCmd
+2016-04-24 11:18:15,924 [INFO] (Thread-20 ) <look participant> 40.3180391788
+2016-04-24 11:18:15,930 [INFO] (Thread-20 )  is the ideal choice for active people 40.3243980408
+2016-04-24 11:18:15,997 [INFO] (Thread-21 ) <look participant> 40.3914451599 contingentCmd
+2016-04-24 11:18:18,944 [INFO] (Thread-20 ) and fits many lifestyles. 43.3379740715
+2016-04-24 11:18:21,613 [INFO] (Thread-20 ) You can put it in your backpack, you can take it with you when you bike, you can go on a hike and have it with you. 46.0073471069
+2016-04-24 11:18:29,410 [INFO] (Thread-20 ) <point lift> 53.8041739464
+2016-04-24 11:18:29,418 [INFO] (Thread-20 )  Simply fill with  53.8124120235
+2016-04-24 11:18:30,966 [INFO] (Thread-20 ) <point return> 55.3606030941
+2016-04-24 11:18:30,978 [INFO] (Thread-20 )  liquid and ice and hit the trail.  55.3722240925
+2016-04-24 11:18:32,842 [INFO] (Thread-21 ) <look right> 57.2366390228 contingentCmd
+2016-04-24 11:18:33,774 [INFO] (Thread-20 ) For even longer cooling power,  58.1686501503
+2016-04-24 11:18:34,348 [INFO] (Thread-21 ) <look participant> 58.7420151234 contingentCmd
+2016-04-24 11:18:35,745 [INFO] (Thread-20 ) <point participant> 60.1396331787
+2016-04-24 11:18:35,750 [INFO] (Thread-20 )  fill your insulated bottle  60.1442360878
+2016-04-24 11:18:36,836 [INFO] (Thread-21 ) <look right> 61.2302999496 contingentCmd
+2016-04-24 11:18:37,729 [INFO] (Thread-20 ) <point return> 62.1234741211
+2016-04-24 11:18:37,740 [INFO] (Thread-20 )  and store it in the freezer before use. Either way, it will keep liquids cold twice as long as conventional water bottles.  62.1348421574
+2016-04-24 11:18:38,344 [INFO] (Thread-21 ) <look participant> 62.7385630608 contingentCmd
+2016-04-24 11:18:46,344 [INFO] (Thread-20 ) <look item> 70.7382719517
+2016-04-24 11:18:46,923 [INFO] (Thread-20 ) The double-wall construction of our  71.3177480698
+2016-04-24 11:18:47,991 [INFO] (Thread-21 ) <look item> 72.3856191635 contingentCmd
+2016-04-24 11:18:49,165 [INFO] (Thread-20 ) <look participant> 73.5594921112
+2016-04-24 11:18:49,285 [INFO] (Thread-20 )  insulated water bottles creates a thermal barrier of air to keep heat out and cold in.  73.6788611412
+2016-04-24 11:18:49,548 [INFO] (Thread-21 ) <look participant> 73.9427340031 contingentCmd
+2016-04-24 11:18:54,675 [INFO] (Thread-21 ) <look item> 79.0698289871 contingentCmd
+2016-04-24 11:18:55,193 [INFO] (Thread-20 ) Foil layers reflect solar rays for additional thermal protection.  79.5876750946
+2016-04-24 11:18:56,183 [INFO] (Thread-21 ) <look participant> 80.5774979591 contingentCmd
+2016-04-24 11:19:00,514 [INFO] (Thread-20 ) <pointandlook item> 84.9082159996
+2016-04-24 11:19:01,028 [INFO] (Thread-20 ) This 24 ounce bottle is  85.4222171307
+2016-04-24 11:19:03,435 [INFO] (Thread-20 ) <point return> 87.8296620846
+2016-04-24 11:19:03,450 [INFO] (Thread-20 ) <look participant> 87.8439860344
+2016-04-24 11:19:03,454 [INFO] (Thread-20 )   100% BPA-free, durable, and lightweight. 87.8479449749
+2016-04-24 11:19:08,034 [INFO] (Thread-20 ) Its also Made in America, so if you buy it you're a patriot and you help the economy.  92.4288439751
+2016-04-24 11:19:09,109 [INFO] (Thread-21 ) <look item> 93.5030491352 contingentCmd
+2016-04-24 11:19:10,614 [INFO] (Thread-21 ) <look participant> 95.0087270737 contingentCmd
+2016-04-24 11:19:14,029 [INFO] (Thread-20 ) <point return> 98.4232530594

@@ -1,0 +1,60 @@
+2016-04-24 12:15:04,810 [INFO] (Thread-10 ) <point participant> 0.00164794921875
+2016-04-24 12:15:05,328 [INFO] (Thread-10 ) Grab your eyeballs,  0.518810987473
+2016-04-24 12:15:06,509 [INFO] (Thread-10 ) <point return> 1.69984602928
+2016-04-24 12:15:06,521 [INFO] (Thread-10 )  and prepare to step out even when it is extremely sunny  1.71221399307
+2016-04-24 12:15:10,366 [INFO] (Thread-10 ) <pointandlook item> 5.5569601059
+2016-04-24 12:15:10,879 [INFO] (Thread-10 ) with these wayfarer style sunglasses.  6.06982111931
+2016-04-24 12:15:12,052 [INFO] (Thread-11 ) <look item> 7.24340701103 contingentCmd
+2016-04-24 12:15:13,558 [INFO] (Thread-11 ) <look participant> 8.74912714958 contingentCmd
+2016-04-24 12:15:13,653 [INFO] (Thread-10 ) <point return> 8.84421014786
+2016-04-24 12:15:13,667 [INFO] (Thread-10 ) <look participant> 8.85810494423
+2016-04-24 12:15:14,172 [INFO] (Thread-10 ) Featuring a flexible  9.36314105988
+2016-04-24 12:15:15,848 [INFO] (Thread-10 ) <look item> 11.0389959812
+2016-04-24 12:15:15,852 [INFO] (Thread-10 )  polycarbonate frame, these full-rim sunglasses  11.0433149338
+2016-04-24 12:15:17,605 [INFO] (Thread-11 ) <look item> 12.7966940403 contingentCmd
+2016-04-24 12:15:19,113 [INFO] (Thread-11 ) <look participant> 14.3042891026 contingentCmd
+2016-04-24 12:15:19,121 [INFO] (Thread-11 ) <look item> 14.311907053 contingentCmd
+2016-04-24 12:15:19,453 [INFO] (Thread-10 ) <look participant> 14.6440770626
+2016-04-24 12:15:19,458 [INFO] (Thread-10 )  are lightweight and durable. 14.6487720013
+2016-04-24 12:15:20,627 [INFO] (Thread-11 ) <look participant> 15.8180370331 contingentCmd
+2016-04-24 12:15:20,633 [INFO] (Thread-11 ) <look item> 15.8246660233 contingentCmd
+2016-04-24 12:15:21,728 [INFO] (Thread-10 ) <point item> 16.9195680618
+2016-04-24 12:15:21,735 [INFO] (Thread-10 )  Take a look at these stylish and trendy shades.  16.9262571335
+2016-04-24 12:15:22,141 [INFO] (Thread-11 ) <look participant> 17.3318240643 contingentCmd
+2016-04-24 12:15:22,145 [INFO] (Thread-11 ) <look item> 17.3363609314 contingentCmd
+2016-04-24 12:15:23,657 [INFO] (Thread-11 ) <look participant> 18.8483810425 contingentCmd
+2016-04-24 12:15:23,765 [INFO] (Thread-11 ) <look item> 18.9560410976 contingentCmd
+2016-04-24 12:15:24,684 [INFO] (Thread-10 ) <point return> 19.8755390644
+2016-04-24 12:15:24,695 [INFO] (Thread-10 )  This pair of hot Vintage sunglasses makes looking good easy, wouldn't you agree? 19.8866760731
+2016-04-24 12:15:25,289 [INFO] (Thread-11 ) <look participant> 20.4801130295 contingentCmd
+2016-04-24 12:15:27,419 [INFO] (Thread-11 ) <look right> 22.6101961136 contingentCmd
+2016-04-24 12:15:28,925 [INFO] (Thread-11 ) <look participant> 24.1162159443 contingentCmd
+2016-04-24 12:15:30,348 [INFO] (Thread-10 ) <look item> 25.5390360355
+2016-04-24 12:15:30,855 [INFO] (Thread-10 ) These sunglasses will  26.0465340614
+2016-04-24 12:15:31,851 [INFO] (Thread-11 ) <look item> 27.0425989628 contingentCmd
+2016-04-24 12:15:32,715 [INFO] (Thread-10 ) <look participant> 27.9061851501
+2016-04-24 12:15:32,723 [INFO] (Thread-10 )  take good care  27.9145720005
+2016-04-24 12:15:33,357 [INFO] (Thread-11 ) <look participant> 28.5481481552 contingentCmd
+2016-04-24 12:15:33,363 [INFO] (Thread-11 ) <look item> 28.5545449257 contingentCmd
+2016-04-24 12:15:34,012 [INFO] (Thread-10 ) <point participant> 29.2032320499
+2016-04-24 12:15:34,019 [INFO] (Thread-10 )  of your vision protecting  29.2104041576
+2016-04-24 12:15:34,869 [INFO] (Thread-11 ) <look participant> 30.0601620674 contingentCmd
+2016-04-24 12:15:35,816 [INFO] (Thread-10 ) <point head> 31.0071351528
+2016-04-24 12:15:35,821 [INFO] (Thread-10 )  your eyes from  31.0120339394
+2016-04-24 12:15:37,204 [INFO] (Thread-10 ) <point up> 32.3950209618
+2016-04-24 12:15:37,208 [INFO] (Thread-10 )  harmful sun rays.  32.3993320465
+2016-04-24 12:15:38,955 [INFO] (Thread-10 ) <point return> 34.146476984
+2016-04-24 12:15:39,465 [INFO] (Thread-10 ) They feature next generation Tri-Layer UV400 Lens Technology, absorbing over 99% of harmful UVA and UVB spectrums.  34.6563229561
+2016-04-24 12:15:49,357 [INFO] (Thread-10 ) These non-polarized sunglasses will protect your eyes from the harmful sunrays and pollution.  44.5483150482
+2016-04-24 12:15:51,275 [INFO] (Thread-11 ) <look item> 46.4664990902 contingentCmd
+2016-04-24 12:15:52,781 [INFO] (Thread-11 ) <look participant> 47.9725439548 contingentCmd
+2016-04-24 12:15:55,840 [INFO] (Thread-10 ) <look item> 51.0315570831
+2016-04-24 12:15:56,347 [INFO] (Thread-10 ) These sunglasses were designed  51.5387461185
+2016-04-24 12:15:57,269 [INFO] (Thread-11 ) <look item> 52.460408926 contingentCmd
+2016-04-24 12:15:58,623 [INFO] (Thread-10 ) <look participant> 53.8143041134
+2016-04-24 12:15:58,628 [INFO] (Thread-10 ) <point participant> 53.8196589947
+2016-04-24 12:15:58,634 [INFO] (Thread-10 )   to make you look fashionable like never before.  53.8256139755
+2016-04-24 12:15:58,778 [INFO] (Thread-11 ) <look participant> 53.9691281319 contingentCmd
+2016-04-24 12:15:58,788 [INFO] (Thread-11 ) <look item> 53.979352951 contingentCmd
+2016-04-24 12:16:00,293 [INFO] (Thread-11 ) <look participant> 55.4842131138 contingentCmd
+2016-04-24 12:16:01,485 [INFO] (Thread-10 ) <point return> 56.6761159897

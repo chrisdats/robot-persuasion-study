@@ -1,0 +1,110 @@
+2016-04-24 11:15:17,745 [INFO] (Thread-18 ) <point item> 0.00130295753479
+2016-04-24 11:15:18,256 [INFO] (Thread-18 )  This is a pack of  0.512261867523
+2016-04-24 11:15:19,306 [INFO] (Thread-19 ) <look item> 1.56239295006 contingentCmd
+2016-04-24 11:15:19,501 [INFO] (Thread-18 ) <point return> 1.75694584846
+2016-04-24 11:15:19,510 [INFO] (Thread-18 )  orbit's peppermint sugarfree gum. 1.76689076424
+2016-04-24 11:15:20,812 [INFO] (Thread-19 ) <look participant> 3.06882786751 contingentCmd
+2016-04-24 11:15:20,825 [INFO] (Thread-19 ) <look item> 3.08186078072 contingentCmd
+2016-04-24 11:15:22,332 [INFO] (Thread-19 ) <look participant> 4.58806991577 contingentCmd
+2016-04-24 11:15:22,586 [INFO] (Thread-18 ) Orbit gum is one of the  4.84237790108
+2016-04-24 11:15:23,341 [INFO] (Thread-19 ) <look item> 5.59743285179 contingentCmd
+2016-04-24 11:15:24,302 [INFO] (Thread-18 ) <point participant> 6.55885887146
+2016-04-24 11:15:24,308 [INFO] (Thread-18 )  most effecitive gums  6.56398677826
+2016-04-24 11:15:24,847 [INFO] (Thread-19 ) <look participant> 7.10334992409 contingentCmd
+2016-04-24 11:15:24,852 [INFO] (Thread-19 ) <look item> 7.1081328392 contingentCmd
+2016-04-24 11:15:26,113 [INFO] (Thread-18 ) <point return> 8.36928796768
+2016-04-24 11:15:26,126 [INFO] (Thread-18 )  out there.  8.38264894485
+2016-04-24 11:15:26,358 [INFO] (Thread-19 ) <look participant> 8.61420583725 contingentCmd
+2016-04-24 11:15:27,555 [INFO] (Thread-18 ) It has  9.81145477295
+2016-04-24 11:15:28,395 [INFO] (Thread-18 ) <point open> 10.6517939568
+2016-04-24 11:15:28,405 [INFO] (Thread-18 )  long lasting freshness  10.6613278389
+2016-04-24 11:15:30,339 [INFO] (Thread-18 ) <point return> 12.595843792
+2016-04-24 11:15:30,349 [INFO] (Thread-18 )  after you have it.  12.6057789326
+2016-04-24 11:15:32,144 [INFO] (Thread-18 ) After you chew this gum you won't be afraid to sit next to people and you will  14.4004609585
+2016-04-24 11:15:32,363 [INFO] (Thread-19 ) <look item> 14.6192808151 contingentCmd
+2016-04-24 11:15:33,871 [INFO] (Thread-19 ) <look participant> 16.1269807816 contingentCmd
+2016-04-24 11:15:36,577 [INFO] (Thread-18 ) <point open> 18.8332939148
+2016-04-24 11:15:36,589 [INFO] (Thread-18 )  be an oasis of  18.8456017971
+2016-04-24 11:15:38,018 [INFO] (Thread-18 ) <point return> 20.2739827633
+2016-04-24 11:15:38,027 [INFO] (Thread-18 )  freshness, coolness, and happiness. 20.2829179764
+2016-04-24 11:15:41,764 [INFO] (Thread-18 ) It is also one of the most flavorfull gums that cleans  24.0203549862
+2016-04-24 11:15:45,463 [INFO] (Thread-18 ) <point head> 27.7191019058
+2016-04-24 11:15:45,471 [INFO] (Thread-18 )  up that dirty mouth feeling  27.7271208763
+2016-04-24 11:15:47,466 [INFO] (Thread-18 ) <point return> 29.7224788666
+2016-04-24 11:15:47,478 [INFO] (Thread-18 )  and gives you a sense of refreshment.  29.7339468002
+2016-04-24 11:15:50,297 [INFO] (Thread-18 ) Our motto is Eat, Drink, Chew, so after you eat you can chew some Orbit to keep the good taste going. 32.5536329746
+2016-04-24 11:15:58,798 [INFO] (Thread-18 ) Furthermore, chewing this gum  41.0541799068
+2016-04-24 11:16:01,021 [INFO] (Thread-18 ) <point participant> 43.2773458958
+2016-04-24 11:16:01,027 [INFO] (Thread-18 )  will keep you away  43.283605814
+2016-04-24 11:16:02,466 [INFO] (Thread-18 ) <point return> 44.7222678661
+2016-04-24 11:16:02,481 [INFO] (Thread-18 )  from the dentist. We know how terrible it is to go to the dentist and subject oursleves to all  44.7373378277
+2016-04-24 11:16:09,187 [INFO] (Thread-18 ) <point up> 51.4434738159
+2016-04-24 11:16:09,191 [INFO] (Thread-18 )  of the tools that they use on our  51.4477398396
+2016-04-24 11:16:11,364 [INFO] (Thread-18 ) <point return> 53.620497942
+2016-04-24 11:16:11,374 [INFO] (Thread-18 )  mouths.  53.6299967766
+2016-04-24 11:16:12,890 [INFO] (Thread-18 ) With Orbit we make sure to keep our teeth clean for  55.1461899281
+2016-04-24 11:16:16,310 [INFO] (Thread-18 ) <point participant> 58.5666348934
+2016-04-24 11:16:16,314 [INFO] (Thread-18 )  even longer than just  58.5709009171
+2016-04-24 11:16:17,910 [INFO] (Thread-18 ) <point return> 60.1663618088
+2016-04-24 11:16:17,920 [INFO] (Thread-18 )  toothbrush and toothpaste.  60.1761319637
+2016-04-24 11:16:20,464 [INFO] (Thread-18 ) Orbit has been awarded to American Dental Association's Seal of Acceptance for preventing cavaties and keeping our teeth healthy. 62.7207958698
+2016-04-24 11:16:28,920 [INFO] (Thread-18 ) <point return> 71.1769068241
+2016-04-24 11:17:36,107 [INFO] (Thread-20 ) <look item> 0.501825094223
+2016-04-24 11:17:36,115 [INFO] (Thread-20 )  Polar Bottle is the  0.508893013
+2016-04-24 11:17:37,804 [INFO] (Thread-20 ) <look participant> 2.19857215881
+2016-04-24 11:17:37,808 [INFO] (Thread-20 )  original insulated plastic sport bottle 2.20267605782
+2016-04-24 11:17:41,376 [INFO] (Thread-20 ) and has been keeping   5.77014803886
+2016-04-24 11:17:42,883 [INFO] (Thread-20 ) <point lift> 7.27749204636
+2016-04-24 11:17:42,888 [INFO] (Thread-20 )  liquids colder, longer,  7.28219294548
+2016-04-24 11:17:44,803 [INFO] (Thread-20 ) <point return> 9.19749999046
+2016-04-24 11:17:44,813 [INFO] (Thread-20 )  since 1994. 9.20693206787
+2016-04-24 11:17:47,373 [INFO] (Thread-20 ) This company  11.7673790455
+2016-04-24 11:17:48,536 [INFO] (Thread-20 ) <point open> 12.9300789833
+2016-04-24 11:17:48,547 [INFO] (Thread-20 )  has a long history of  12.9412331581
+2016-04-24 11:17:50,369 [INFO] (Thread-20 ) <point return> 14.7630701065
+2016-04-24 11:17:50,381 [INFO] (Thread-20 )  making great great bottles. 14.7752010822
+2016-04-24 11:17:52,922 [INFO] (Thread-20 ) <point item> 17.3161900043
+2016-04-24 11:17:52,936 [INFO] (Thread-20 )  Take a look! This  17.3306519985
+2016-04-24 11:17:54,913 [INFO] (Thread-20 ) <point return> 19.3068771362
+2016-04-24 11:17:54,925 [INFO] (Thread-20 )  specific bottle is made with the most advanced insulating technique, brightly colored foil pattern, and an innovative removable valve system. 19.3190581799
+2016-04-24 11:18:04,442 [INFO] (Thread-20 ) Combining the thermal properties of an insulated vacuum bottle  28.8358721733
+2016-04-24 11:18:08,856 [INFO] (Thread-20 ) with the lightweight, flexible features of a plastic bottle,  33.250054121
+2016-04-24 11:18:12,492 [INFO] (Thread-20 ) <look item> 36.8860681057
+2016-04-24 11:18:12,997 [INFO] (Thread-20 ) Polar Bottle's insulated water bottle  37.3912270069
+2016-04-24 11:18:14,488 [INFO] (Thread-21 ) <look item> 38.8826899529 contingentCmd
+2016-04-24 11:18:15,924 [INFO] (Thread-20 ) <look participant> 40.3180391788
+2016-04-24 11:18:15,930 [INFO] (Thread-20 )  is the ideal choice for active people 40.3243980408
+2016-04-24 11:18:15,997 [INFO] (Thread-21 ) <look participant> 40.3914451599 contingentCmd
+2016-04-24 11:18:18,944 [INFO] (Thread-20 ) and fits many lifestyles. 43.3379740715
+2016-04-24 11:18:21,613 [INFO] (Thread-20 ) You can put it in your backpack, you can take it with you when you bike, you can go on a hike and have it with you. 46.0073471069
+2016-04-24 11:18:29,410 [INFO] (Thread-20 ) <point lift> 53.8041739464
+2016-04-24 11:18:29,418 [INFO] (Thread-20 )  Simply fill with  53.8124120235
+2016-04-24 11:18:30,966 [INFO] (Thread-20 ) <point return> 55.3606030941
+2016-04-24 11:18:30,978 [INFO] (Thread-20 )  liquid and ice and hit the trail.  55.3722240925
+2016-04-24 11:18:32,842 [INFO] (Thread-21 ) <look right> 57.2366390228 contingentCmd
+2016-04-24 11:18:33,774 [INFO] (Thread-20 ) For even longer cooling power,  58.1686501503
+2016-04-24 11:18:34,348 [INFO] (Thread-21 ) <look participant> 58.7420151234 contingentCmd
+2016-04-24 11:18:35,745 [INFO] (Thread-20 ) <point participant> 60.1396331787
+2016-04-24 11:18:35,750 [INFO] (Thread-20 )  fill your insulated bottle  60.1442360878
+2016-04-24 11:18:36,836 [INFO] (Thread-21 ) <look right> 61.2302999496 contingentCmd
+2016-04-24 11:18:37,729 [INFO] (Thread-20 ) <point return> 62.1234741211
+2016-04-24 11:18:37,740 [INFO] (Thread-20 )  and store it in the freezer before use. Either way, it will keep liquids cold twice as long as conventional water bottles.  62.1348421574
+2016-04-24 11:18:38,344 [INFO] (Thread-21 ) <look participant> 62.7385630608 contingentCmd
+2016-04-24 11:18:46,344 [INFO] (Thread-20 ) <look item> 70.7382719517
+2016-04-24 11:18:46,923 [INFO] (Thread-20 ) The double-wall construction of our  71.3177480698
+2016-04-24 11:18:47,991 [INFO] (Thread-21 ) <look item> 72.3856191635 contingentCmd
+2016-04-24 11:18:49,165 [INFO] (Thread-20 ) <look participant> 73.5594921112
+2016-04-24 11:18:49,285 [INFO] (Thread-20 )  insulated water bottles creates a thermal barrier of air to keep heat out and cold in.  73.6788611412
+2016-04-24 11:18:49,548 [INFO] (Thread-21 ) <look participant> 73.9427340031 contingentCmd
+2016-04-24 11:18:54,675 [INFO] (Thread-21 ) <look item> 79.0698289871 contingentCmd
+2016-04-24 11:18:55,193 [INFO] (Thread-20 ) Foil layers reflect solar rays for additional thermal protection.  79.5876750946
+2016-04-24 11:18:56,183 [INFO] (Thread-21 ) <look participant> 80.5774979591 contingentCmd
+2016-04-24 11:19:00,514 [INFO] (Thread-20 ) <pointandlook item> 84.9082159996
+2016-04-24 11:19:01,028 [INFO] (Thread-20 ) This 24 ounce bottle is  85.4222171307
+2016-04-24 11:19:03,435 [INFO] (Thread-20 ) <point return> 87.8296620846
+2016-04-24 11:19:03,450 [INFO] (Thread-20 ) <look participant> 87.8439860344
+2016-04-24 11:19:03,454 [INFO] (Thread-20 )   100% BPA-free, durable, and lightweight. 87.8479449749
+2016-04-24 11:19:08,034 [INFO] (Thread-20 ) Its also Made in America, so if you buy it you're a patriot and you help the economy.  92.4288439751
+2016-04-24 11:19:09,109 [INFO] (Thread-21 ) <look item> 93.5030491352 contingentCmd
+2016-04-24 11:19:10,614 [INFO] (Thread-21 ) <look participant> 95.0087270737 contingentCmd
+2016-04-24 11:19:14,029 [INFO] (Thread-20 ) <point return> 98.4232530594

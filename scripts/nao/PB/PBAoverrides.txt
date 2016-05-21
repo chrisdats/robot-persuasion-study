@@ -10,3 +10,7 @@
 <look item>,46.6386840343
 <look up>,49.6135671139
 <look participant>,51.121297121
+<look item>,19.8048751354
+<look participant>,21.3154549599
+<look item>,25.0007629395
+<look participant>,26.5064580441

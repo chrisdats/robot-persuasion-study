@@ -1,0 +1,48 @@
+2016-04-28 09:30:24,050 [INFO] (Thread-10 ) <look participant> 0.00125217437744
+2016-04-28 09:30:24,058 [INFO] (Thread-10 )  If you are looking for ultra smooth writing with ultra soft, comfortable grip,  0.00960612297058
+2016-04-28 09:30:28,516 [INFO] (Thread-10 ) <point item> 4.4680249691
+2016-04-28 09:30:28,527 [INFO] (Thread-10 )  this is the pen for you!  4.47877407074
+2016-04-28 09:30:30,184 [INFO] (Thread-10 ) <point return> 6.13504910469
+2016-04-28 09:30:30,201 [INFO] (Thread-10 ) <look item> 6.15302395821
+2016-04-28 09:30:30,571 [INFO] (Thread-11 ) <look item> 6.52275514603 contingentCmd
+2016-04-28 09:30:31,207 [INFO] (Thread-10 ) This 1.4mm extra-smooth  7.15875601768
+2016-04-28 09:30:32,078 [INFO] (Thread-11 ) <look participant> 8.02946019173 contingentCmd
+2016-04-28 09:30:34,404 [INFO] (Thread-10 ) <look participant> 10.3556330204
+2016-04-28 09:30:34,415 [INFO] (Thread-10 )  writing system has the easy-glide feel of a gel pen, but the smear-resistant properties of quick-drying ink, making it a great pen for lefties. 10.3660771847
+2016-04-28 09:30:40,404 [INFO] (Thread-11 ) <look item> 16.3556010723 contingentCmd
+2016-04-28 09:30:41,917 [INFO] (Thread-11 ) <look participant> 17.8684999943 contingentCmd
+2016-04-28 09:30:44,219 [INFO] (Thread-10 ) Also, you never have  20.1700651646
+2016-04-28 09:30:44,603 [INFO] (Thread-11 ) <look item> 20.554746151 contingentCmd
+2016-04-28 09:30:46,116 [INFO] (Thread-10 ) <point lift> 22.0672869682
+2016-04-28 09:30:46,121 [INFO] (Thread-10 )  to scratch them on  22.0721030235
+2016-04-28 09:30:46,133 [INFO] (Thread-11 ) <look participant> 22.0847601891 contingentCmd
+2016-04-28 09:30:47,699 [INFO] (Thread-10 ) <point return> 23.6509141922
+2016-04-28 09:30:47,720 [INFO] (Thread-10 )  something to get them to work, they write the first time, every time.  23.6710829735
+2016-04-28 09:30:53,457 [INFO] (Thread-10 ) Additionally,  29.408616066
+2016-04-28 09:30:54,244 [INFO] (Thread-10 ) <look item> 30.1954569817
+2016-04-28 09:30:54,250 [INFO] (Thread-10 )  there's no cap to use since  30.2013611794
+2016-04-28 09:30:56,420 [INFO] (Thread-10 ) <look participant> 32.3712460995
+2016-04-28 09:30:56,426 [INFO] (Thread-10 )  it's retractable, preventing it from drying out.  32.3774051666
+2016-04-28 09:31:00,466 [INFO] (Thread-10 ) The ink matches barrel color, making  36.4172010422
+2016-04-28 09:31:02,179 [INFO] (Thread-11 ) <look right> 38.1310210228 contingentCmd
+2016-04-28 09:31:03,312 [INFO] (Thread-10 ) <point participant> 39.2637941837
+2016-04-28 09:31:03,318 [INFO] (Thread-10 )  choosing the proper  39.2696290016
+2016-04-28 09:31:03,687 [INFO] (Thread-11 ) <look participant> 39.6385099888 contingentCmd
+2016-04-28 09:31:04,805 [INFO] (Thread-10 ) <point return> 40.7561671734
+2016-04-28 09:31:04,818 [INFO] (Thread-10 )  pen hassle-free.   40.769575119
+2016-04-28 09:31:05,413 [INFO] (Thread-11 ) <look up> 41.3647770882 contingentCmd
+2016-04-28 09:31:06,924 [INFO] (Thread-11 ) <look participant> 42.8750221729 contingentCmd
+2016-04-28 09:31:07,474 [INFO] (Thread-10 ) This is a great pen for notes, letters, anything you may need! 43.4251580238
+2016-04-28 09:31:08,092 [INFO] (Thread-11 ) <look up> 44.0435349941 contingentCmd
+2016-04-28 09:31:09,597 [INFO] (Thread-11 ) <look participant> 45.5489501953 contingentCmd
+2016-04-28 09:31:10,643 [INFO] (Thread-11 ) <look up> 46.594987154 contingentCmd
+2016-04-28 09:31:12,153 [INFO] (Thread-11 ) <look participant> 48.1049540043 contingentCmd
+2016-04-28 09:31:12,913 [INFO] (Thread-10 ) <point participant> 48.8649671078
+2016-04-28 09:31:12,926 [INFO] (Thread-10 )  What college student doesn't  48.8778560162
+2016-04-28 09:31:15,044 [INFO] (Thread-10 ) <point return> 50.9951980114
+2016-04-28 09:31:15,058 [INFO] (Thread-10 )  want a  51.0099701881
+2016-04-28 09:31:15,983 [INFO] (Thread-10 ) <look item> 51.9349780083
+2016-04-28 09:31:16,000 [INFO] (Thread-10 )  smooth and comfortable pen to  51.9511749744
+2016-04-28 09:31:18,308 [INFO] (Thread-10 ) <look participant> 54.2594740391
+2016-04-28 09:31:18,314 [INFO] (Thread-10 )  write with? 54.2654261589
+2016-04-28 09:31:19,876 [INFO] (Thread-10 ) <point return> 55.8271751404

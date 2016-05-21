@@ -1,0 +1,335 @@
+2016-04-24 11:07:02,883 [INFO] (Thread-10 ) <pointandlook item> 0.503498077393
+2016-04-24 11:07:02,944 [INFO] (Thread-11 ) <look item> 0.564135074615 contingentCmd
+2016-04-24 11:07:03,396 [INFO] (Thread-10 ) Here we have a decadent bar  1.01618909836
+2016-04-24 11:07:04,450 [INFO] (Thread-11 ) <look participant> 2.07032203674 contingentCmd
+2016-04-24 11:07:05,507 [INFO] (Thread-10 ) <point return> 3.12729907036
+2016-04-24 11:07:05,544 [INFO] (Thread-10 ) <look participant> 3.16377592087
+2016-04-24 11:07:05,550 [INFO] (Thread-10 )   of chocolate made in Belgium, with the flavor of  3.16998696327
+2016-04-24 11:07:08,750 [INFO] (Thread-10 ) <point lift> 6.37004709244
+2016-04-24 11:07:08,755 [INFO] (Thread-10 )  almond, sea salt,  6.37541508675
+2016-04-24 11:07:10,158 [INFO] (Thread-10 ) <point return> 7.77777504921
+2016-04-24 11:07:10,168 [INFO] (Thread-10 ) and dark chocolate. 7.78811907768
+2016-04-24 11:07:12,742 [INFO] (Thread-10 ) <look participant> 10.3621759415
+2016-04-24 11:07:12,753 [INFO] (Thread-10 )  Dark  10.3727440834
+2016-04-24 11:07:13,551 [INFO] (Thread-10 ) <point head> 11.1710059643
+2016-04-24 11:07:13,558 [INFO] (Thread-10 )  chocolate is definitely my favorite kind of chocolate!  11.1775710583
+2016-04-24 11:07:17,073 [INFO] (Thread-10 ) <point return> 14.6929399967
+2016-04-24 11:07:18,396 [INFO] (Thread-10 ) This bar is 55 percent coco content which  16.0165281296
+2016-04-24 11:07:20,896 [INFO] (Thread-11 ) <look item> 18.515666008 contingentCmd
+2016-04-24 11:07:22,113 [INFO] (Thread-10 ) <point lift> 19.7328920364
+2016-04-24 11:07:22,118 [INFO] (Thread-10 )  is very high,  19.7378571033
+2016-04-24 11:07:22,403 [INFO] (Thread-11 ) <look participant> 20.0226280689 contingentCmd
+2016-04-24 11:07:23,130 [INFO] (Thread-10 ) <point return> 20.7502019405
+2016-04-24 11:07:23,142 [INFO] (Thread-10 )  meaning it is a relatively high quality bar. 20.7623960972
+2016-04-24 11:07:25,930 [INFO] (Thread-11 ) <look item> 23.5495960712 contingentCmd
+2016-04-24 11:07:27,207 [INFO] (Thread-10 ) Additionally, it is organic. Unlike other chocolates that are farmed with underpaid laborers with  24.8266019821
+2016-04-24 11:07:27,437 [INFO] (Thread-11 ) <look participant> 25.0573060513 contingentCmd
+2016-04-24 11:07:31,563 [INFO] (Thread-11 ) <look item> 29.1826119423 contingentCmd
+2016-04-24 11:07:33,069 [INFO] (Thread-11 ) <look participant> 30.6890320778 contingentCmd
+2016-04-24 11:07:33,865 [INFO] (Thread-10 ) <pointandlook item> 31.4850530624
+2016-04-24 11:07:33,877 [INFO] (Thread-10 )  outdated methods, this is certified  31.4973549843
+2016-04-24 11:07:36,646 [INFO] (Thread-10 ) <look participant> 34.2658350468
+2016-04-24 11:07:36,651 [INFO] (Thread-10 ) <point return> 34.271048069
+2016-04-24 11:07:36,662 [INFO] (Thread-10 )  by Switzerland as For Life. 34.2816231251
+2016-04-24 11:07:37,275 [INFO] (Thread-11 ) <look item> 34.8949201107 contingentCmd
+2016-04-24 11:07:38,782 [INFO] (Thread-11 ) <look participant> 36.4021029472 contingentCmd
+2016-04-24 11:07:39,833 [INFO] (Thread-10 ) This means that the coca beans were cultivated in a socially responsible and sustainable manner, with care given to the coca bean farmers and their families. So it helps protects the environment and  37.4533119202
+2016-04-24 11:07:43,268 [INFO] (Thread-11 ) <look item> 40.8879680634 contingentCmd
+2016-04-24 11:07:44,774 [INFO] (Thread-11 ) <look participant> 42.3943309784 contingentCmd
+2016-04-24 11:07:49,141 [INFO] (Thread-11 ) <look item> 46.761300087 contingentCmd
+2016-04-24 11:07:50,647 [INFO] (Thread-11 ) <look participant> 48.2672710419 contingentCmd
+2016-04-24 11:07:52,377 [INFO] (Thread-10 ) <point item> 49.9967370033
+2016-04-24 11:07:52,383 [INFO] (Thread-10 )  it helps draw out  50.0030519962
+2016-04-24 11:07:53,998 [INFO] (Thread-10 ) <point return> 51.6180210114
+2016-04-24 11:07:54,007 [INFO] (Thread-10 )  all the taste from the coca beans.  51.6266920567
+2016-04-24 11:07:56,015 [INFO] (Thread-11 ) <look item> 53.6348869801 contingentCmd
+2016-04-24 11:07:57,523 [INFO] (Thread-11 ) <look participant> 55.1428339481 contingentCmd
+2016-04-24 11:07:57,724 [INFO] (Thread-10 ) <look item> 55.3444879055
+2016-04-24 11:07:58,229 [INFO] (Thread-10 ) The almonds are a delicious touch,  55.8492350578
+2016-04-24 11:07:59,889 [INFO] (Thread-10 ) <look participant> 57.5093770027
+2016-04-24 11:07:59,894 [INFO] (Thread-10 ) <point participant> 57.5137660503
+2016-04-24 11:07:59,899 [INFO] (Thread-10 )   and if you like the combination  57.5194880962
+2016-04-24 11:08:01,984 [INFO] (Thread-10 ) <point return> 59.6037430763
+2016-04-24 11:08:01,993 [INFO] (Thread-10 )  of salt and chocolate, like a chocolate covered pretzel or m and ms in trail mix, you will love this flavor. 59.6127140522
+2016-04-24 11:08:09,369 [INFO] (Thread-11 ) <look item> 66.9888410568 contingentCmd
+2016-04-24 11:08:09,749 [INFO] (Thread-10 ) Crunchy almonds and sea salt crystals make a tantilizing combination which brings out the complexity of the chocolate. It very smooth and buttery, but not too sweet.  67.3691570759
+2016-04-24 11:08:10,874 [INFO] (Thread-11 ) <look participant> 68.4944760799 contingentCmd
+2016-04-24 11:08:11,123 [INFO] (Thread-11 ) <look item> 68.7433190346 contingentCmd
+2016-04-24 11:08:12,629 [INFO] (Thread-11 ) <look participant> 70.2490320206 contingentCmd
+2016-04-24 11:08:18,474 [INFO] (Thread-11 ) <look item> 76.0940310955 contingentCmd
+2016-04-24 11:08:19,983 [INFO] (Thread-11 ) <look participant> 77.6033079624 contingentCmd
+2016-04-24 11:08:21,455 [INFO] (Thread-10 ) <look item> 79.0747070312
+2016-04-24 11:08:21,961 [INFO] (Thread-10 ) It is a great gift  79.5815010071
+2016-04-24 11:08:23,544 [INFO] (Thread-10 ) <look participant> 81.1641640663
+2016-04-24 11:08:23,553 [INFO] (Thread-10 )  so you can give it to your mother because its delicious. 81.1734309196
+2016-04-24 11:08:27,987 [INFO] (Thread-10 ) But with a love  85.6072010994
+2016-04-24 11:08:29,155 [INFO] (Thread-10 ) <point item> 86.7750179768
+2016-04-24 11:08:29,160 [INFO] (Thread-10 )  poem inside, these bars  86.7803430557
+2016-04-24 11:08:31,694 [INFO] (Thread-10 ) <point return> 89.3136940002
+2016-04-24 11:08:31,705 [INFO] (Thread-10 )  are also great to share with a special someone. 89.3251850605
+2016-04-24 11:08:35,919 [INFO] (Thread-10 ) You can  93.5386600494
+2016-04-24 11:08:36,900 [INFO] (Thread-10 ) <point lift> 94.5200829506
+2016-04-24 11:08:36,905 [INFO] (Thread-10 )  also chop it  94.5250310898
+2016-04-24 11:08:38,414 [INFO] (Thread-10 ) <point return> 96.0335891247
+2016-04-24 11:08:38,425 [INFO] (Thread-10 )  up into pieces and share with friends. 96.0451660156
+2016-04-24 11:08:41,977 [INFO] (Thread-10 ) <point item> 99.5973129272
+2016-04-24 11:08:42,482 [INFO] (Thread-10 ) This is one of my favorite  100.102159023
+2016-04-24 11:08:44,408 [INFO] (Thread-10 ) <point return> 102.028146982
+2016-04-24 11:08:44,426 [INFO] (Thread-10 )  chocolate bars myself and I would definitely recommend it to anyone looking for a delicious high-quality chocolate bar. 102.045722961
+2016-04-24 11:08:52,485 [INFO] (Thread-10 ) <point return> 110.105058908
+2016-04-24 11:09:43,655 [INFO] (Thread-12 ) <look participant> 0.00110006332397
+2016-04-24 11:09:43,667 [INFO] (Thread-12 )  If you are looking for ultra smooth writing with ultra soft, comfortable grip,  0.0123279094696
+2016-04-24 11:09:46,736 [INFO] (Thread-13 ) <look item> 3.08198595047 contingentCmd
+2016-04-24 11:09:48,131 [INFO] (Thread-12 ) <point item> 4.47652983665
+2016-04-24 11:09:48,136 [INFO] (Thread-12 )  this is the pen for you!  4.48123383522
+2016-04-24 11:09:48,243 [INFO] (Thread-13 ) <look participant> 4.58913683891 contingentCmd
+2016-04-24 11:09:49,799 [INFO] (Thread-12 ) <point return> 6.14450192451
+2016-04-24 11:09:49,847 [INFO] (Thread-12 ) <look item> 6.19215583801
+2016-04-24 11:09:50,856 [INFO] (Thread-12 ) This 1.4mm extra-smooth  7.2020919323
+2016-04-24 11:09:54,061 [INFO] (Thread-12 ) <look participant> 10.4070129395
+2016-04-24 11:09:54,067 [INFO] (Thread-12 )  writing system has the easy-glide feel of a gel pen, but the smear-resistant properties of quick-drying ink, making it a great pen for lefties. 10.412364006
+2016-04-24 11:10:02,451 [INFO] (Thread-13 ) <look item> 18.7962698936 contingentCmd
+2016-04-24 11:10:03,875 [INFO] (Thread-12 ) Also, you never have  20.2204790115
+2016-04-24 11:10:03,958 [INFO] (Thread-13 ) <look participant> 20.3035860062 contingentCmd
+2016-04-24 11:10:04,404 [INFO] (Thread-13 ) <look item> 20.7491879463 contingentCmd
+2016-04-24 11:10:05,710 [INFO] (Thread-12 ) <point lift> 22.055369854
+2016-04-24 11:10:05,719 [INFO] (Thread-12 )  to scratch them on  22.0651209354
+2016-04-24 11:10:05,917 [INFO] (Thread-13 ) <look participant> 22.262387991 contingentCmd
+2016-04-24 11:10:07,209 [INFO] (Thread-12 ) <point return> 23.5549640656
+2016-04-24 11:10:07,228 [INFO] (Thread-12 )  something to get them to work, they write the first time, every time.  23.5735769272
+2016-04-24 11:10:12,985 [INFO] (Thread-12 ) Additionally,  29.3304009438
+2016-04-24 11:10:13,776 [INFO] (Thread-12 ) <look item> 30.1212320328
+2016-04-24 11:10:13,780 [INFO] (Thread-12 )  there's no cap to use since  30.1257760525
+2016-04-24 11:10:15,950 [INFO] (Thread-12 ) <look participant> 32.2951550484
+2016-04-24 11:10:15,955 [INFO] (Thread-12 )  it's retractable, preventing it from drying out.  32.3005959988
+2016-04-24 11:10:19,993 [INFO] (Thread-12 ) The ink matches barrel color, making  36.3390669823
+2016-04-24 11:10:22,839 [INFO] (Thread-12 ) <point participant> 39.1849169731
+2016-04-24 11:10:22,844 [INFO] (Thread-12 )  choosing the proper  39.1892158985
+2016-04-24 11:10:24,336 [INFO] (Thread-12 ) <point return> 40.6816248894
+2016-04-24 11:10:24,347 [INFO] (Thread-12 )  pen hassle-free.   40.6931059361
+2016-04-24 11:10:25,886 [INFO] (Thread-13 ) <look item> 42.2317419052 contingentCmd
+2016-04-24 11:10:27,002 [INFO] (Thread-12 ) This is a great pen for notes, letters, anything you may need! 43.3479700089
+2016-04-24 11:10:27,394 [INFO] (Thread-13 ) <look participant> 43.739210844 contingentCmd
+2016-04-24 11:10:30,721 [INFO] (Thread-13 ) <look item> 47.0670149326 contingentCmd
+2016-04-24 11:10:32,227 [INFO] (Thread-13 ) <look participant> 48.5728549957 contingentCmd
+2016-04-24 11:10:32,400 [INFO] (Thread-12 ) <point participant> 48.7455699444
+2016-04-24 11:10:32,405 [INFO] (Thread-12 )  What college student doesn't  48.7504608631
+2016-04-24 11:10:34,552 [INFO] (Thread-12 ) <point return> 50.8973588943
+2016-04-24 11:10:34,570 [INFO] (Thread-12 )  want a  50.9154179096
+2016-04-24 11:10:35,491 [INFO] (Thread-12 ) <look item> 51.8364288807
+2016-04-24 11:10:35,495 [INFO] (Thread-12 )  smooth and comfortable pen to  51.8410999775
+2016-04-24 11:10:37,817 [INFO] (Thread-12 ) <look participant> 54.1623439789
+2016-04-24 11:10:37,822 [INFO] (Thread-12 )  write with? 54.1676590443
+2016-04-24 11:10:39,475 [INFO] (Thread-12 ) <point return> 55.8210308552
+2016-04-24 11:11:27,407 [INFO] (Thread-14 ) <point participant> 0.00313901901245
+2016-04-24 11:11:27,408 [INFO] (Thread-15 ) <look right> 0.00410890579224 contingentCmd
+2016-04-24 11:11:27,915 [INFO] (Thread-14 ) Grab your eyeballs,  0.511090993881
+2016-04-24 11:11:28,922 [INFO] (Thread-15 ) <look participant> 1.51806998253 contingentCmd
+2016-04-24 11:11:29,080 [INFO] (Thread-14 ) <point return> 1.67618894577
+2016-04-24 11:11:29,089 [INFO] (Thread-14 )  and prepare to step out even when it is extremely sunny  1.68571305275
+2016-04-24 11:11:32,941 [INFO] (Thread-14 ) <pointandlook item> 5.53767299652
+2016-04-24 11:11:33,452 [INFO] (Thread-14 ) with these wayfarer style sunglasses.  6.04796409607
+2016-04-24 11:11:34,247 [INFO] (Thread-15 ) <look item> 6.84280705452 contingentCmd
+2016-04-24 11:11:35,753 [INFO] (Thread-15 ) <look participant> 8.3490319252 contingentCmd
+2016-04-24 11:11:35,881 [INFO] (Thread-15 ) <look item> 8.47694993019 contingentCmd
+2016-04-24 11:11:36,232 [INFO] (Thread-14 ) <point return> 8.82800889015
+2016-04-24 11:11:36,240 [INFO] (Thread-14 ) <look participant> 8.83673000336
+2016-04-24 11:11:36,745 [INFO] (Thread-14 ) Featuring a flexible  9.34159708023
+2016-04-24 11:11:37,387 [INFO] (Thread-15 ) <look participant> 9.98353505135 contingentCmd
+2016-04-24 11:11:38,383 [INFO] (Thread-14 ) <look item> 10.9788389206
+2016-04-24 11:11:38,387 [INFO] (Thread-14 )  polycarbonate frame, these full-rim sunglasses  10.9831330776
+2016-04-24 11:11:41,985 [INFO] (Thread-14 ) <look participant> 14.5817439556
+2016-04-24 11:11:41,990 [INFO] (Thread-14 )  are lightweight and durable. 14.5864589214
+2016-04-24 11:11:43,034 [INFO] (Thread-15 ) <look item> 15.6300559044 contingentCmd
+2016-04-24 11:11:44,261 [INFO] (Thread-14 ) <point item> 16.8574140072
+2016-04-24 11:11:44,267 [INFO] (Thread-14 )  Take a look at these stylish and trendy shades.  16.8628540039
+2016-04-24 11:11:44,541 [INFO] (Thread-15 ) <look participant> 17.1368529797 contingentCmd
+2016-04-24 11:11:47,215 [INFO] (Thread-14 ) <point return> 19.811606884
+2016-04-24 11:11:47,225 [INFO] (Thread-14 )  This pair of hot Vintage sunglasses makes looking good easy, wouldn't you agree? 19.8215138912
+2016-04-24 11:11:52,385 [INFO] (Thread-15 ) <look up> 24.9815299511 contingentCmd
+2016-04-24 11:11:52,904 [INFO] (Thread-14 ) <look item> 25.5003988743
+2016-04-24 11:11:53,409 [INFO] (Thread-14 ) These sunglasses will  26.0056190491
+2016-04-24 11:11:53,902 [INFO] (Thread-15 ) <look participant> 26.49832201 contingentCmd
+2016-04-24 11:11:55,188 [INFO] (Thread-15 ) <look up> 27.7839488983 contingentCmd
+2016-04-24 11:11:55,240 [INFO] (Thread-14 ) <look participant> 27.8361589909
+2016-04-24 11:11:55,244 [INFO] (Thread-14 )  take good care  27.8405520916
+2016-04-24 11:11:56,517 [INFO] (Thread-14 ) <point participant> 29.1133630276
+2016-04-24 11:11:56,523 [INFO] (Thread-14 )  of your vision protecting  29.1193618774
+2016-04-24 11:11:56,696 [INFO] (Thread-15 ) <look participant> 29.2923538685 contingentCmd
+2016-04-24 11:11:58,327 [INFO] (Thread-14 ) <point head> 30.9234440327
+2016-04-24 11:11:58,332 [INFO] (Thread-14 )  your eyes from  30.9282510281
+2016-04-24 11:11:58,501 [INFO] (Thread-15 ) <look up> 31.0974628925 contingentCmd
+2016-04-24 11:11:59,693 [INFO] (Thread-14 ) <point up> 32.2889940739
+2016-04-24 11:11:59,700 [INFO] (Thread-14 )  harmful sun rays.  32.2958769798
+2016-04-24 11:12:00,007 [INFO] (Thread-15 ) <look participant> 32.6033759117 contingentCmd
+2016-04-24 11:12:01,444 [INFO] (Thread-14 ) <point return> 34.0405030251
+2016-04-24 11:12:01,958 [INFO] (Thread-14 ) They feature next generation Tri-Layer UV400 Lens Technology, absorbing over 99% of harmful UVA and UVB spectrums.  34.5546638966
+2016-04-24 11:12:11,814 [INFO] (Thread-14 ) These non-polarized sunglasses will protect your eyes from the harmful sunrays and pollution.  44.4097108841
+2016-04-24 11:12:18,292 [INFO] (Thread-14 ) <look item> 50.8886740208
+2016-04-24 11:12:18,797 [INFO] (Thread-14 ) These sunglasses were designed  51.3936650753
+2016-04-24 11:12:19,897 [INFO] (Thread-15 ) <look item> 52.4930589199 contingentCmd
+2016-04-24 11:12:21,071 [INFO] (Thread-14 ) <look participant> 53.6676299572
+2016-04-24 11:12:21,077 [INFO] (Thread-14 ) <point participant> 53.6731410027
+2016-04-24 11:12:21,082 [INFO] (Thread-14 )   to make you look fashionable like never before.  53.6779658794
+2016-04-24 11:12:21,406 [INFO] (Thread-15 ) <look participant> 54.0024309158 contingentCmd
+2016-04-24 11:12:21,412 [INFO] (Thread-15 ) <look item> 54.0085439682 contingentCmd
+2016-04-24 11:12:22,919 [INFO] (Thread-15 ) <look participant> 55.515681982 contingentCmd
+2016-04-24 11:12:23,909 [INFO] (Thread-14 ) <point return> 56.5057048798
+2016-04-24 11:13:11,868 [INFO] (Thread-16 ) There is nothing better for a dorm room or apartment  0.00319409370422
+2016-04-24 11:13:13,910 [INFO] (Thread-17 ) <look item> 2.04536390305 contingentCmd
+2016-04-24 11:13:15,234 [INFO] (Thread-16 ) <point lift> 3.36912202835
+2016-04-24 11:13:15,240 [INFO] (Thread-16 )  than a scented candle!  3.37551307678
+2016-04-24 11:13:15,418 [INFO] (Thread-17 ) <look participant> 3.55354690552 contingentCmd
+2016-04-24 11:13:16,905 [INFO] (Thread-16 ) <point return> 5.04061293602
+2016-04-24 11:13:17,417 [INFO] (Thread-16 ) <pointandlook item> 5.55230307579
+2016-04-24 11:13:17,929 [INFO] (Thread-16 ) This candle's scent is  6.06431698799
+2016-04-24 11:13:19,780 [INFO] (Thread-16 ) <point return> 7.91529989243
+2016-04-24 11:13:19,791 [INFO] (Thread-16 ) <look participant> 7.92595005035
+2016-04-24 11:13:19,796 [INFO] (Thread-16 )   Chilled Sangria, which is a wonderful aroma for any time. 7.93101787567
+2016-04-24 11:13:24,625 [INFO] (Thread-16 ) Candles are becoming America’s number one gift, which comes as no surprise considering they are one of the most affordable   12.7608680725
+2016-04-24 11:13:32,204 [INFO] (Thread-16 ) <point participant> 20.3397009373
+2016-04-24 11:13:32,212 [INFO] (Thread-16 ) luxuries we can get for our home.  20.3474569321
+2016-04-24 11:13:34,713 [INFO] (Thread-16 ) <point return> 22.8486318588
+2016-04-24 11:13:35,224 [INFO] (Thread-16 ) They make the perfect gift for Birthdays, Christmas, Valentines Day, Mother’s Day or thank you presents.  23.3589940071
+2016-04-24 11:13:43,678 [INFO] (Thread-16 ) Candles play a major role when it comes to our home decor. 31.8134288788
+2016-04-24 11:13:48,256 [INFO] (Thread-16 ) These candles  36.3913300037
+2016-04-24 11:13:49,561 [INFO] (Thread-16 ) <point open> 37.6967959404
+2016-04-24 11:13:49,574 [INFO] (Thread-16 )  fill the whole room with  37.7097229958
+2016-04-24 11:13:51,526 [INFO] (Thread-16 ) <point return> 39.6618380547
+2016-04-24 11:13:51,538 [INFO] (Thread-16 )  fragrance.  39.6736359596
+2016-04-24 11:13:53,222 [INFO] (Thread-16 ) Just light the candle, and a pool of scented oil forms that quickly releases  41.3575410843
+2016-04-24 11:13:57,943 [INFO] (Thread-16 ) <point up> 46.0787029266
+2016-04-24 11:13:57,948 [INFO] (Thread-16 ) fragrance into the air creating  46.0835859776
+2016-04-24 11:14:00,234 [INFO] (Thread-16 ) <point return> 48.3693020344
+2016-04-24 11:14:00,245 [INFO] (Thread-16 )  a warm, relaxing atmosphere.  48.3801028728
+2016-04-24 11:14:02,686 [INFO] (Thread-16 ) <look item> 50.8216068745
+2016-04-24 11:14:02,691 [INFO] (Thread-16 ) <point return> 50.8260440826
+2016-04-24 11:14:03,201 [INFO] (Thread-16 ) These candles have  51.3364350796
+2016-04-24 11:14:04,415 [INFO] (Thread-16 ) <look participant> 52.5500710011
+2016-04-24 11:14:04,420 [INFO] (Thread-16 )  a variety of benefits including:  52.5555830002
+2016-04-24 11:14:06,881 [INFO] (Thread-16 ) calms the nerves and relieves anxiety,  55.015971899
+2016-04-24 11:14:09,868 [INFO] (Thread-16 ) proves a relaxing scent for mediation,  58.0031628609
+2016-04-24 11:14:10,703 [INFO] (Thread-17 ) <look item> 58.838465929 contingentCmd
+2016-04-24 11:14:12,209 [INFO] (Thread-17 ) <look participant> 60.3445699215 contingentCmd
+2016-04-24 11:14:12,824 [INFO] (Thread-16 ) induces sleep for those  60.9591119289
+2016-04-24 11:14:14,802 [INFO] (Thread-16 ) <point lift> 62.9377589226
+2016-04-24 11:14:14,806 [INFO] (Thread-16 )  who suffer from insomnia,  62.941920042
+2016-04-24 11:14:16,362 [INFO] (Thread-16 ) <point return> 64.4977629185
+2016-04-24 11:14:16,872 [INFO] (Thread-16 ) serve as a great bug repellant,  65.0070540905
+2016-04-24 11:14:19,115 [INFO] (Thread-16 ) eliminates unwanted cleaning and cooking odors,  67.2507240772
+2016-04-24 11:14:22,320 [INFO] (Thread-16 ) and can be used as a soothing massage oil. 70.4556920528
+2016-04-24 11:14:26,296 [INFO] (Thread-16 ) You can't go wrong  74.431568861
+2016-04-24 11:14:27,724 [INFO] (Thread-16 ) <look item> 75.8595778942
+2016-04-24 11:14:27,730 [INFO] (Thread-16 )  by getting this candle!  75.8651618958
+2016-04-24 11:14:29,390 [INFO] (Thread-16 ) <look participant> 77.5258939266
+2016-04-24 11:14:29,896 [INFO] (Thread-16 ) <point return> 78.0309579372
+2016-04-24 11:15:17,745 [INFO] (Thread-18 ) <point item> 0.00130295753479
+2016-04-24 11:15:18,256 [INFO] (Thread-18 )  This is a pack of  0.512261867523
+2016-04-24 11:15:19,306 [INFO] (Thread-19 ) <look item> 1.56239295006 contingentCmd
+2016-04-24 11:15:19,501 [INFO] (Thread-18 ) <point return> 1.75694584846
+2016-04-24 11:15:19,510 [INFO] (Thread-18 )  orbit's peppermint sugarfree gum. 1.76689076424
+2016-04-24 11:15:20,812 [INFO] (Thread-19 ) <look participant> 3.06882786751 contingentCmd
+2016-04-24 11:15:20,825 [INFO] (Thread-19 ) <look item> 3.08186078072 contingentCmd
+2016-04-24 11:15:22,332 [INFO] (Thread-19 ) <look participant> 4.58806991577 contingentCmd
+2016-04-24 11:15:22,586 [INFO] (Thread-18 ) Orbit gum is one of the  4.84237790108
+2016-04-24 11:15:23,341 [INFO] (Thread-19 ) <look item> 5.59743285179 contingentCmd
+2016-04-24 11:15:24,302 [INFO] (Thread-18 ) <point participant> 6.55885887146
+2016-04-24 11:15:24,308 [INFO] (Thread-18 )  most effecitive gums  6.56398677826
+2016-04-24 11:15:24,847 [INFO] (Thread-19 ) <look participant> 7.10334992409 contingentCmd
+2016-04-24 11:15:24,852 [INFO] (Thread-19 ) <look item> 7.1081328392 contingentCmd
+2016-04-24 11:15:26,113 [INFO] (Thread-18 ) <point return> 8.36928796768
+2016-04-24 11:15:26,126 [INFO] (Thread-18 )  out there.  8.38264894485
+2016-04-24 11:15:26,358 [INFO] (Thread-19 ) <look participant> 8.61420583725 contingentCmd
+2016-04-24 11:15:27,555 [INFO] (Thread-18 ) It has  9.81145477295
+2016-04-24 11:15:28,395 [INFO] (Thread-18 ) <point open> 10.6517939568
+2016-04-24 11:15:28,405 [INFO] (Thread-18 )  long lasting freshness  10.6613278389
+2016-04-24 11:15:30,339 [INFO] (Thread-18 ) <point return> 12.595843792
+2016-04-24 11:15:30,349 [INFO] (Thread-18 )  after you have it.  12.6057789326
+2016-04-24 11:15:32,144 [INFO] (Thread-18 ) After you chew this gum you won't be afraid to sit next to people and you will  14.4004609585
+2016-04-24 11:15:32,363 [INFO] (Thread-19 ) <look item> 14.6192808151 contingentCmd
+2016-04-24 11:15:33,871 [INFO] (Thread-19 ) <look participant> 16.1269807816 contingentCmd
+2016-04-24 11:15:36,577 [INFO] (Thread-18 ) <point open> 18.8332939148
+2016-04-24 11:15:36,589 [INFO] (Thread-18 )  be an oasis of  18.8456017971
+2016-04-24 11:15:38,018 [INFO] (Thread-18 ) <point return> 20.2739827633
+2016-04-24 11:15:38,027 [INFO] (Thread-18 )  freshness, coolness, and happiness. 20.2829179764
+2016-04-24 11:15:41,764 [INFO] (Thread-18 ) It is also one of the most flavorfull gums that cleans  24.0203549862
+2016-04-24 11:15:45,463 [INFO] (Thread-18 ) <point head> 27.7191019058
+2016-04-24 11:15:45,471 [INFO] (Thread-18 )  up that dirty mouth feeling  27.7271208763
+2016-04-24 11:15:47,466 [INFO] (Thread-18 ) <point return> 29.7224788666
+2016-04-24 11:15:47,478 [INFO] (Thread-18 )  and gives you a sense of refreshment.  29.7339468002
+2016-04-24 11:15:50,297 [INFO] (Thread-18 ) Our motto is Eat, Drink, Chew, so after you eat you can chew some Orbit to keep the good taste going. 32.5536329746
+2016-04-24 11:15:58,798 [INFO] (Thread-18 ) Furthermore, chewing this gum  41.0541799068
+2016-04-24 11:16:01,021 [INFO] (Thread-18 ) <point participant> 43.2773458958
+2016-04-24 11:16:01,027 [INFO] (Thread-18 )  will keep you away  43.283605814
+2016-04-24 11:16:02,466 [INFO] (Thread-18 ) <point return> 44.7222678661
+2016-04-24 11:16:02,481 [INFO] (Thread-18 )  from the dentist. We know how terrible it is to go to the dentist and subject oursleves to all  44.7373378277
+2016-04-24 11:16:09,187 [INFO] (Thread-18 ) <point up> 51.4434738159
+2016-04-24 11:16:09,191 [INFO] (Thread-18 )  of the tools that they use on our  51.4477398396
+2016-04-24 11:16:11,364 [INFO] (Thread-18 ) <point return> 53.620497942
+2016-04-24 11:16:11,374 [INFO] (Thread-18 )  mouths.  53.6299967766
+2016-04-24 11:16:12,890 [INFO] (Thread-18 ) With Orbit we make sure to keep our teeth clean for  55.1461899281
+2016-04-24 11:16:16,310 [INFO] (Thread-18 ) <point participant> 58.5666348934
+2016-04-24 11:16:16,314 [INFO] (Thread-18 )  even longer than just  58.5709009171
+2016-04-24 11:16:17,910 [INFO] (Thread-18 ) <point return> 60.1663618088
+2016-04-24 11:16:17,920 [INFO] (Thread-18 )  toothbrush and toothpaste.  60.1761319637
+2016-04-24 11:16:20,464 [INFO] (Thread-18 ) Orbit has been awarded to American Dental Association's Seal of Acceptance for preventing cavaties and keeping our teeth healthy. 62.7207958698
+2016-04-24 11:16:28,920 [INFO] (Thread-18 ) <point return> 71.1769068241
+2016-04-24 11:17:36,107 [INFO] (Thread-20 ) <look item> 0.501825094223
+2016-04-24 11:17:36,115 [INFO] (Thread-20 )  Polar Bottle is the  0.508893013
+2016-04-24 11:17:37,804 [INFO] (Thread-20 ) <look participant> 2.19857215881
+2016-04-24 11:17:37,808 [INFO] (Thread-20 )  original insulated plastic sport bottle 2.20267605782
+2016-04-24 11:17:41,376 [INFO] (Thread-20 ) and has been keeping   5.77014803886
+2016-04-24 11:17:42,883 [INFO] (Thread-20 ) <point lift> 7.27749204636
+2016-04-24 11:17:42,888 [INFO] (Thread-20 )  liquids colder, longer,  7.28219294548
+2016-04-24 11:17:44,803 [INFO] (Thread-20 ) <point return> 9.19749999046
+2016-04-24 11:17:44,813 [INFO] (Thread-20 )  since 1994. 9.20693206787
+2016-04-24 11:17:47,373 [INFO] (Thread-20 ) This company  11.7673790455
+2016-04-24 11:17:48,536 [INFO] (Thread-20 ) <point open> 12.9300789833
+2016-04-24 11:17:48,547 [INFO] (Thread-20 )  has a long history of  12.9412331581
+2016-04-24 11:17:50,369 [INFO] (Thread-20 ) <point return> 14.7630701065
+2016-04-24 11:17:50,381 [INFO] (Thread-20 )  making great great bottles. 14.7752010822
+2016-04-24 11:17:52,922 [INFO] (Thread-20 ) <point item> 17.3161900043
+2016-04-24 11:17:52,936 [INFO] (Thread-20 )  Take a look! This  17.3306519985
+2016-04-24 11:17:54,913 [INFO] (Thread-20 ) <point return> 19.3068771362
+2016-04-24 11:17:54,925 [INFO] (Thread-20 )  specific bottle is made with the most advanced insulating technique, brightly colored foil pattern, and an innovative removable valve system. 19.3190581799
+2016-04-24 11:18:04,442 [INFO] (Thread-20 ) Combining the thermal properties of an insulated vacuum bottle  28.8358721733
+2016-04-24 11:18:08,856 [INFO] (Thread-20 ) with the lightweight, flexible features of a plastic bottle,  33.250054121
+2016-04-24 11:18:12,492 [INFO] (Thread-20 ) <look item> 36.8860681057
+2016-04-24 11:18:12,997 [INFO] (Thread-20 ) Polar Bottle's insulated water bottle  37.3912270069
+2016-04-24 11:18:14,488 [INFO] (Thread-21 ) <look item> 38.8826899529 contingentCmd
+2016-04-24 11:18:15,924 [INFO] (Thread-20 ) <look participant> 40.3180391788
+2016-04-24 11:18:15,930 [INFO] (Thread-20 )  is the ideal choice for active people 40.3243980408
+2016-04-24 11:18:15,997 [INFO] (Thread-21 ) <look participant> 40.3914451599 contingentCmd
+2016-04-24 11:18:18,944 [INFO] (Thread-20 ) and fits many lifestyles. 43.3379740715
+2016-04-24 11:18:21,613 [INFO] (Thread-20 ) You can put it in your backpack, you can take it with you when you bike, you can go on a hike and have it with you. 46.0073471069
+2016-04-24 11:18:29,410 [INFO] (Thread-20 ) <point lift> 53.8041739464
+2016-04-24 11:18:29,418 [INFO] (Thread-20 )  Simply fill with  53.8124120235
+2016-04-24 11:18:30,966 [INFO] (Thread-20 ) <point return> 55.3606030941
+2016-04-24 11:18:30,978 [INFO] (Thread-20 )  liquid and ice and hit the trail.  55.3722240925
+2016-04-24 11:18:32,842 [INFO] (Thread-21 ) <look right> 57.2366390228 contingentCmd
+2016-04-24 11:18:33,774 [INFO] (Thread-20 ) For even longer cooling power,  58.1686501503
+2016-04-24 11:18:34,348 [INFO] (Thread-21 ) <look participant> 58.7420151234 contingentCmd
+2016-04-24 11:18:35,745 [INFO] (Thread-20 ) <point participant> 60.1396331787
+2016-04-24 11:18:35,750 [INFO] (Thread-20 )  fill your insulated bottle  60.1442360878
+2016-04-24 11:18:36,836 [INFO] (Thread-21 ) <look right> 61.2302999496 contingentCmd
+2016-04-24 11:18:37,729 [INFO] (Thread-20 ) <point return> 62.1234741211
+2016-04-24 11:18:37,740 [INFO] (Thread-20 )  and store it in the freezer before use. Either way, it will keep liquids cold twice as long as conventional water bottles.  62.1348421574
+2016-04-24 11:18:38,344 [INFO] (Thread-21 ) <look participant> 62.7385630608 contingentCmd
+2016-04-24 11:18:46,344 [INFO] (Thread-20 ) <look item> 70.7382719517
+2016-04-24 11:18:46,923 [INFO] (Thread-20 ) The double-wall construction of our  71.3177480698
+2016-04-24 11:18:47,991 [INFO] (Thread-21 ) <look item> 72.3856191635 contingentCmd
+2016-04-24 11:18:49,165 [INFO] (Thread-20 ) <look participant> 73.5594921112
+2016-04-24 11:18:49,285 [INFO] (Thread-20 )  insulated water bottles creates a thermal barrier of air to keep heat out and cold in.  73.6788611412
+2016-04-24 11:18:49,548 [INFO] (Thread-21 ) <look participant> 73.9427340031 contingentCmd
+2016-04-24 11:18:54,675 [INFO] (Thread-21 ) <look item> 79.0698289871 contingentCmd
+2016-04-24 11:18:55,193 [INFO] (Thread-20 ) Foil layers reflect solar rays for additional thermal protection.  79.5876750946
+2016-04-24 11:18:56,183 [INFO] (Thread-21 ) <look participant> 80.5774979591 contingentCmd
+2016-04-24 11:19:00,514 [INFO] (Thread-20 ) <pointandlook item> 84.9082159996
+2016-04-24 11:19:01,028 [INFO] (Thread-20 ) This 24 ounce bottle is  85.4222171307
+2016-04-24 11:19:03,435 [INFO] (Thread-20 ) <point return> 87.8296620846
+2016-04-24 11:19:03,450 [INFO] (Thread-20 ) <look participant> 87.8439860344
+2016-04-24 11:19:03,454 [INFO] (Thread-20 )   100% BPA-free, durable, and lightweight. 87.8479449749
+2016-04-24 11:19:08,034 [INFO] (Thread-20 ) Its also Made in America, so if you buy it you're a patriot and you help the economy.  92.4288439751
+2016-04-24 11:19:09,109 [INFO] (Thread-21 ) <look item> 93.5030491352 contingentCmd
+2016-04-24 11:19:10,614 [INFO] (Thread-21 ) <look participant> 95.0087270737 contingentCmd
+2016-04-24 11:19:14,029 [INFO] (Thread-20 ) <point return> 98.4232530594

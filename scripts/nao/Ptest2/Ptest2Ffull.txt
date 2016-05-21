@@ -1,0 +1,196 @@
+2016-04-26 22:49:00,941 [INFO] (Thread-10 ) There is nothing better for a dorm room or apartment  0.00140905380249
+2016-04-26 22:49:04,289 [INFO] (Thread-10 ) <point lift> 3.34949016571
+2016-04-26 22:49:04,295 [INFO] (Thread-10 )  than a scented candle!  3.35601711273
+2016-04-26 22:49:05,956 [INFO] (Thread-10 ) <point return> 5.01691412926
+2016-04-26 22:49:06,467 [INFO] (Thread-10 ) <pointandlook item> 5.52736210823
+2016-04-26 22:49:06,977 [INFO] (Thread-10 ) This candle's scent is  6.03777313232
+2016-04-26 22:49:07,982 [INFO] (Thread-11 ) <look item> 7.04294514656 contingentCmd
+2016-04-26 22:49:08,827 [INFO] (Thread-10 ) <point return> 7.88754916191
+2016-04-26 22:49:08,836 [INFO] (Thread-10 ) <look participant> 7.89633917809
+2016-04-26 22:49:08,842 [INFO] (Thread-10 )   Chilled Sangria, which is a wonderful aroma for any time. 7.90269899368
+2016-04-26 22:49:09,489 [INFO] (Thread-11 ) <look participant> 8.5494081974 contingentCmd
+2016-04-26 22:49:09,495 [INFO] (Thread-11 ) <look item> 8.55603218079 contingentCmd
+2016-04-26 22:49:11,000 [INFO] (Thread-11 ) <look participant> 10.0608971119 contingentCmd
+2016-04-26 22:49:11,006 [INFO] (Thread-11 ) <look item> 10.0670051575 contingentCmd
+2016-04-26 22:49:12,512 [INFO] (Thread-11 ) <look participant> 11.5732460022 contingentCmd
+2016-04-26 22:49:12,520 [INFO] (Thread-11 ) <look item> 11.5804111958 contingentCmd
+2016-04-26 22:49:13,668 [INFO] (Thread-10 ) Candles are becoming America’s number one gift, which comes as no surprise considering they are one of the most affordable   12.729031086
+2016-04-26 22:49:14,026 [INFO] (Thread-11 ) <look participant> 13.0866270065 contingentCmd
+2016-04-26 22:49:15,116 [INFO] (Thread-11 ) <look item> 14.1766271591 contingentCmd
+2016-04-26 22:49:16,622 [INFO] (Thread-11 ) <look participant> 15.6826860905 contingentCmd
+2016-04-26 22:49:16,627 [INFO] (Thread-11 ) <look item> 15.6875531673 contingentCmd
+2016-04-26 22:49:18,132 [INFO] (Thread-11 ) <look participant> 17.1926631927 contingentCmd
+2016-04-26 22:49:18,937 [INFO] (Thread-11 ) <look item> 17.998281002 contingentCmd
+2016-04-26 22:49:20,446 [INFO] (Thread-11 ) <look participant> 19.5067961216 contingentCmd
+2016-04-26 22:49:21,290 [INFO] (Thread-10 ) <point participant> 20.3504340649
+2016-04-26 22:49:21,296 [INFO] (Thread-10 ) luxuries we can get for our home.  20.357019186
+2016-04-26 22:49:23,788 [INFO] (Thread-10 ) <point return> 22.8491001129
+2016-04-26 22:49:24,300 [INFO] (Thread-10 ) They make the perfect gift for Birthdays, Christmas, Valentines Day, Mother’s Day or thank you presents.  23.3610219955
+2016-04-26 22:49:28,132 [INFO] (Thread-11 ) <look item> 27.1925051212 contingentCmd
+2016-04-26 22:49:29,638 [INFO] (Thread-11 ) <look participant> 28.6989040375 contingentCmd
+2016-04-26 22:49:32,740 [INFO] (Thread-10 ) Candles play a major role when it comes to our home decor. 31.8006141186
+2016-04-26 22:49:37,317 [INFO] (Thread-10 ) These candles  36.3773670197
+2016-04-26 22:49:38,628 [INFO] (Thread-10 ) <point open> 37.6890749931
+2016-04-26 22:49:38,641 [INFO] (Thread-10 )  fill the whole room with  37.7014391422
+2016-04-26 22:49:40,590 [INFO] (Thread-10 ) <point return> 39.6510951519
+2016-04-26 22:49:40,600 [INFO] (Thread-10 )  fragrance.  39.6603391171
+2016-04-26 22:49:41,163 [INFO] (Thread-11 ) <look item> 40.2236599922 contingentCmd
+2016-04-26 22:49:42,289 [INFO] (Thread-10 ) Just light the candle, and a pool of scented oil forms that quickly releases  41.3493161201
+2016-04-26 22:49:42,671 [INFO] (Thread-11 ) <look participant> 41.7320439816 contingentCmd
+2016-04-26 22:49:42,678 [INFO] (Thread-11 ) <look item> 41.7390232086 contingentCmd
+2016-04-26 22:49:44,185 [INFO] (Thread-11 ) <look participant> 43.245568037 contingentCmd
+2016-04-26 22:49:44,192 [INFO] (Thread-11 ) <look item> 43.2531490326 contingentCmd
+2016-04-26 22:49:45,703 [INFO] (Thread-11 ) <look participant> 44.7636971474 contingentCmd
+2016-04-26 22:49:47,017 [INFO] (Thread-10 ) <point up> 46.0776331425
+2016-04-26 22:49:47,021 [INFO] (Thread-10 ) fragrance into the air creating  46.0821762085
+2016-04-26 22:49:49,237 [INFO] (Thread-10 ) <point return> 48.2981131077
+2016-04-26 22:49:49,247 [INFO] (Thread-10 )  a warm, relaxing atmosphere.  48.3076000214
+2016-04-26 22:49:51,668 [INFO] (Thread-10 ) <look item> 50.7289311886
+2016-04-26 22:49:51,674 [INFO] (Thread-10 ) <point return> 50.7349641323
+2016-04-26 22:49:52,185 [INFO] (Thread-10 ) These candles have  51.2461969852
+2016-04-26 22:49:53,391 [INFO] (Thread-10 ) <look participant> 52.4521520138
+2016-04-26 22:49:53,396 [INFO] (Thread-10 )  a variety of benefits including:  52.4567501545
+2016-04-26 22:49:55,861 [INFO] (Thread-10 ) calms the nerves and relieves anxiety,  54.9213922024
+2016-04-26 22:49:58,508 [INFO] (Thread-11 ) <look item> 57.5687150955 contingentCmd
+2016-04-26 22:49:58,839 [INFO] (Thread-10 ) proves a relaxing scent for mediation,  57.900231123
+2016-04-26 22:50:00,015 [INFO] (Thread-11 ) <look participant> 59.0755841732 contingentCmd
+2016-04-26 22:50:00,702 [INFO] (Thread-11 ) <look right> 59.7624611855 contingentCmd
+2016-04-26 22:50:01,805 [INFO] (Thread-10 ) induces sleep for those  60.8656392097
+2016-04-26 22:50:02,208 [INFO] (Thread-11 ) <look participant> 61.268376112 contingentCmd
+2016-04-26 22:50:03,782 [INFO] (Thread-10 ) <point lift> 62.8431022167
+2016-04-26 22:50:03,787 [INFO] (Thread-10 )  who suffer from insomnia,  62.8477201462
+2016-04-26 22:50:05,319 [INFO] (Thread-10 ) <point return> 64.379914999
+2016-04-26 22:50:05,832 [INFO] (Thread-10 ) serve as a great bug repellant,  64.8925302029
+2016-04-26 22:50:08,080 [INFO] (Thread-10 ) eliminates unwanted cleaning and cooking odors,  67.1405670643
+2016-04-26 22:50:11,282 [INFO] (Thread-10 ) and can be used as a soothing massage oil. 70.3427751064
+2016-04-26 22:50:15,262 [INFO] (Thread-10 ) You can't go wrong  74.3232831955
+2016-04-26 22:50:16,734 [INFO] (Thread-10 ) <look item> 75.7945730686
+2016-04-26 22:50:16,738 [INFO] (Thread-10 )  by getting this candle!  75.799033165
+2016-04-26 22:50:18,420 [INFO] (Thread-10 ) <look participant> 77.4805970192
+2016-04-26 22:50:18,925 [INFO] (Thread-10 ) <point return> 77.98539114
+2016-04-26 22:51:35,733 [INFO] (Thread-10 ) There is nothing better for a dorm room or apartment  0.00111889839172
+2016-04-26 22:51:39,099 [INFO] (Thread-10 ) <point lift> 3.36707401276
+2016-04-26 22:51:39,105 [INFO] (Thread-10 )  than a scented candle!  3.3729968071
+2016-04-26 22:51:39,455 [INFO] (Thread-11 ) <look item> 3.72249293327 contingentCmd
+2016-04-26 22:51:40,765 [INFO] (Thread-10 ) <point return> 5.03250980377
+2016-04-26 22:51:40,963 [INFO] (Thread-11 ) <look participant> 5.23070693016 contingentCmd
+2016-04-26 22:51:41,278 [INFO] (Thread-10 ) <pointandlook item> 5.54610180855
+2016-04-26 22:51:41,790 [INFO] (Thread-10 ) This candle's scent is  6.05778098106
+2016-04-26 22:51:43,642 [INFO] (Thread-10 ) <point return> 7.90939188004
+2016-04-26 22:51:43,653 [INFO] (Thread-10 ) <look participant> 7.92077589035
+2016-04-26 22:51:43,658 [INFO] (Thread-10 )   Chilled Sangria, which is a wonderful aroma for any time. 7.92559981346
+2016-04-26 22:51:44,651 [INFO] (Thread-11 ) <look item> 8.91854095459 contingentCmd
+2016-04-26 22:51:46,157 [INFO] (Thread-11 ) <look participant> 10.424893856 contingentCmd
+2016-04-26 22:51:47,683 [INFO] (Thread-11 ) <look item> 11.9504787922 contingentCmd
+2016-04-26 22:51:48,544 [INFO] (Thread-10 ) Candles are becoming America’s number one gift, which comes as no surprise considering they are one of the most affordable   12.8123748302
+2016-04-26 22:51:49,190 [INFO] (Thread-11 ) <look participant> 13.4577999115 contingentCmd
+2016-04-26 22:51:56,145 [INFO] (Thread-10 ) <point participant> 20.413285017
+2016-04-26 22:51:56,152 [INFO] (Thread-10 ) luxuries we can get for our home.  20.4196069241
+2016-04-26 22:51:58,640 [INFO] (Thread-10 ) <point return> 22.9076929092
+2016-04-26 22:51:59,154 [INFO] (Thread-10 ) They make the perfect gift for Birthdays, Christmas, Valentines Day, Mother’s Day or thank you presents.  23.422066927
+2016-04-26 22:52:07,599 [INFO] (Thread-10 ) Candles play a major role when it comes to our home decor. 31.866686821
+2016-04-26 22:52:12,177 [INFO] (Thread-10 ) These candles  36.4444768429
+2016-04-26 22:52:13,486 [INFO] (Thread-10 ) <point open> 37.7538797855
+2016-04-26 22:52:13,495 [INFO] (Thread-10 )  fill the whole room with  37.7630598545
+2016-04-26 22:52:15,464 [INFO] (Thread-10 ) <point return> 39.7313938141
+2016-04-26 22:52:15,477 [INFO] (Thread-10 )  fragrance.  39.7443878651
+2016-04-26 22:52:17,146 [INFO] (Thread-10 ) Just light the candle, and a pool of scented oil forms that quickly releases  41.4135129452
+2016-04-26 22:52:21,870 [INFO] (Thread-10 ) <point up> 46.1382248402
+2016-04-26 22:52:21,878 [INFO] (Thread-10 ) fragrance into the air creating  46.1460118294
+2016-04-26 22:52:24,094 [INFO] (Thread-10 ) <point return> 48.3619208336
+2016-04-26 22:52:24,105 [INFO] (Thread-10 )  a warm, relaxing atmosphere.  48.3732860088
+2016-04-26 22:52:25,556 [INFO] (Thread-11 ) <look item> 49.8243708611 contingentCmd
+2016-04-26 22:52:26,530 [INFO] (Thread-10 ) <look item> 50.7974460125
+2016-04-26 22:52:26,535 [INFO] (Thread-10 ) <point return> 50.8029658794
+2016-04-26 22:52:27,046 [INFO] (Thread-10 ) These candles have  51.3133609295
+2016-04-26 22:52:27,065 [INFO] (Thread-11 ) <look participant> 51.3328998089 contingentCmd
+2016-04-26 22:52:28,253 [INFO] (Thread-10 ) <look participant> 52.5208849907
+2016-04-26 22:52:28,259 [INFO] (Thread-10 )  a variety of benefits including:  52.5265967846
+2016-04-26 22:52:30,715 [INFO] (Thread-10 ) calms the nerves and relieves anxiety,  54.9828000069
+2016-04-26 22:52:32,431 [INFO] (Thread-11 ) <look item> 56.6991739273 contingentCmd
+2016-04-26 22:52:33,702 [INFO] (Thread-10 ) proves a relaxing scent for mediation,  57.9701488018
+2016-04-26 22:52:33,941 [INFO] (Thread-11 ) <look participant> 58.2085998058 contingentCmd
+2016-04-26 22:52:36,664 [INFO] (Thread-10 ) induces sleep for those  60.9316329956
+2016-04-26 22:52:37,749 [INFO] (Thread-11 ) <look right> 62.017138958 contingentCmd
+2016-04-26 22:52:38,637 [INFO] (Thread-10 ) <point lift> 62.9050159454
+2016-04-26 22:52:38,642 [INFO] (Thread-10 )  who suffer from insomnia,  62.9098749161
+2016-04-26 22:52:39,259 [INFO] (Thread-11 ) <look participant> 63.526542902 contingentCmd
+2016-04-26 22:52:40,173 [INFO] (Thread-10 ) <point return> 64.4405620098
+2016-04-26 22:52:40,685 [INFO] (Thread-10 ) serve as a great bug repellant,  64.9526188374
+2016-04-26 22:52:41,984 [INFO] (Thread-11 ) <look item> 66.2522358894 contingentCmd
+2016-04-26 22:52:42,935 [INFO] (Thread-10 ) eliminates unwanted cleaning and cooking odors,  67.2028989792
+2016-04-26 22:52:43,490 [INFO] (Thread-11 ) <look participant> 67.7579507828 contingentCmd
+2016-04-26 22:52:44,216 [INFO] (Thread-11 ) <look item> 68.4838109016 contingentCmd
+2016-04-26 22:52:45,973 [INFO] (Thread-11 ) <look participant> 70.2409129143 contingentCmd
+2016-04-26 22:52:46,301 [INFO] (Thread-11 ) <look item> 70.5690748692 contingentCmd
+2016-04-26 22:52:46,377 [INFO] (Thread-10 ) and can be used as a soothing massage oil. 70.6448948383
+2016-04-26 22:52:48,209 [INFO] (Thread-11 ) <look participant> 72.4771909714 contingentCmd
+2016-04-26 22:52:50,590 [INFO] (Thread-10 ) You can't go wrong  74.8574018478
+2016-04-26 22:52:52,086 [INFO] (Thread-10 ) <look item> 76.354049921
+2016-04-26 22:52:52,091 [INFO] (Thread-10 )  by getting this candle!  76.3585908413
+2016-04-26 22:52:53,745 [INFO] (Thread-10 ) <look participant> 78.0131809711
+2016-04-26 22:52:54,251 [INFO] (Thread-10 ) <point return> 78.5187268257
+2016-04-26 22:54:20,095 [INFO] (Thread-10 ) There is nothing better for a dorm room or apartment  0.00107002258301
+2016-04-26 22:54:23,447 [INFO] (Thread-10 ) <point lift> 3.35357403755
+2016-04-26 22:54:23,453 [INFO] (Thread-10 )  than a scented candle!  3.35987997055
+2016-04-26 22:54:25,114 [INFO] (Thread-10 ) <point return> 5.02035188675
+2016-04-26 22:54:25,624 [INFO] (Thread-10 ) <pointandlook item> 5.53095889091
+2016-04-26 22:54:26,135 [INFO] (Thread-10 ) This candle's scent is  6.04171490669
+2016-04-26 22:54:26,216 [INFO] (Thread-11 ) <look item> 6.12234687805 contingentCmd
+2016-04-26 22:54:27,727 [INFO] (Thread-11 ) <look participant> 7.63353800774 contingentCmd
+2016-04-26 22:54:27,994 [INFO] (Thread-10 ) <point return> 7.90058708191
+2016-04-26 22:54:28,008 [INFO] (Thread-10 ) <look participant> 7.91454696655
+2016-04-26 22:54:28,013 [INFO] (Thread-10 )   Chilled Sangria, which is a wonderful aroma for any time. 7.91943502426
+2016-04-26 22:54:32,836 [INFO] (Thread-10 ) Candles are becoming America’s number one gift, which comes as no surprise considering they are one of the most affordable   12.7420749664
+2016-04-26 22:54:36,293 [INFO] (Thread-11 ) <look item> 16.1992959976 contingentCmd
+2016-04-26 22:54:37,800 [INFO] (Thread-11 ) <look participant> 17.7060110569 contingentCmd
+2016-04-26 22:54:40,450 [INFO] (Thread-10 ) <point participant> 20.3568930626
+2016-04-26 22:54:40,456 [INFO] (Thread-10 ) luxuries we can get for our home.  20.3621850014
+2016-04-26 22:54:42,951 [INFO] (Thread-10 ) <point return> 22.8579549789
+2016-04-26 22:54:43,464 [INFO] (Thread-10 ) They make the perfect gift for Birthdays, Christmas, Valentines Day, Mother’s Day or thank you presents.  23.3703639507
+2016-04-26 22:54:44,446 [INFO] (Thread-11 ) <look item> 24.3525600433 contingentCmd
+2016-04-26 22:54:46,047 [INFO] (Thread-11 ) <look participant> 25.9532959461 contingentCmd
+2016-04-26 22:54:46,128 [INFO] (Thread-11 ) <look item> 26.0347979069 contingentCmd
+2016-04-26 22:54:47,634 [INFO] (Thread-11 ) <look participant> 27.5407819748 contingentCmd
+2016-04-26 22:54:50,926 [INFO] (Thread-11 ) <look item> 30.8322989941 contingentCmd
+2016-04-26 22:54:51,919 [INFO] (Thread-10 ) Candles play a major role when it comes to our home decor. 31.8250439167
+2016-04-26 22:54:52,432 [INFO] (Thread-11 ) <look participant> 32.3385429382 contingentCmd
+2016-04-26 22:54:56,491 [INFO] (Thread-10 ) These candles  36.3975589275
+2016-04-26 22:54:57,794 [INFO] (Thread-10 ) <point open> 37.7003750801
+2016-04-26 22:54:57,803 [INFO] (Thread-10 )  fill the whole room with  37.7097129822
+2016-04-26 22:54:59,277 [INFO] (Thread-11 ) <look item> 39.1838550568 contingentCmd
+2016-04-26 22:54:59,757 [INFO] (Thread-10 ) <point return> 39.6633069515
+2016-04-26 22:54:59,768 [INFO] (Thread-10 )  fragrance.  39.6743650436
+2016-04-26 22:55:00,783 [INFO] (Thread-11 ) <look participant> 40.6895599365 contingentCmd
+2016-04-26 22:55:01,466 [INFO] (Thread-10 ) Just light the candle, and a pool of scented oil forms that quickly releases  41.3727960587
+2016-04-26 22:55:03,350 [INFO] (Thread-11 ) <look item> 43.256018877 contingentCmd
+2016-04-26 22:55:04,857 [INFO] (Thread-11 ) <look participant> 44.7633900642 contingentCmd
+2016-04-26 22:55:04,863 [INFO] (Thread-11 ) <look item> 44.7691869736 contingentCmd
+2016-04-26 22:55:06,205 [INFO] (Thread-10 ) <point up> 46.1116430759
+2016-04-26 22:55:06,211 [INFO] (Thread-10 ) fragrance into the air creating  46.1172630787
+2016-04-26 22:55:06,368 [INFO] (Thread-11 ) <look participant> 46.2746870518 contingentCmd
+2016-04-26 22:55:08,418 [INFO] (Thread-10 ) <point return> 48.3246068954
+2016-04-26 22:55:08,431 [INFO] (Thread-10 )  a warm, relaxing atmosphere.  48.3373610973
+2016-04-26 22:55:10,854 [INFO] (Thread-10 ) <look item> 50.760176897
+2016-04-26 22:55:10,860 [INFO] (Thread-10 ) <point return> 50.7669138908
+2016-04-26 22:55:11,370 [INFO] (Thread-10 ) These candles have  51.2761590481
+2016-04-26 22:55:12,580 [INFO] (Thread-10 ) <look participant> 52.4866280556
+2016-04-26 22:55:12,585 [INFO] (Thread-10 )  a variety of benefits including:  52.4919369221
+2016-04-26 22:55:15,052 [INFO] (Thread-10 ) calms the nerves and relieves anxiety,  54.958122015
+2016-04-26 22:55:18,029 [INFO] (Thread-10 ) proves a relaxing scent for mediation,  57.9350309372
+2016-04-26 22:55:19,014 [INFO] (Thread-11 ) <look right> 58.9203460217 contingentCmd
+2016-04-26 22:55:20,521 [INFO] (Thread-11 ) <look participant> 60.4277610779 contingentCmd
+2016-04-26 22:55:20,993 [INFO] (Thread-10 ) induces sleep for those  60.8994870186
+2016-04-26 22:55:22,967 [INFO] (Thread-10 ) <point lift> 62.8734819889
+2016-04-26 22:55:22,971 [INFO] (Thread-10 )  who suffer from insomnia,  62.8777039051
+2016-04-26 22:55:24,504 [INFO] (Thread-10 ) <point return> 64.4099969864
+2016-04-26 22:55:25,014 [INFO] (Thread-10 ) serve as a great bug repellant,  64.9209060669
+2016-04-26 22:55:27,265 [INFO] (Thread-10 ) eliminates unwanted cleaning and cooking odors,  67.1717939377
+2016-04-26 22:55:30,592 [INFO] (Thread-10 ) and can be used as a soothing massage oil. 70.4988889694
+2016-04-26 22:55:34,249 [INFO] (Thread-11 ) <look item> 74.1556549072 contingentCmd
+2016-04-26 22:55:34,637 [INFO] (Thread-10 ) You can't go wrong  74.5434029102
+2016-04-26 22:55:35,756 [INFO] (Thread-11 ) <look participant> 75.6626229286 contingentCmd
+2016-04-26 22:55:36,066 [INFO] (Thread-10 ) <look item> 75.9725680351
+2016-04-26 22:55:36,071 [INFO] (Thread-10 )  by getting this candle!  75.9773581028
+2016-04-26 22:55:37,733 [INFO] (Thread-10 ) <look participant> 77.6398999691
+2016-04-26 22:55:38,241 [INFO] (Thread-10 ) <point return> 78.1472730637
